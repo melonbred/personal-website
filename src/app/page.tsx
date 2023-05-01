@@ -21,8 +21,8 @@ export default function Home() {
           <div className="w-96 px-4 font-mono flex flex-col justify-center">
             <h1 className="text-xl py-2">Hi! My name is MelonBred.</h1>
             <p className="text-sm">
-              I'm a self-taught mechanical keyboard hobbyist that enjoys drawing
-              up PCBs and keyboard cases on my free time.
+              I&apos;m a self-taught mechanical keyboard hobbyist that enjoys
+              drawing up PCBs and keyboard cases on my free time.
             </p>
           </div>
         </div>
