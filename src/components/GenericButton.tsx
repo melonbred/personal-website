@@ -8,10 +8,12 @@ type GenericButtonProps = {
 
 export default function GenericButton({ text, href, img }: GenericButtonProps) {
   return (
-    <a href={href}>
-      <div className="bg-green-300 border-2 border-emerald-700 text-green-950 rounded-3xl w-80 h-16 flex items-center px-4 gap-16">
-        <Image alt={text} height={40} width={40} src={img} />
-        <div className="flex items-center">{text}</div>
+    <a href={href} target="_blank">
+      <div className="bg-green-300 border-2 border-emerald-700 text-green-950 rounded-3xl w-80 h-16 flex items-center m-1 hover:scale-105">
+        <div className="px-6">
+          <Image alt={text} height={30} width={30} src={img} />
+        </div>
+        <div className="flex w-40 justify-center">{text}</div>
       </div>
     </a>
   );
