@@ -13,9 +13,7 @@ export default function GenericButton({ text, href, img }: GenericButtonProps) {
         <div className="pl-4 pr-2">
           <Image alt={text} height={30} width={30} src={img} />
         </div>
-        <div className="flex w-52 justify-center font-mono tracking-tighter">
-          {text}
-        </div>
+        <div className="flex w-52 justify-center">{text}</div>
       </div>
     </a>
   );

@@ -1,22 +1,10 @@
 import Image from "next/image";
-import { Inter } from "next/font/google";
-
-const inter = Inter({ subsets: ["latin"] });
 import GenericButton from "@/components/GenericButton";
 import MenuButton from "@/components/menu";
 
-import fs from "fs";
-import { dirname } from "path";
-
 export default function Home() {
-  const files = fs.readdirSync("./src/app/(content)", { withFileTypes: true });
-  let menuButtonRoutes = files
-    .filter((file) => file.isDirectory())
-    .map((file) => file.name);
-  console.log(menuButtonRoutes);
-
   return (
-    <div className="flex justify-center h-screen pt-20 bg-slate-800">
+    <div className="flex justify-center min-h-screen pt-20 bg-slate-800">
       <div className="flex flex-col items-center">
         <div className="md:flex md:justify-center m-4 w-max">
           <div className="flex justify-center">
@@ -30,7 +18,7 @@ export default function Home() {
               />
             </div>
           </div>
-          <div className="w-96 px-4 font-mono tracking-tight flex flex-col justify-center text-center md:w-96 md:text-left">
+          <div className="w-96 px-4 flex flex-col justify-center text-center md:w-96 md:text-left">
             <h1 className="text-xl py-2">Hi! My name is Cliff.</h1>
             <p className="text-sm">
               Most people on the internet know me as MelonBred. I&apos;m a
@@ -39,7 +27,9 @@ export default function Home() {
             </p>
           </div>
         </div>
-        <MenuButton folders={menuButtonRoutes} />
+        <MenuButton isHome={true} />
+
+        <div className="mt-6">External Links</div>
         <GenericButton
           text="GitHub"
           href="https://github.com/melonbred"

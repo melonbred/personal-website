@@ -1,7 +1,7 @@
 import "./globals.css";
-import { Inter } from "next/font/google";
+import { Chivo_Mono } from "next/font/google";
 
-const inter = Inter({ subsets: ["latin"] });
+const chivoMono = Chivo_Mono({ subsets: ["latin"] });
 
 export const metadata = {
   title: "MelonBred Keyboards",
@@ -15,7 +15,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={chivoMono.className}>{children}</body>
     </html>
   );
 }
