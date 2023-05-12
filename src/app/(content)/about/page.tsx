@@ -27,7 +27,7 @@ export default function About() {
           Fast-forward to present day, and I&apos;ve been fortunate enough to
           have drawn up a handful of keyboards! With help from some dear friends
           and wonderful community members, some of these creations have made it
-          to several hundred of people's desks and workstations.
+          to several hundred of people&apos;s desks and workstations.
         </p>
         <p className="pt-5">
           If you have supported my projects, thank you from the bottom of my
