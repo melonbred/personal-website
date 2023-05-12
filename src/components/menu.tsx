@@ -17,13 +17,13 @@ export default function MenuButton(props: MenuProps) {
     <div
       className={`${
         props.addTW ? props.addTW : ""
-      } bg-green-300 border-1 border-emerald-700 rounded-3xl m-1`}
+      } bg-green-300 border-emerald-700 rounded-3xl m-1`}
     >
       <button onClick={() => setIsClicked(!isClicked)}>
         <div
           className={`${isClicked ? "" : "hover:scale-105"}
           ${props.isHome ? "w-80" : "w-40 md:w-80"}
-           bg-green-300 border-2 border-emerald-700 text-green-950 rounded-3xl h-16 flex items-center m-0 transition-opacity duration-150`}
+           bg-green-300 border-4 border-emerald-700 text-green-950 rounded-3xl h-16 flex items-center m-0 transistion duration-150`}
         >
           <Bars3Icon className="h-8 w-8 ml-4 mr-2"></Bars3Icon>
 
