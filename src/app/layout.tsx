@@ -1,10 +1,12 @@
 import "./globals.css";
-import { PT_Mono } from "next/font/google";
+import { Fira_Mono } from "next/font/google";
 
-const pt_Mono = PT_Mono({
+const fira_Mono = Fira_Mono({
   subsets: ["latin"],
   weight: "400",
-  variable: "--font-pt-mono",
+  display: "swap",
+  preload: true,
+  variable: "--font-fira-mono",
 });
 
 export const metadata = {
@@ -19,7 +21,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${pt_Mono.className} font-mono`}>{children}</body>
+      <body className={`${fira_Mono.className}`}>{children}</body>
     </html>
   );
 }
