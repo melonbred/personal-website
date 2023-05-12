@@ -1,7 +1,11 @@
 import "./globals.css";
-import { Chivo_Mono } from "next/font/google";
+import { PT_Mono } from "next/font/google";
 
-const chivoMono = Chivo_Mono({ subsets: ["latin"] });
+const pt_Mono = PT_Mono({
+  subsets: ["latin"],
+  weight: "400",
+  variable: "--font-pt-mono",
+});
 
 export const metadata = {
   title: "MelonBred Keyboards",
@@ -15,7 +19,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={chivoMono.className}>{children}</body>
+      <body className={`${pt_Mono.className} font-mono`}>{children}</body>
     </html>
   );
 }
