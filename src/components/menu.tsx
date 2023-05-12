@@ -12,7 +12,7 @@ type MenuProps = {
 
 export default function MenuButton(props: MenuProps) {
   const [isClicked, setIsClicked] = useState(false);
-  const menuArray = ["About", "Keyboards", "Resources"];
+  const menuArray = ["About", "Keyboards", "Resources", "Contact"];
 
   return (
     <div
@@ -48,7 +48,7 @@ export default function MenuButton(props: MenuProps) {
             return (
               <div
                 key={folder}
-                className="w-full flex justify-center hover:scale-110"
+                className="w-full flex justify-center p-1 hover:scale-110"
               >
                 <Link href={`/${folder.toLocaleLowerCase()}`}>{folder}</Link>
               </div>

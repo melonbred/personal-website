@@ -3,7 +3,7 @@ import { Chivo_Mono } from "next/font/google";
 import Image from "next/image";
 import MenuButton from "@/components/menu";
 
-const chivoMono = Chivo_Mono({ subsets: ["latin"] });
+const chivoMono = Chivo_Mono({ subsets: ["latin"], display: "swap" });
 
 export const metadata = {
   title: "MelonBred Keyboards",
