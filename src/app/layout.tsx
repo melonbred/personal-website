@@ -1,7 +1,13 @@
 import "./globals.css";
-import { Inter } from "next/font/google";
+import { Fira_Mono } from "next/font/google";
 
-const inter = Inter({ subsets: ["latin"] });
+const fira_Mono = Fira_Mono({
+  subsets: ["latin"],
+  weight: "400",
+  display: "swap",
+  preload: true,
+  variable: "--font-fira-mono",
+});
 
 export const metadata = {
   title: "MelonBred Keyboards",
@@ -15,7 +21,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={`${fira_Mono.className}`}>{children}</body>
     </html>
   );
 }
