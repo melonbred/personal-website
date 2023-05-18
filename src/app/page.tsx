@@ -4,9 +4,9 @@ import MenuButton from "@/components/menu";
 
 export default function Home() {
   return (
-    <div className="flex justify-center min-h-screen pt-20 bg-slate-800">
+    <div className="flex min-h-screen justify-center bg-slate-800 pt-20">
       <div className="flex flex-col items-center">
-        <div className="md:flex md:justify-center m-4 w-max">
+        <div className="m-4 w-max md:flex md:justify-center">
           <div className="flex justify-center">
             <div className="h-32 w-32 overflow-hidden rounded-full">
               <Image
@@ -14,12 +14,12 @@ export default function Home() {
                 height={10000}
                 width={10000}
                 src="/headshot.jpg"
-                className="rounded-full scale-125"
+                className="scale-125 rounded-full"
               />
             </div>
           </div>
-          <div className="w-96 px-4 flex flex-col justify-center text-center md:w-96 md:text-left">
-            <h1 className="text-xl py-2">Hi! My name is Cliff.</h1>
+          <div className="flex w-96 flex-col justify-center px-4 text-center md:w-96 md:text-left">
+            <h1 className="py-2 text-xl">Hi! My name is Cliff.</h1>
             <p className="text-sm">
               Most people on the internet know me as MelonBred. I&apos;m a
               mechanical keyboard hobbyist that enjoys drawing up PCBs and cases

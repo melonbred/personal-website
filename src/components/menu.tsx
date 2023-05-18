@@ -17,15 +17,15 @@ export default function MenuButton(props: MenuProps) {
     <div
       className={`${
         props.addTW ? props.addTW : ""
-      } bg-green-300 border-emerald-700 rounded-3xl m-1`}
+      } absolute right-3 m-1 rounded-3xl border-emerald-700 bg-green-300`}
     >
       <button onClick={() => setIsClicked(!isClicked)}>
         <div
           className={`${isClicked ? "" : "hover:scale-105"}
           ${props.isHome ? "w-80" : "w-40 md:w-80"}
-           bg-green-300 border-4 border-emerald-700 text-green-950 rounded-3xl h-16 flex items-center m-0  duration-150`}
+           m-0 flex h-16 items-center rounded-3xl border-4 border-emerald-700 bg-green-300 text-green-950  duration-150`}
         >
-          <Bars3Icon className="h-8 w-8 ml-4 mr-2"></Bars3Icon>
+          <Bars3Icon className="ml-4 mr-2 h-8 w-8"></Bars3Icon>
 
           <div className="flex w-52 justify-center">Menu</div>
         </div>
@@ -34,18 +34,18 @@ export default function MenuButton(props: MenuProps) {
       <div
         className={`${
           isClicked
-            ? "transition-transform duration-200 translate-y-0"
+            ? "translate-y-0 transition-transform duration-200"
             : "-translate-y-20 scale-y-0"
         } 
         ${props.isHome ? "w-80" : "w-40 md:w-80"}
-        flex flex-col justify-center items-center bg-green-300 text-green-950 rounded-b-3xl relative`}
+        relative flex flex-col items-center justify-center rounded-b-3xl bg-green-300 text-green-950`}
       >
         {isClicked &&
           menuArray.map((folder) => {
             return (
               <div
                 key={folder}
-                className="w-full flex justify-center p-1 hover:scale-110"
+                className="flex w-full justify-center p-1 hover:scale-110"
               >
                 <Link
                   onClick={() => setIsClicked(false)}

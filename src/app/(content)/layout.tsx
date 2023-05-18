@@ -14,10 +14,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <div className="bg-slate-800 min-h-screen">
-      <div className="flex justify-between items-start fixed top-0 left-3 right-3">
+    <div className="min-h-screen bg-slate-800">
+      <div className="fixed left-3 right-3 top-0 z-10 flex items-start justify-between backdrop-blur">
         <Link
-          className="rounded-full bg-green-300 border-4 border-emerald-700 mt-2 hover:scale-105 duration-150"
+          className="mt-2 rounded-full border-4 border-emerald-700 bg-green-300 duration-150 hover:scale-105"
           href="/"
         >
           <Image alt="turtle" width="80" height="80" src="/turtlepan.png" />
