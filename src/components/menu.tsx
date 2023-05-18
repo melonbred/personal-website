@@ -15,9 +15,10 @@ export default function MenuButton(props: MenuProps) {
 
   return (
     <div
-      className={`${
-        props.addTW ? props.addTW : ""
-      } absolute right-3 m-1 rounded-3xl border-emerald-700 bg-green-300`}
+      className={`${props.addTW ? props.addTW : ""} 
+      ${
+        props.isHome ? "" : "absolute right-3"
+      } m-1 rounded-3xl border-emerald-700 bg-green-300`}
     >
       <button onClick={() => setIsClicked(!isClicked)}>
         <div
