@@ -47,7 +47,12 @@ export default function MenuButton(props: MenuProps) {
                 key={folder}
                 className="w-full flex justify-center p-1 hover:scale-110"
               >
-                <Link href={`/${folder.toLocaleLowerCase()}`}>{folder}</Link>
+                <Link
+                  onClick={() => setIsClicked(false)}
+                  href={`/${folder.toLocaleLowerCase()}`}
+                >
+                  {folder}
+                </Link>
               </div>
             );
           })}
