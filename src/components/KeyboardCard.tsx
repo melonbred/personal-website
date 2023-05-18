@@ -17,12 +17,16 @@ export default function KeyboardCard({
   return (
     <Link
       href={href}
-      className="bg-green-300 border-4 border-emerald-700 text-green-950 rounded-3xl w-80 md:w-96 h-32 flex items-center m-1 transition duration-150 hover:scale-105"
+      className="m-1 flex h-80 w-80 flex-col rounded-3xl bg-green-300 text-green-950 transition duration-150 hover:scale-105  md:w-96 "
     >
-      <div className="pl-4 pr-2">
-        <Image alt={title} height={30} width={30} src={img} />
+      <div className="">
+        <img
+          className="m-auto h-56 w-full overflow-hidden rounded-3xl border-4 border-emerald-700 bg-green-300 object-cover object-center"
+          alt={title}
+          src="/keyboards/lux_keyboard.JPG"
+        ></img>
       </div>
-      <div className="flex flex-col pl-4">
+      <div className="flex h-32 flex-col  pl-4">
         <h2 className="text-lg">{title}</h2>
         <p>{body}</p>
       </div>
