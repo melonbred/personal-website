@@ -1,5 +1,6 @@
 import "./globals.css";
 import { Fira_Mono } from "next/font/google";
+import { Analytics } from "@vercel/analytics/react";
 
 const fira_Mono = Fira_Mono({
   subsets: ["latin"],
@@ -21,7 +22,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${fira_Mono.className}`}>{children}</body>
+      <body className={`${fira_Mono.className}`}>
+        {children}
+        <Analytics />
+      </body>
     </html>
   );
 }
