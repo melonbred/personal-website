@@ -28,7 +28,6 @@ export default function Home() {
           </div>
         </div>
         <MenuButton isHome={true} />
-
         <div className="mt-6">External Links</div>
         <GenericButton
           text="GitHub"
