@@ -17,7 +17,7 @@ export default function About() {
               title="MB-44"
               body="This is a test of what the card will look like. You dingus."
               href="/keyboards/mb44"
-              img="/keyboards/lux_keyboard.JPG"
+              img="/keyboards/images/lux_keyboard.JPG"
             />
             <KeyboardCard
               title="MB-44"
