@@ -13,7 +13,7 @@ export default function Home() {
                 alt="MB Headshot"
                 height={10000}
                 width={10000}
-                src="/images/headshot.jpg"
+                src="/images/misc/headshot.jpg"
                 className="scale-125 rounded-full"
               />
             </div>

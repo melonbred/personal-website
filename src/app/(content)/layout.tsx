@@ -24,7 +24,7 @@ export default function RootLayout({
             alt="turtle"
             width="80"
             height="80"
-            src="/images/turtlepan.png"
+            src="/images/misc/turtlepan.png"
           />
         </Link>
         <MenuButton isHome={false} addTW="mt-4" />
