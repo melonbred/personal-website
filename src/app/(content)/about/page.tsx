@@ -1,8 +1,8 @@
 export default function About() {
   return (
-    <div className="min-w-min pt-24 pb-5 flex flex-col items-center">
-      <h1 className="text-3xl pt-4">About Me</h1>
-      <div className=" p-5 max-w-2xl">
+    <div className="flex min-w-min flex-col items-center pb-5 pt-24">
+      <h1 className="pt-4 text-3xl">About Me</h1>
+      <div className=" max-w-2xl p-5">
         <p className="pt-5">
           Located in the San Francisco, Bay Area, I&apos;m an engineer by day
           with a love for tinkering and learning. Some other hobbies of mine
@@ -27,13 +27,18 @@ export default function About() {
           Fast-forward to present day, and I&apos;ve been fortunate enough to
           have drawn up a handful of keyboards! With help from some dear friends
           and wonderful community members, some of these creations have made it
-          to several hundred of people&apos;s desks and workstations.
+          to several hundreds of people&apos;s desks and workstations.
         </p>
         <p className="pt-5">
           If you have supported my projects, thank you from the bottom of my
-          heart. If you are finding them the first time, welcome! I hope to keep
-          working on projects as ideas strike, and you&apos;ll likely find them
-          here on this site.
+          heart.
+        </p>
+        <p className="pt-5">
+          If you are finding them for the first time, welcome!
+        </p>
+        <p className="pt-5">
+          I hope to keep working on projects as ideas strike, and you&apos;ll
+          likely find them here on this site.
         </p>
       </div>
     </div>
