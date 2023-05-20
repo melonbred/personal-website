@@ -32,17 +32,17 @@ export default function Home() {
         <GenericButton
           text="GitHub"
           href="https://github.com/melonbred"
-          img="/github-mark.svg"
+          img="/images/icons/github-mark.svg"
         />
         <GenericButton
           text="Instagram"
           href="https://www.instagram.com/melonbred.kb/"
-          img="/iconmonstr-instagram-11.svg"
+          img="/images/icons/iconmonstr-instagram-11.svg"
         />
         <GenericButton
           text="Griffin 60% Keyboard"
           href="https://geekhack.org/index.php?topic=120200.0"
-          img="/DocumentCheck.svg"
+          img="/images/icons/DocumentCheck.svg"
         />
       </div>
     </div>
