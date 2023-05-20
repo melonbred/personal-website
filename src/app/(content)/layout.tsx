@@ -20,7 +20,12 @@ export default function RootLayout({
           className="mt-2 rounded-full border-4 border-emerald-700 bg-green-300 duration-150 hover:scale-105"
           href="/"
         >
-          <Image alt="turtle" width="80" height="80" src="/turtlepan.png" />
+          <Image
+            alt="turtle"
+            width="80"
+            height="80"
+            src="/images/turtlepan.png"
+          />
         </Link>
         <MenuButton isHome={false} addTW="mt-4" />
       </div>
