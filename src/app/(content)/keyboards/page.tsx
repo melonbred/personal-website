@@ -26,7 +26,7 @@ export default function Keyboards() {
             start with my initials due to the nature of them being perosnal
             projects and my lack of originality and foresight.
           </p>
-          <div className="flex justify-center">
+          <div className="flex justify-center pt-3">
             <div className="grid grid-cols-1 gap-7 text-center lg:grid-cols-2 xl:grid-cols-3">
               <KeyboardCard
                 title="MB-44"

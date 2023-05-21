@@ -18,7 +18,7 @@ export default function Resources() {
         <h1 className="pt-4 text-3xl">Keyboards</h1>
         <div className="min-w-screen p-4 md:p-10">
           <h2 className="pt-5 text-2xl">MB Series</h2>
-          <p className="pb-5 pt-2">
+          <p className="pt-2">
             Projects in the MB series all started off as personal experiments
             with the intent to learn and try different things. These projects
             typically feature simple case construcutions. All of these projects
@@ -30,8 +30,7 @@ export default function Resources() {
       <Swiper
         centeredSlides={true}
         modules={[Navigation, Pagination, A11y]}
-        spaceBetween={100}
-        // navigation={true}
+        navigation={true}
         pagination={{ clickable: true }}
         onSlideChange={() => console.log("slide change")}
         onSwiper={(swiper) => console.log(swiper)}
@@ -67,6 +66,45 @@ export default function Resources() {
           </div>
         </SwiperSlide>
       </Swiper>
+      <div className="min-w-screen p-4 md:p-10">
+        <h2 className="pt-5 text-2xl">Winged Mythics Series</h2>
+        <p className="pt-2">
+          Projects in the Winged Mythics series all share a similar aesthetic.
+          Inspired by older TX-Keyboards designs (TX-75 and TX-CP) and ai03's
+          reference designs. These projects also provided an opportunity to try
+          different mounting solutions.
+        </p>
+      </div>
+      <Swiper
+        centeredSlides={true}
+        modules={[Navigation, Pagination, A11y]}
+        navigation={true}
+        pagination={{ clickable: true }}
+        onSlideChange={() => console.log("slide change")}
+        onSwiper={(swiper) => console.log(swiper)}
+      >
+        <SwiperSlide>
+          <div className="flex justify-center">
+            <KeyboardCard
+              title="Pegasus"
+              body="Pegasus is a 40% keyboard with a 12.75u WKL layout with 0.75u blockers and integrated half-plate."
+              href="/keyboards/pegasus"
+              img="/images/keyboards/pegasus.jpg"
+            />
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className="flex justify-center">
+            <KeyboardCard
+              title="MB-LB"
+              body="A 12.5u WKL main cluster + macro column 40% keyboard. Features an LED light bar and supports up to 4 rotary encoders."
+              href="/keyboards/mblb"
+              img="/images/keyboards/mblb.jpg"
+            />
+          </div>
+        </SwiperSlide>
+      </Swiper>
+      <div className="p-10"></div>
     </>
   );
 }
