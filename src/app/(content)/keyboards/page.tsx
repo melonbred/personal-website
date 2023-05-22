@@ -70,9 +70,9 @@ export default function Resources() {
         <h2 className="pt-5 text-2xl">Winged Mythics Series</h2>
         <p className="pt-2">
           Projects in the Winged Mythics series all share a similar aesthetic.
-          Inspired by older TX-Keyboards designs (TX-75 and TX-CP) and ai03's
-          reference designs. These projects also provided an opportunity to try
-          different mounting solutions.
+          Inspired by older TX-Keyboards designs (TX-75 and TX-CP) and
+          ai03&apos;s reference designs. These projects also provided an
+          opportunity to try different mounting solutions.
         </p>
       </div>
       <Swiper
