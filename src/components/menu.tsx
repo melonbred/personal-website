@@ -24,7 +24,7 @@ export default function MenuButton(props: MenuProps) {
         <div
           className={`${isClicked ? "" : "hover:scale-105"}
           ${props.isHome ? "w-80" : "w-40 md:w-80"}
-           m-0 flex h-16 items-center rounded-3xl border-4 border-emerald-700 bg-green-300 text-green-950  duration-150`}
+           m-0 flex h-16 items-center rounded-3xl border-4 border-emerald-700 bg-green-300 text-green-950 duration-150`}
         >
           <Bars3Icon className="ml-4 mr-2 h-8 w-8"></Bars3Icon>
 

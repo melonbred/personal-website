@@ -87,7 +87,7 @@ export default function Resources() {
           <div className="flex justify-center">
             <KeyboardCard
               title="Pegasus"
-              body="Pegasus is a 40% keyboard with a 12.75u WKL layout with 0.75u blockers and integrated half-plate."
+              body="A 40% keyboard with a 12.75u WKL layout and 0.75u blockers. Features a gasket mounted integrated half-plate."
               href="/keyboards/pegasus"
               img="/images/keyboards/pegasus.jpg"
             />
@@ -96,15 +96,15 @@ export default function Resources() {
         <SwiperSlide>
           <div className="flex justify-center">
             <KeyboardCard
-              title="MB-LB"
-              body="A 12.5u WKL main cluster + macro column 40% keyboard. Features an LED light bar and supports up to 4 rotary encoders."
-              href="/keyboards/mblb"
-              img="/images/keyboards/mblb.jpg"
+              title="Griffin"
+              body="A tried and true 60% keyboard that features a gummy o-ring mounting solution."
+              href="/keyboards/griffin"
+              img="/images/keyboards/griffin.jpg"
             />
           </div>
         </SwiperSlide>
       </Swiper>
-      <div className="p-10g"></div>
+      <div className="p-10"></div>
     </>
   );
 }
