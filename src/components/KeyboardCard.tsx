@@ -1,5 +1,5 @@
-import Image from "next/image";
 import Link from "next/link";
+import { ChevronDoubleRightIcon } from "@heroicons/react/24/solid";
 
 type KeyboardCardProps = {
   title: string;
@@ -27,6 +27,10 @@ export default function KeyboardCard({
       <div className="flex flex-col items-start justify-center p-4 md:w-72">
         <h2 className="text-xl">{title}</h2>
         <p className="text-left">{body}</p>
+        <div className="mt-auto flex w-full items-center justify-end pt-4">
+          More!
+          <ChevronDoubleRightIcon className="h-5 w-5 "></ChevronDoubleRightIcon>
+        </div>
       </div>
     </Link>
   );
