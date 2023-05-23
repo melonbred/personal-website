@@ -27,7 +27,7 @@ export default function KeyboardCard({
         <div className="mt-auto flex w-full items-center justify-end rounded-md pt-4">
           <Link
             href={href}
-            className="flex items-center rounded-2xl border-4 border-emerald-700 bg-green-300 p-1 text-green-950 transition duration-100 hover:scale-110 hover:underline"
+            className="flex items-center rounded-2xl border-4 border-emerald-700 bg-green-300 p-1 text-green-950 transition duration-100 hover:scale-110 hover:bg-green-400"
           >
             More!
             <ChevronDoubleRightIcon className="h-5 w-5 "></ChevronDoubleRightIcon>
