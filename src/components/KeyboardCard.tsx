@@ -15,9 +15,9 @@ export default function KeyboardCard({
   img,
 }: KeyboardCardProps) {
   return (
-    <div className="m-1 flex w-80 flex-col rounded-3xl bg-cyan-300 text-cyan-950 md:w-[800px] md:flex-row ">
+    <div className="m-1 flex w-80 flex-col rounded-3xl bg-slate-600 text-white md:w-[800px] md:flex-row ">
       <img
-        className="m-0 h-[239.76px] w-full overflow-hidden rounded-3xl border-4 border-sky-700 bg-cyan-300 object-cover object-center md:h-[400px]"
+        className="m-0 h-[239.76px] w-full overflow-hidden rounded-3xl border-4 border-slate-400 bg-slate-600 object-cover object-center md:h-[400px]"
         alt={title}
         src={img}
       ></img>
@@ -27,7 +27,7 @@ export default function KeyboardCard({
         <div className="mt-auto flex w-full items-center justify-end rounded-md pt-4">
           <Link
             href={href}
-            className="flex items-center rounded-2xl border-4 border-emerald-700 bg-green-300 p-1 transition duration-150 hover:scale-110"
+            className="flex items-center rounded-2xl border-4 border-emerald-700 bg-green-300 p-1 text-green-950 transition duration-100 hover:scale-110 hover:underline"
           >
             More!
             <ChevronDoubleRightIcon className="h-5 w-5 "></ChevronDoubleRightIcon>

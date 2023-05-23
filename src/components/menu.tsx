@@ -46,7 +46,7 @@ export default function MenuButton(props: MenuProps) {
             return (
               <div
                 key={folder}
-                className="flex w-full justify-center p-1 hover:scale-110"
+                className="flex w-full justify-center p-1 transition duration-100 hover:scale-110 hover:underline"
               >
                 <Link
                   onClick={() => setIsClicked(false)}
