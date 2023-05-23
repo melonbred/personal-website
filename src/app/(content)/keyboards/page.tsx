@@ -14,18 +14,18 @@ import KeyboardCard from "@/components/KeyboardCard";
 export default function Resources() {
   return (
     <>
-      <div className="min-w-screen flex flex-col items-center pb-5 pt-24">
+      <div className="min-w-screen flex flex-col items-center pt-24">
         <h1 className="pt-4 text-3xl">Keyboards</h1>
-        <div className="min-w-screen p-4 md:p-10">
-          <h2 className="pt-1 text-2xl">MB Series</h2>
-          <p className="pt-2">
-            Projects in the MB series all started off as personal experiments
-            with the intent to learn and try different things. These projects
-            typically feature simple case construcutions. All of these projects
-            start with my initials due to the nature of them being perosnal
-            projects and my lack of originality and foresight.
-          </p>
-        </div>
+      </div>
+      <div className="min-w-screen p-4 md:p-10">
+        <h2 className="pt-1 text-2xl">MB Series</h2>
+        <p className="pt-2">
+          Projects in the MB series all started off as personal experiments with
+          the intent to learn and try different things. These projects typically
+          feature simple case construcutions. All of these projects start with
+          my initials due to the nature of them being perosnal projects and my
+          lack of originality and foresight.
+        </p>
       </div>
       <Swiper
         centeredSlides={true}
