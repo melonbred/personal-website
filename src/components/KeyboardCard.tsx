@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { ChevronDoubleRightIcon } from "@heroicons/react/24/solid";
 
 type KeyboardCardProps = {
@@ -16,11 +17,14 @@ export default function KeyboardCard({
 }: KeyboardCardProps) {
   return (
     <div className="m-1 flex w-80 flex-col rounded-3xl bg-slate-600 text-white md:w-[800px] md:flex-row ">
-      <img
-        className="m-0 h-[239.76px] w-full overflow-hidden rounded-3xl border-4 border-slate-400 bg-slate-600 object-cover object-center md:h-[400px]"
-        alt={title}
-        src={img}
-      ></img>
+      <div className="relative m-0 h-[239.76px] w-full overflow-hidden rounded-3xl border-4 border-slate-400 bg-slate-600 object-center md:h-[400px]">
+        <Image
+          alt={title}
+          src={img}
+          fill={true}
+          className="overflow-hidden object-cover"
+        />
+      </div>
       <div className="flex flex-col items-start justify-center p-4 md:w-72">
         <h2 className="text-xl">{title}</h2>
         <p className="pt-1 text-left">{body}</p>
