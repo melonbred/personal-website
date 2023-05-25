@@ -15,7 +15,6 @@ export default function MenuButton(props: MenuProps) {
 
   return (
     <>
-      {document.body.addEventListener("click", () => setIsOpen(false))}
       <div
         className={`${props.addTW ? props.addTW : ""} 
       ${
