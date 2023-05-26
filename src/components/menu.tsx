@@ -6,7 +6,7 @@ import { Bars3Icon } from "@heroicons/react/24/solid";
 
 type MenuProps = {
   isHome: boolean;
-  addTW?: string;
+  addTailWind?: string;
 };
 
 export default function MenuButton(props: MenuProps) {
@@ -20,7 +20,7 @@ export default function MenuButton(props: MenuProps) {
   return (
     <>
       <div
-        className={`${props.addTW ? props.addTW : ""} 
+        className={`${props.addTailWind ? props.addTailWind : ""} 
       ${
         props.isHome ? "" : "absolute right-3"
       } m-1 rounded-3xl border-emerald-700 bg-green-300`}
