@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import { Bars3Icon } from "@heroicons/react/24/solid";
 
@@ -13,19 +13,39 @@ export default function MenuButton(props: MenuProps) {
   const [isOpen, setIsOpen] = useState(false);
   const menuArray = ["About", "Keyboards", "Resources", "Contact"];
 
+  console.log(`The menu is open: ${isOpen}`);
+
+  const menuRef = useRef<HTMLDivElement>(null);
+
   useEffect(() => {
-    document.body.addEventListener("click", () => setIsOpen(false));
+    const handleClick = (e: any) => {
+      if (menuRef.current && !menuRef.current.contains(e.target)) {
+        setIsOpen(false);
+        console.log("Click off menu button. The menu is closed");
+      }
+    };
+
+    document.body.addEventListener("click", handleClick);
+
+    return () => {
+      document.body.removeEventListener("click", handleClick);
+    };
   }, []);
 
   return (
     <>
       <div
+        ref={menuRef}
         className={`${props.addTailWind ? props.addTailWind : ""} 
       ${
         props.isHome ? "" : "absolute right-3"
       } m-1 rounded-3xl border-emerald-700 bg-green-300`}
       >
-        <button onClick={() => setIsOpen(!isOpen)}>
+        <button
+          onClick={(e) => {
+            setIsOpen(!isOpen);
+          }}
+        >
           <div
             className={`${isOpen ? "" : "hover:scale-105"}
           ${props.isHome ? "w-80" : "w-40 md:w-80"}
