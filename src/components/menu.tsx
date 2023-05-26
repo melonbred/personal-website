@@ -13,6 +13,10 @@ export default function MenuButton(props: MenuProps) {
   const [isOpen, setIsOpen] = useState(false);
   const menuArray = ["About", "Keyboards", "Resources", "Contact"];
 
+  useEffect(() => {
+    document.body.addEventListener("click", () => setIsOpen(false));
+  }, []);
+
   return (
     <>
       <div
@@ -21,10 +25,7 @@ export default function MenuButton(props: MenuProps) {
         props.isHome ? "" : "absolute right-3"
       } m-1 rounded-3xl border-emerald-700 bg-green-300`}
       >
-        <button
-          onClick={() => setIsOpen(!isOpen)}
-          onBlur={() => setIsOpen(false)}
-        >
+        <button onClick={() => setIsOpen(!isOpen)}>
           <div
             className={`${isOpen ? "" : "hover:scale-105"}
           ${props.isHome ? "w-80" : "w-40 md:w-80"}
