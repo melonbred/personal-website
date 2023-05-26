@@ -27,7 +27,7 @@ export default function RootLayout({
             src="/images/misc/turtlepan.png"
           />
         </Link>
-        <MenuButton isHome={false} addTW="mt-4" />
+        <MenuButton isHome={false} addTailWind="mt-4" />
       </div>
       {children}
     </div>
