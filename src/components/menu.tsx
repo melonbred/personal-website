@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Link from "next/link";
 import { Bars3Icon } from "@heroicons/react/24/solid";
 
@@ -12,6 +12,10 @@ type MenuProps = {
 export default function MenuButton(props: MenuProps) {
   const [isOpen, setIsOpen] = useState(false);
   const menuArray = ["About", "Keyboards", "Resources", "Contact"];
+
+  useEffect(() => {
+    document.body.addEventListener("click", () => setIsOpen(false));
+  }, []);
 
   return (
     <>
