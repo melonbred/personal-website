@@ -70,7 +70,7 @@ export default function Resources() {
         <p className="pt-2">
           Projects in the Mythics series all share a similar aesthetic. Inspired
           by older TX-Keyboards designs (TX-75 and TX-CP) and ai03&apos;s
-          reference designs. These projects also feature a weight and an
+          reference designs. Mythic series keyboards feature a weight and an
           engraving of a winged mythical creature that is the namesake of the
           keyboard. These projects also provided an opportunity to try different
           mounting solutions.
