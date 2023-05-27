@@ -23,9 +23,7 @@ export default function Resources() {
         <p className="pt-2">
           Projects in the MB series all started off as personal experiments with
           the intent to learn and try different things. These projects typically
-          feature simple case construcutions. All of these projects start with
-          my initials due to the nature of them being perosnal projects and my
-          lack of originality and foresight.
+          feature simple case constructions and fun layouts.
         </p>
       </div>
       <Swiper
@@ -68,12 +66,14 @@ export default function Resources() {
         </SwiperSlide>
       </Swiper>
       <div className="min-w-screen p-4 md:p-10">
-        <h2 className="pt-5 text-2xl">Winged Mythics Series</h2>
+        <h2 className="pt-5 text-2xl">Mythics Series</h2>
         <p className="pt-2">
-          Projects in the Winged Mythics series all share a similar aesthetic.
-          Inspired by older TX-Keyboards designs (TX-75 and TX-CP) and
-          ai03&apos;s reference designs. These projects also provided an
-          opportunity to try different mounting solutions.
+          Projects in the Mythics series all share a similar aesthetic. Inspired
+          by older TX-Keyboards designs (TX-75 and TX-CP) and ai03&apos;s
+          reference designs. These projects also feature a weight and an
+          engraving of a winged mythical creature that is the namesake of the
+          keyboard. These projects also provided an opportunity to try different
+          mounting solutions.
         </p>
       </div>
       <Swiper
