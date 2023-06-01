@@ -7,10 +7,11 @@ export default function Pegasus() {
           <h2 className="pt-5 text-2xl">Overview</h2>
           <p className="pt-2">
             Pegasus is the first in the Mythics series keyboards. A 40% keyboard
-            with a 12.75u "WKL" layout and 0.75u blockers, this project was as
-            much as an experiment as all the projects that came before it. A
-            4-piece construction that offers a unique win keyless (WKL) layout,
-            Pegasus was a premium offering into the 40% keyboard space.
+            with a 12.75u &quot;WKL&quot; layout and 0.75u blockers, this
+            project was as much as an experiment as all the projects that came
+            before it. A 4-piece construction that offers a unique win keyless
+            (WKL) layout, Pegasus was a premium offering into the 40% keyboard
+            space.
           </p>
           <h2 className="pt-10 text-2xl">Case Construction</h2>
           <p className="pt-5">
@@ -26,7 +27,7 @@ export default function Pegasus() {
           </p>
           <p className="pt-5">
             The weight featured an engraving of a Pegasus and was offered in raw
-            brass and polished stainless steel
+            brass and polished stainless steel.
           </p>
         </div>
       </div>
