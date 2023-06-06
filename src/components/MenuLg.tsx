@@ -2,10 +2,9 @@
 
 import Link from "next/link";
 import { Bars3Icon } from "@heroicons/react/24/solid";
+import { menuArray } from "./menu";
 
 export default function MenuLg() {
-  const menuArray = ["About", "Keyboards", "Resources", "Contact"];
-
   return (
     <>
       <div className="static m-1 mt-4 w-80 rounded-3xl border-emerald-700 bg-green-300">

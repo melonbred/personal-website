@@ -4,6 +4,8 @@ import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import { Bars3Icon } from "@heroicons/react/24/solid";
 
+export const menuArray = ["About", "Keyboards", "Resources", "Contact"];
+
 type MenuProps = {
   isHome: boolean;
   addTailWind?: string;
@@ -11,7 +13,6 @@ type MenuProps = {
 
 export default function MenuButton(props: MenuProps) {
   const [isOpen, setIsOpen] = useState(false);
-  const menuArray = ["About", "Keyboards", "Resources", "Contact"];
 
   console.log(`The menu is open: ${isOpen}`);
 
