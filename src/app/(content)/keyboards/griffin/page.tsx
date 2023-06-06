@@ -7,7 +7,7 @@ export default function MB44() {
         <div className="h-24 lg:hidden"></div>
         <img
           alt="griffin side"
-          src="/images/keyboards/griffin/griffin_btm.jpeg"
+          src="/images/keyboards/griffin/griffin_btm.png"
           width="auto"
           height="auto"
           className="rounded-3xl object-cover p-3"
