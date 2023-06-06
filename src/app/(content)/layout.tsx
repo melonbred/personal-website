@@ -2,6 +2,8 @@ import "../globals.css";
 import Image from "next/image";
 import Link from "next/link";
 import MenuButton from "@/components/menu";
+import MenuLg from "@/components/MenuLg";
+import ExternalLinks from "@/components/ExternalLinks";
 
 export const metadata = {
   title: "MelonBred Keyboards",
@@ -41,7 +43,10 @@ export default function RootLayout({
             src="/images/misc/turtlepan.png"
           />
         </Link>
-        <MenuButton isHome={false} addTailWind="mt-4 lg:static" />
+        <div className="mt-10"></div>
+        <MenuLg />
+        <div className="mt-10"></div>
+        <ExternalLinks />
       </aside>
       <div className="overflow-y-auto rounded-3xl lg:bg-slate-800">
         {children}
