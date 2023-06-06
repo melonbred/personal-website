@@ -100,7 +100,7 @@ export default function Resources() {
               title="Griffin"
               body="A tried and true 60% keyboard that features a gummy o-ring mounting solution."
               href="/keyboards/griffin"
-              img="/images/keyboards/griffin.jpg"
+              img="/images/keyboards/griffin/griffin.jpg"
             />
           </div>
         </SwiperSlide>
