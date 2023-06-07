@@ -20,6 +20,7 @@ export default function ExternalLinks() {
         href="https://www.instagram.com/melonbred.kb/"
         img="/icons/iconmonstr-instagram-11.svg"
       />
+      <div className="m-6 md:hidden"></div>
     </div>
   );
 }

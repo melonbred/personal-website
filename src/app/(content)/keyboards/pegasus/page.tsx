@@ -31,7 +31,7 @@ export default function Pegasus() {
                 keyboards: top, bottom, switch plate and weight. However, what
                 is unique about Pegasus is the plate mounting solution. The
                 switch plate is a half plate that is integrated into the raised
-                bezel commponent of the keyboard. This component is then
+                bezel component of the keyboard. This component is then
                 sandwiched between the case and bottom components, isolated by
                 open-cell foam strips. The idea was to provide a soft, flexible
                 typing experience in the alphas while offering a stable platform
