@@ -1,37 +1,43 @@
 export default function Resources() {
   return (
     <>
-      <div className="min-w-screen flex flex-col items-center pb-5 pt-24 lg:pt-10">
+      <div className="flex flex-col items-center pb-5">
+        <div className="pt-24 lg:pt-10"></div>
         <h1 className="pt-4 text-3xl">Resources</h1>
-        <div className="flex flex-col items-center p-4 md:p-10">
-          <h2 className="pt-5 text-2xl">Work In Progress</h2>
-          <p className="p-10">But here is some text to chew on.</p>
-          <p className="">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Nec
-            feugiat in fermentum posuere urna nec tincidunt. Magna sit amet
-            purus gravida quis blandit turpis. Orci dapibus ultrices in iaculis.
-            Volutpat est velit egestas dui id ornare. Bibendum arcu vitae
-            elementum curabitur vitae. Bibendum at varius vel pharetra.
-            Vestibulum lectus mauris ultrices eros. Sit amet purus gravida quis
-            blandit turpis. Faucibus a pellentesque sit amet porttitor eget.
-            Scelerisque felis imperdiet proin fermentum leo vel. Vitae suscipit
-            tellus mauris a diam maecenas. Ullamcorper eget nulla facilisi etiam
-            dignissim. Nisl pretium fusce id velit ut tortor pretium viverra
-            suspendisse. Viverra maecenas accumsan lacus vel facilisis volutpat.
-            Consectetur adipiscing elit pellentesque habitant morbi tristique
-            senectus. Elementum sagittis vitae et leo duis ut diam quam nulla.
-            Senectus et netus et malesuada fames ac turpis egestas maecenas.
-            Quam pellentesque nec nam aliquam sem. Morbi blandit cursus risus at
-            ultrices mi tempus imperdiet. Blandit libero volutpat sed cras
-            ornare. Purus in massa tempor nec. Vel eros donec ac odio tempor.
-            Vitae aliquet nec ullamcorper sit. Pretium fusce id velit ut tortor
-            pretium viverra suspendisse. Eu consequat ac felis donec et odio.
-            Sapien pellentesque habitant morbi tristique senectus et netus. Sit
-            amet volutpat consequat mauris nunc congue nisi vitae. Amet cursus
-            sit amet dictum. Auctor elit sed vulputate mi. Purus semper eget
-            duis at.
+        <div className="p-5 md:px-20">
+          <p className="py-5">
+            This page includes resources for all past projects. The resources
+            may include plate files, PCB files, case models, etc. These files
+            are offered for user convenience. However, by downloading and/or
+            using hese files, the user takes responsibility for verifying the
+            files prior to use or production.
           </p>
+
+          <h2 className="py-5 text-2xl">MB Series</h2>
+          <div className="flex flex-col md:flex-row md:justify-between">
+            <div className="py-2 md:mr-20 md:w-1/2">
+              <h3 className="text-xl">MB-44</h3>
+              <ul className="list-disc">
+                <div className="px-4 py-2">
+                  <li>Plate Files</li>
+                  <li>PCB KiCAD (Design)</li>
+                  <li>PCB Gerbers (Production)</li>
+                  <li>Case Model</li>
+                </div>
+              </ul>
+            </div>
+            <div className="py-2 md:mr-20 md:w-1/2">
+              <h3 className="text-xl">MB-LB</h3>
+              <ul className="list-disc">
+                <div className="px-4 py-2">
+                  <li>Plate Files</li>
+                  <li>PCB KiCAD (Design)</li>
+                  <li>PCB Gerbers (Production)</li>
+                  <li>Case Files (Stacked Acrylic)</li>
+                </div>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </>
