@@ -2,7 +2,7 @@ import GenericButton from "./GenericButton";
 
 export default function ExternalLinks() {
   return (
-    <>
+    <div className="flex flex-col items-center">
       <div className="mt-6">External Links</div>
       <GenericButton
         text="GitHub"
@@ -19,6 +19,6 @@ export default function ExternalLinks() {
         href="https://geekhack.org/index.php?topic=120200.0"
         img="/icons/DocumentCheck.svg"
       />
-    </>
+    </div>
   );
 }
