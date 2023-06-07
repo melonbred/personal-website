@@ -91,7 +91,7 @@ export default function Resources() {
               title="Pegasus"
               body="A 40% keyboard with a 12.75u WKL layout and 0.75u blockers. Features a gasket mounted integrated half-plate."
               href="/keyboards/pegasus"
-              img="/images/keyboards/pegasus.jpg"
+              img="/images/keyboards/pegasus/pegasus_top.png"
             />
           </div>
         </SwiperSlide>
