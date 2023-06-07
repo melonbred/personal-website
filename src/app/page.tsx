@@ -18,7 +18,7 @@ export default function Home() {
               />
             </div>
           </div>
-          <div className="flex w-96 flex-col justify-center px-4 text-center md:w-96 md:text-left">
+          <div className="flex w-96 flex-col justify-center px-4 pb-6 text-center md:w-96 md:text-left">
             <h1 className="py-2 text-xl">Hi! My name is Cliff.</h1>
             <p className="text-sm">
               Most people on the internet know me as MelonBred. I&apos;m a

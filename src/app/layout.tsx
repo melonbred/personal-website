@@ -21,7 +21,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${fira_Mono.className}`}>{children}</body>
+      <body className={`${fira_Mono.className} text-white`}>{children}</body>
     </html>
   );
 }
