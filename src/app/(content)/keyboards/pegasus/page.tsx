@@ -1,7 +1,15 @@
 export default function Pegasus() {
   return (
     <>
-      <div className="min-w-screen flex flex-col items-center pb-5 pt-24">
+      <div className="min-w-screen flex flex-col items-center pb-5">
+        <div className="h-24 lg:hidden"></div>
+        <img
+          alt="griffin side"
+          src="/images/keyboards/pegasus/pegasus_btm_crop.png"
+          width="auto"
+          height="auto"
+          className="rounded-3xl object-cover p-3"
+        />
         <h1 className="pt-4 text-3xl">Pegasus</h1>
         <div className="min-w-screen p-4 md:p-10">
           <h2 className="pt-5 text-2xl">Overview</h2>
