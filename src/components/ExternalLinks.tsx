@@ -7,7 +7,7 @@ export default function ExternalLinks() {
       <GenericButton
         text="Shop Griffin 60%"
         href="https://p3dstore.com/products/griffin-group-buy"
-        img="/icons/DocumentCheck.svg"
+        img="/icons/shoppingBag.svg"
       />
       <div className="mt-6">External Links</div>
       <GenericButton

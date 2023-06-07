@@ -1,20 +1,56 @@
+"use client";
+
 import Image from "next/image";
+
+// import Swiper core and required modules
+import { Navigation, Pagination, A11y } from "swiper";
+import { Swiper, SwiperSlide } from "swiper/react";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/navigation";
+import "@/app/swiper.css";
+import "swiper/css/pagination";
 
 export default function Pegasus() {
   return (
     <>
+      <div className="h-24 lg:hidden"></div>
+      <div className="p-3">
+        <Swiper
+          centeredSlides={true}
+          modules={[Navigation, Pagination, A11y]}
+          navigation={true}
+          pagination={{ clickable: true }}
+          onSlideChange={() => console.log("slide change")}
+          onSwiper={(swiper) => console.log(swiper)}
+        >
+          <SwiperSlide>
+            <div className="relative h-72 md:h-[500px] lg:h-[700px]">
+              <Image
+                alt="pegasus btm"
+                src="/images/keyboards/pegasus/pegasus_btm_crop.png"
+                fill={true}
+                className="rounded-2xl object-cover"
+              />
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="relative h-72 md:h-[500px] lg:h-[700px]">
+              <Image
+                alt="griffin top"
+                src="/images/keyboards/pegasus/pegasus_top_crop.png"
+                fill={true}
+                className="rounded-2xl object-cover"
+              />
+            </div>
+          </SwiperSlide>
+        </Swiper>
+      </div>
       <div className="min-w-screen flex flex-col items-center pb-5">
-        <div className="h-24 lg:hidden"></div>
-        <img
-          alt="griffin side"
-          src="/images/keyboards/pegasus/pegasus_btm_crop.png"
-          width="auto"
-          height="auto"
-          className="rounded-3xl object-cover p-3"
-        />
         <h1 className="pt-4 text-3xl">Pegasus</h1>
         <div className="min-w-screen p-4 md:p-10">
-          <h2 className="pt-5 text-2xl">Overview</h2>
+          <h2 className="text-2xl">Overview</h2>
           <p className="pt-2">
             Pegasus is the first in the Mythics series keyboards. A 40% keyboard
             with a 12.75u &quot;WKL&quot; layout and 0.75u blockers, this
@@ -23,10 +59,11 @@ export default function Pegasus() {
             solution, Pegasus was a premium offering into the 40% keyboard
             space.
           </p>
-          <h2 className="pt-10 text-2xl">Case Construction</h2>
-          <div className="flex flex-col md:flex-row md:space-x-10">
+
+          <div className="flex flex-col pt-10 md:flex-row md:space-x-10 ">
             <div className="flex flex-col lg:w-1/2">
-              <p className="pt-5">
+              <h2 className="text-2xl">Case Construction</h2>
+              <p className="py-2">
                 The 4-piece construction includes components typical of many
                 keyboards: top, bottom, switch plate and weight. However, what
                 is unique about Pegasus is the plate mounting solution. The
@@ -37,9 +74,22 @@ export default function Pegasus() {
                 typing experience in the alphas while offering a stable platform
                 in the modifiers for tap-hold functions.
               </p>
-              <p className="pt-5">
+              <p className="py-2">
                 The weight featured an engraving of a Pegasus and was offered in
                 raw brass and polished stainless steel.
+              </p>
+              <h2 className="pt-10 text-2xl">PCB</h2>
+              <p className="py-2">
+                The PCB is powered by an Atmel Atmega32u4-MU and features a cut
+                across the middle to provide flexibility in the alpha cluster.
+                Rotary encoder support is also provided in two independent
+                locations.
+              </p>
+              <p className="py-2">
+                The mainboard PCB is connected to a C3 Unified Daughterboard via
+                a 4-pin JST cable to provide ESD, oversurge protection, shield
+                noise decoupling, and single-path grounding to chasis
+                functionality.
               </p>
             </div>
             <div className="py-5">
