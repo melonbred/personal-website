@@ -15,10 +15,11 @@ import KeyboardCard from "@/components/KeyboardCard";
 export default function Resources() {
   return (
     <>
-      <div className="min-w-screen flex flex-col items-center pt-24">
+      <div className="flex flex-col items-center">
+        <div className="pt-24 lg:pt-10"></div>
         <h1 className="pt-4 text-3xl">Keyboards</h1>
       </div>
-      <div className="min-w-screen p-4 md:p-10">
+      <div className=" p-4 md:p-10">
         <h2 className="pt-1 text-2xl">MB Series</h2>
         <p className="pt-2">
           Projects in the MB series all started off as personal experiments with
@@ -65,7 +66,7 @@ export default function Resources() {
           </div>
         </SwiperSlide>
       </Swiper>
-      <div className="min-w-screen p-4 md:p-10">
+      <div className="p-4 md:p-10">
         <h2 className="pt-5 text-2xl">Mythics Series</h2>
         <p className="pt-2">
           Projects in the Mythics series all share a similar aesthetic. Inspired

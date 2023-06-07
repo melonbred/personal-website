@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function MB44() {
   return (
     <>
-      <div className="min-w-screen flex flex-col items-center pb-5 lg:bg-slate-800">
+      <div className="flex flex-col items-center pb-5 lg:bg-slate-800">
         <div className="h-24 lg:hidden"></div>
         <img
           alt="griffin side"
@@ -14,7 +14,7 @@ export default function MB44() {
         />
 
         <h1 className="pt-4 text-3xl">Griffin</h1>
-        <div className="min-w-screen p-4 md:p-10">
+        <div className="p-4 md:p-10">
           <h2 className="pt-5 text-2xl">Overview</h2>
           <p className="pt-5">
             Griffin is the second in the Mythics series. The idea was to provide
@@ -43,7 +43,7 @@ export default function MB44() {
                 regal Griffin.
               </p>
             </div>
-            <Image
+            <img
               src="/images/keyboards/griffin/griffin_components.jpeg"
               alt="griffin components"
               width="500"
