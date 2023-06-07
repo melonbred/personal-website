@@ -61,7 +61,7 @@ export default function Pegasus() {
           </p>
 
           <div className="flex flex-col pt-10 md:flex-row md:space-x-10 ">
-            <div className="flex flex-col lg:w-1/2">
+            <div className="flex flex-col md:w-1/2">
               <h2 className="text-2xl">Case Construction</h2>
               <p className="py-2">
                 The 4-piece construction includes components typical of many
