@@ -116,7 +116,7 @@ export default function Pegasus() {
                 <li className="pt-5">
                   Group buy was fulfilled on January 1st, 2023.
                 </li>
-                <li className="pt-5">Extras sold on January 25th.</li>
+                <li className="pt-5">Extras sold on January 25th, 2023.</li>
               </ul>
             </div>
           </div>
