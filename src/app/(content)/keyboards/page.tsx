@@ -99,7 +99,7 @@ export default function Resources() {
           <div className="flex justify-center">
             <KeyboardCard
               title="Griffin"
-              body="A tried and true 60% keyboard that features a gummy o-ring mounting solution."
+              body="A tried and true 60% keyboard layout that features a gummy o-ring mounting solution."
               href="/keyboards/griffin"
               img="/images/keyboards/griffin/griffin.jpg"
             />
