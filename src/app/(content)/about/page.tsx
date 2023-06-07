@@ -2,9 +2,10 @@ import Image from "next/image";
 
 export default function About() {
   return (
-    <div className="flex min-w-min flex-col items-center pb-5 pt-24">
+    <div className="flex flex-col items-center pb-5">
+      <div className="pt-24 lg:pt-10"></div>
       <h1 className="pt-4 text-3xl">About Me</h1>
-      <div className=" max-w-2xl p-5">
+      <div className="p-5 md:px-20">
         <p className="pt-5">
           Located in the San Francisco, Bay Area, I&apos;m an engineer by day
           with a love for tinkering and learning. Some other hobbies of mine
@@ -27,8 +28,8 @@ export default function About() {
           I hope to keep working on projects as ideas strike, and you&apos;ll
           likely find them here on this site.
         </p>
-        <div className="flex items-center justify-end">
-          <p className="p-5">Thanks for visiting!</p>
+        <div className="flex items-center justify-end p-10">
+          <p className="px-5">Thanks for visiting!</p>
           <Image
             src="./images/misc/turtlepan_white.svg"
             width="75"
