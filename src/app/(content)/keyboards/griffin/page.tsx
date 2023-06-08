@@ -34,7 +34,7 @@ export default function Griffin() {
                 className="rounded-2xl object-cover"
               />
               <p className="absolute bottom-1 left-2 text-sm text-black">
-                Provided by P3D
+                Courtesy of P3D
               </p>
             </div>
           </SwiperSlide>
@@ -47,7 +47,7 @@ export default function Griffin() {
                 className="rounded-2xl object-cover"
               />
               <p className="absolute bottom-1 left-2 text-sm text-black">
-                Provided by P3D
+                Courtesy of P3D
               </p>
             </div>
           </SwiperSlide>
@@ -60,7 +60,7 @@ export default function Griffin() {
                 className="rounded-2xl object-cover"
               />
               <p className="absolute bottom-1 left-2 text-sm text-black">
-                Provided by P3D
+                Courtesy of P3D
               </p>
             </div>
           </SwiperSlide>
