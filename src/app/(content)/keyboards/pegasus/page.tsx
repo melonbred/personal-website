@@ -26,7 +26,7 @@ export default function Pegasus() {
           onSwiper={(swiper) => console.log(swiper)}
         >
           <SwiperSlide>
-            <div className="relative h-60 md:h-[500px] lg:h-[700px]">
+            <div className="relative h-60 md:h-[500px] lg:h-[650px]">
               <Image
                 alt="pegasus btm"
                 src="/images/keyboards/pegasus/pegasus_btm_crop.png"
@@ -36,9 +36,9 @@ export default function Pegasus() {
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div className="relative h-60 md:h-[500px] lg:h-[700px]">
+            <div className="relative h-60 md:h-[500px] lg:h-[650px]">
               <Image
-                alt="griffin top"
+                alt="pegasus top"
                 src="/images/keyboards/pegasus/pegasus_top_crop.png"
                 fill={true}
                 className="rounded-2xl object-cover"
@@ -47,9 +47,9 @@ export default function Pegasus() {
           </SwiperSlide>
         </Swiper>
       </div>
-      <div className="min-w-screen flex flex-col items-center pb-5">
+      <div className="flex flex-col items-center pb-5">
         <h1 className="pt-4 text-3xl">Pegasus</h1>
-        <div className="min-w-screen p-4 md:p-10">
+        <div className="p-4 md:p-10">
           <h2 className="text-2xl">Overview</h2>
           <p className="pt-2">
             Pegasus is the first in the Mythics series keyboards. A 40% keyboard
