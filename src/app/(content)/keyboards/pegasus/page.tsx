@@ -78,19 +78,6 @@ export default function Pegasus() {
                 The weight featured an engraving of a Pegasus and was offered in
                 raw brass and polished stainless steel.
               </p>
-              <h2 className="pt-10 text-2xl">PCB</h2>
-              <p className="py-2">
-                The PCB is powered by an Atmel Atmega32u4-MU and features a cut
-                across the middle to provide flexibility in the alpha cluster.
-                Rotary encoder support is also provided in two independent
-                locations.
-              </p>
-              <p className="py-2">
-                The mainboard PCB is connected to a C3 Unified Daughterboard via
-                a 4-pin JST cable to provide ESD, oversurge protection, shield
-                noise decoupling, and single-path grounding to chasis
-                functionality.
-              </p>
             </div>
             <div className="py-5">
               <img
@@ -102,6 +89,20 @@ export default function Pegasus() {
               />
             </div>
           </div>
+
+          <h2 className="pt-10 text-2xl">PCB</h2>
+          <p className="py-2">
+            The PCB is powered by an Atmel Atmega32u4-MU and features a cut
+            across the middle to provide flexibility in the alpha cluster.
+            Rotary encoder support is also provided in two independent
+            locations.
+          </p>
+          <p className="py-2">
+            The mainboard PCB is connected to a C3 Unified Daughterboard via a
+            4-pin JST cable to provide ESD, oversurge protection, shield noise
+            decoupling, and single-path grounding to chasis functionality.
+          </p>
+
           <div className="flex flex-col md:flex-row">
             <div className="md:w-1/2">
               <h2 className="pb-5 pt-10 text-2xl">Specifications</h2>
