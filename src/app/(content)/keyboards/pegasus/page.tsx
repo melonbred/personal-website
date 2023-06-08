@@ -26,7 +26,7 @@ export default function Pegasus() {
           onSwiper={(swiper) => console.log(swiper)}
         >
           <SwiperSlide>
-            <div className="relative h-72 md:h-[500px] lg:h-[700px]">
+            <div className="relative h-60 md:h-[500px] lg:h-[700px]">
               <Image
                 alt="pegasus btm"
                 src="/images/keyboards/pegasus/pegasus_btm_crop.png"
@@ -36,7 +36,7 @@ export default function Pegasus() {
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div className="relative h-72 md:h-[500px] lg:h-[700px]">
+            <div className="relative h-60 md:h-[500px] lg:h-[700px]">
               <Image
                 alt="griffin top"
                 src="/images/keyboards/pegasus/pegasus_top_crop.png"
