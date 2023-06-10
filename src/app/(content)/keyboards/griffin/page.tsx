@@ -113,7 +113,7 @@ export default function Griffin() {
               <a
                 href="https://github.com/dededecline/SST60"
                 target="_blank"
-                className="underline"
+                className="underline hover:decoration-emerald-400/80 hover:decoration-4"
               >
                 SST60 PCB
               </a>{" "}
@@ -123,7 +123,7 @@ export default function Griffin() {
               or H60.
             </p>
             <p className="pt-5">
-              USB connectivity is made possible with Unified S1 USB-C
+              USB-C connectivity is made possible with Unified S1 USB-C
               daughterboard providing ESD protection, overcurrent protection,
               overvoltage protection, shielding noise decoupling, and
               single-path grounding to chassis functionality.
