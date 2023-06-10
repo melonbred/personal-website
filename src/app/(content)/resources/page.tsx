@@ -5,6 +5,7 @@ export default function Resources() {
         <div className="pt-24 lg:pt-10"></div>
         <h1 className="pt-4 text-3xl">Resources</h1>
         <div className="p-5 md:px-20">
+          <p className="py-5">Work in Progress! Links coming soon.</p>
           <p className="py-5">
             This page includes resources for all past projects. The resources
             may include plate files, PCB files, case models, etc. These files
