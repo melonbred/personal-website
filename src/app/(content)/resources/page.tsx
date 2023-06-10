@@ -9,7 +9,7 @@ export default function Resources() {
             This page includes resources for all past projects. The resources
             may include plate files, PCB files, case models, etc. These files
             are offered for user convenience. However, by downloading and/or
-            using hese files, the user agrees to the following:
+            using these files, the user agrees to the following:
           </p>
           <ul className="list-disc">
             <div className="mx-3 text-sm">
@@ -22,7 +22,7 @@ export default function Resources() {
                 permission has been given for commercial use.
               </li>
               <li>
-                These resources may be modified provided that they are for
+                These resources may be modified provided that they are not for
                 commercial use.
               </li>
             </div>
