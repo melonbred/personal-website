@@ -61,7 +61,7 @@ export default function Resources() {
               title="MB-TKL"
               body="A TKL style 40% keyboard that features a split 12.75u main cluster."
               href="/keyboards/mbtkl"
-              img="/images/keyboards/mbtkl_md.jpg"
+              img="/images/keyboards/mbtkl/mbtkl_hero.png"
             />
           </div>
         </SwiperSlide>
