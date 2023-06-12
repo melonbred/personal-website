@@ -1,12 +1,12 @@
 import "./globals.css";
-import { Fira_Mono } from "next/font/google";
+import { Rubik } from "next/font/google";
 
-const fira_Mono = Fira_Mono({
+const rubik = Rubik({
   subsets: ["latin"],
   weight: "400",
   display: "swap",
   preload: true,
-  variable: "--font-fira-mono",
+  variable: "--font-rubik",
 });
 
 export const metadata = {
@@ -21,7 +21,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${fira_Mono.className} text-white`}>{children}</body>
+      <body className={`${rubik.className} text-white`}>{children}</body>
     </html>
   );
 }
