@@ -35,7 +35,7 @@ export default function RootLayout({
       <aside className="hidden lg:relative lg:top-0 lg:mr-2 lg:flex lg:h-full lg:flex-col lg:items-center lg:bg-slate-600 lg:p-5 ">
         <div className="overflow-x-hidden overflow-y-scroll">
           <div className="flex h-full w-[335px] flex-col items-center justify-between">
-            <div className="flex items-center">
+            <div className="my-2 flex w-full items-center justify-evenly">
               <Link
                 className="rounded-full border-4 border-emerald-700 bg-green-300 duration-150 hover:scale-105 hover:bg-green-400"
                 href="/"
