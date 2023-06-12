@@ -61,7 +61,7 @@ export default function Pegasus() {
             space.
           </p>
 
-          <div className="flex flex-col pt-10 md:flex-row md:space-x-10 ">
+          <div className="flex flex-col justify-between pt-10 md:flex-row md:space-x-10">
             <div className="flex flex-col md:w-1/2">
               <h2 className="text-2xl">Case Construction</h2>
               <p className="py-2">
@@ -80,13 +80,13 @@ export default function Pegasus() {
                 raw brass and polished stainless steel.
               </p>
             </div>
-            <div className="py-5">
+            <div className="py-5 md:w-5/12">
               <img
                 alt="pegasus schematic"
                 src="/images/keyboards/pegasus/pegasus_schematic.png"
                 width="750"
                 height="500"
-                className="object-fit"
+                className="object-fit rounded-xl"
               />
             </div>
           </div>
