@@ -21,6 +21,7 @@ export default function Pegasus() {
           centeredSlides={true}
           modules={[Navigation, Pagination, A11y]}
           navigation={true}
+          spaceBetween={200}
           pagination={{ clickable: true }}
           onSlideChange={() => console.log("slide change")}
           onSwiper={(swiper) => console.log(swiper)}
