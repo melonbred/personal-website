@@ -11,6 +11,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "@/app/swiper.css";
 import "swiper/css/pagination";
+import Link from "next/link";
 
 export default function Griffin() {
   return (
@@ -187,17 +188,18 @@ export default function Griffin() {
             <div className="md:w-1/2 md:pl-10">
               <h2 className="pt-10 text-2xl">Timeline</h2>
               <p className="pt-5">
-                P3D Store is the worldwide vendor for Griffin.{" "}
+                Griffin is currently in Interest Check. More information to
+                follow soon!
               </p>
-              <ul className="ml-4 list-disc">
+              {/* <ul className="ml-4 list-disc">
                 <li className="pt-5">
                   Group buy is to run from July 1st through August 1st, 2023.
                 </li>
-                {/* <li className="pt-5">
+                <li className="pt-5">
                   Group buy was fulfilled on January 1st, 2023.
                 </li>
-                <li className="pt-5">Extras sold on January 25th, 2023.</li> */}
-              </ul>
+                <li className="pt-5">Extras sold on January 25th, 2023.</li>
+              </ul> */}
             </div>
           </div>
         </div>
