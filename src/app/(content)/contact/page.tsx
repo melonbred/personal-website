@@ -5,8 +5,8 @@ export default function Contact() {
     <>
       <div className="min-w-screen flex flex-col items-center pb-5 pt-24 lg:pt-10">
         <h1 className="pt-4 text-3xl">Contact</h1>
-        <div className="flex flex-col items-center p-4 md:p-10">
-          <p className="p-10">
+        <div className="flex flex-col items-center p-5 md:px-20">
+          <p className="px-10 py-5">
             If you have any questions about any projects that I have worked on,
             or would like to collaborate on a project in the future, please feel
             free to shoot me a message at{" "}
