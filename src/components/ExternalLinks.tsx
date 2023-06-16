@@ -3,12 +3,18 @@ import GenericButton from "./GenericButton";
 export default function ExternalLinks() {
   return (
     <div className="flex flex-col items-center">
-      <div className="mt-6">Upcoming Group Buy</div>
+      <div className="mt-6">Currently in Interest Check</div>
+      <GenericButton
+        text="Griffin 60%"
+        href="https://geekhack.org/index.php?topic=120200.0"
+        img="/icons/DocumentCheck.svg"
+      />
+      {/* <div className="mt-6">Upcoming Group Buy</div>
       <GenericButton
         text="Shop Griffin 60%"
         href="https://p3dstore.com/products/griffin-group-buy"
         img="/icons/shoppingBag.svg"
-      />
+      /> */}
       <div className="mt-6">External Links</div>
       <GenericButton
         text="GitHub"
