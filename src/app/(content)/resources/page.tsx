@@ -12,6 +12,7 @@ export default function Resources() {
             <Link
               href="https://github.com/melonbred/open-source-projects"
               className="underline hover:decoration-emerald-400/80 hover:decoration-4"
+              target="_blank"
             >
               Open Source Projects
             </Link>{" "}
