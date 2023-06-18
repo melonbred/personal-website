@@ -39,7 +39,7 @@ export default function ImageCard({ text, img }: ImageCardProps) {
         </button>
       </div>
       <div className="p-2">
-        <p className="p-2 text-right text-sm">{text}</p>
+        <p className="pr-2 text-right text-sm">{text}</p>
       </div>
       <div className={`${isExpanded ? "block" : "hidden"}`}>
         <div className="fixed left-0 top-0 z-10 flex h-screen w-screen items-center justify-center backdrop-blur-md">
