@@ -73,7 +73,7 @@ export default function Griffin() {
       <div className="flex flex-col items-center pb-5">
         <h1 className="pt-4 text-3xl">Griffin</h1>
         <div className="p-4 md:p-10">
-          <h2 className="pt-5 text-2xl">Overview</h2>
+          <h2 className="text-2xl">Overview</h2>
           <p className="pt-5">
             Griffin is the second in the Mythics series. The idea was to provide
             a highly customizable keyboard with a simple and unique
