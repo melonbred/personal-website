@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import ImageCard from "@/components/ImageCard";
 
 // import Swiper core and required modules
 import { Navigation, Pagination, A11y } from "swiper";
@@ -61,7 +62,7 @@ export default function Pegasus() {
             space.
           </p>
 
-          <div className="flex flex-col justify-between pt-10 md:flex-row md:space-x-10">
+          <div className="flex flex-col items-center justify-between pt-10 md:flex-row md:space-x-10">
             <div className="flex flex-col md:w-1/2">
               <h2 className="text-2xl">Case Construction</h2>
               <p className="py-2">
@@ -80,7 +81,11 @@ export default function Pegasus() {
                 raw brass and polished stainless steel.
               </p>
             </div>
-            <div className="py-5 md:w-5/12">
+            <ImageCard
+              text="Pegasus Schematic"
+              img="/images/keyboards/pegasus/pegasus_schematic.png"
+            />
+            {/* <div className="py-5 md:w-5/12">
               <img
                 alt="pegasus schematic"
                 src="/images/keyboards/pegasus/pegasus_schematic.png"
@@ -88,7 +93,7 @@ export default function Pegasus() {
                 height="500"
                 className="object-fit rounded-xl"
               />
-            </div>
+            </div> */}
           </div>
 
           <h2 className="pt-10 text-2xl">PCB</h2>

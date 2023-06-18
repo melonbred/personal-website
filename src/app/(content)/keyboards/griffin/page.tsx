@@ -2,6 +2,8 @@
 
 import Image from "next/image";
 
+import ImageCard from "@/components/ImageCard";
+
 // import Swiper core and required modules
 import { Navigation, Pagination, A11y } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -78,7 +80,7 @@ export default function Griffin() {
             construction. Griffin offers the unique aesthetic found in all
             Mythic series projects in a tried and true 60% layout.
           </p>
-          <div className="flex flex-col justify-between pt-10 md:flex-row md:space-x-10">
+          <div className="flex flex-col items-center justify-between pt-10 md:flex-row md:space-x-10">
             <div className="flex flex-col md:w-1/2">
               <h2 className="text-2xl">Case Construction</h2>
               <p className="pt-5">
@@ -99,7 +101,11 @@ export default function Griffin() {
                 regal Griffin.
               </p>
             </div>
-            <div className="py-5 md:w-5/12">
+            <ImageCard
+              text="Griffin Components - Courtesy of P3D"
+              img="/images/keyboards/griffin/griffin_components.jpeg"
+            />
+            {/* <div className="py-5 md:w-5/12">
               <img
                 src="/images/keyboards/griffin/griffin_components.jpeg"
                 alt="griffin components"
@@ -107,7 +113,7 @@ export default function Griffin() {
                 height="500"
                 className="object-fit rounded-xl"
               />
-            </div>
+            </div> */}
           </div>
           <div>
             {" "}
