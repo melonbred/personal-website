@@ -16,7 +16,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <div className="flex h-screen min-h-screen flex-col overflow-hidden bg-slate-600 p-2 lg:flex-row">
+    <div className="inset-0 flex h-screen min-h-screen flex-col overflow-hidden bg-slate-600 p-2 lg:flex-row">
       <div className="relative z-10 flex w-screen items-center justify-between bg-slate-600 p-2 lg:hidden">
         <Link
           className="rounded-full border-4 border-emerald-700 bg-green-300 duration-150 hover:scale-105"
