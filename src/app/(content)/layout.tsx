@@ -62,7 +62,7 @@ export default function RootLayout({
             </div>
           </div>
         </aside>
-        <div className="overflow-y-auto rounded-3xl bg-slate-800 p-5 md:p-10">
+        <div className="overflow-y-auto rounded-3xl bg-slate-800">
           {children}
         </div>
       </div>

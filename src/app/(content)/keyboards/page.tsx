@@ -12,15 +12,15 @@ import "swiper/css/pagination";
 
 import KeyboardCard from "@/components/KeyboardCard";
 
-export default function Resources() {
+export default function Keyboards() {
   return (
     <>
-      <div className="flex flex-col items-center">
+      <div className="flex flex-col items-center p-5 md:pt-10">
         <h1 className="text-3xl">Keyboards</h1>
       </div>
-      <div className="p-5 md:px-10">
+      <div className="p-5 md:px-20 md:py-10">
         <h2 className="pt-1 text-2xl">MB Series</h2>
-        <p className="pt-2">
+        <p className="py-2">
           Projects in the MB series all started off as personal experiments with
           the intent to learn and try different things. These projects typically
           feature simple case constructions and fun layouts.
@@ -65,9 +65,9 @@ export default function Resources() {
           </div>
         </SwiperSlide>
       </Swiper>
-      <div className="p-4 md:p-10">
+      <div className="p-5 md:px-20 md:py-10">
         <h2 className="pt-5 text-2xl">Mythics Series</h2>
-        <p className="pt-2">
+        <p className="py-2">
           Projects in the Mythics series all share a similar aesthetic. Inspired
           by older TX-Keyboards designs (TX-75 and TX-CP) and ai03&apos;s
           reference designs. Mythic series keyboards feature a weight and an
