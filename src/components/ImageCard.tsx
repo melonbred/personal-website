@@ -28,8 +28,8 @@ export default function ImageCard({ text, img }: ImageCardProps) {
   }, []);
 
   return (
-    <div className="m-5 w-80 rounded-3xl bg-slate-600 sm:w-96 md:w-2/3">
-      <div className="relative flex h-[250px] w-full flex-col overflow-hidden rounded-3xl border-4 border-slate-400 object-cover md:h-[450px] lg:h-[500px]">
+    <div className="my-4 w-11/12 rounded-3xl bg-slate-600 sm:w-96 md:w-2/3">
+      <div className="relative flex aspect-[3/2] w-full flex-col overflow-hidden rounded-3xl border-4 border-slate-400 object-cover">
         <Image alt={text} src={img} fill={true} className="object-cover" />
         <button
           className="absolute bottom-4 left-4 h-10 w-10 rounded-lg border-2 border-emerald-700 bg-green-300 text-emerald-900 hover:bg-green-400 lg:h-12 lg:w-12 lg:border-4"
