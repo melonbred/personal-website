@@ -18,7 +18,6 @@ import Link from "next/link";
 export default function Griffin() {
   return (
     <>
-      <div className="h-24 lg:hidden"></div>
       <div className="p-3">
         <Swiper
           centeredSlides={true}
@@ -30,7 +29,7 @@ export default function Griffin() {
           onSwiper={(swiper) => console.log(swiper)}
         >
           <SwiperSlide>
-            <div className="relative h-60 md:h-[500px] lg:h-[650px]">
+            <div className="relative aspect-video">
               <Image
                 alt="griffin btm"
                 src="/images/keyboards/griffin/griffin_btm.png"
@@ -43,7 +42,7 @@ export default function Griffin() {
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div className="relative h-60 md:h-[500px] lg:h-[650px]">
+            <div className="relative aspect-video">
               <Image
                 alt="griffin top"
                 src="/images/keyboards/griffin/griffin_top.png"
@@ -56,7 +55,7 @@ export default function Griffin() {
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div className="relative h-60 md:h-[500px] lg:h-[650px]">
+            <div className="relative aspect-video">
               <Image
                 alt="griffin profile"
                 src="/images/keyboards/griffin/griffin_profile.png"
