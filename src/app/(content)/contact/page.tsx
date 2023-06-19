@@ -4,7 +4,7 @@ export default function Contact() {
   return (
     <>
       <div className="min-w-screen flex h-screen flex-col items-center py-5 lg:pt-10">
-        <h1 className="pt-4 text-3xl">Contact</h1>
+        <h1 className="text-3xl">Contact</h1>
         <div className="flex flex-col items-center p-5 md:px-20">
           <p className="py-5">
             If you have any questions about any projects that I have worked on,

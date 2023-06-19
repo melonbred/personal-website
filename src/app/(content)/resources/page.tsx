@@ -3,8 +3,8 @@ import Link from "next/link";
 export default function Resources() {
   return (
     <>
-      <div className="flex flex-col items-center py-5">
-        <h1 className="pt-4 text-3xl">Resources</h1>
+      <div className="flex flex-col items-center py-5 lg:pt-10">
+        <h1 className="text-3xl">Resources</h1>
         <div className="p-5 md:px-20">
           <p className="py-5">
             Work in Progress! Links coming soon. Until then, please refer to the{" "}
