@@ -16,7 +16,6 @@ import "swiper/css/pagination";
 export default function Pegasus() {
   return (
     <>
-      <div className="h-24 lg:hidden"></div>
       <div className="p-3">
         <Swiper
           centeredSlides={true}
@@ -28,7 +27,7 @@ export default function Pegasus() {
           onSwiper={(swiper) => console.log(swiper)}
         >
           <SwiperSlide>
-            <div className="relative h-60 md:h-[500px] lg:h-[650px]">
+            <div className="relative aspect-video">
               <Image
                 alt="pegasus btm"
                 src="/images/keyboards/pegasus/pegasus_btm_crop.png"
@@ -38,7 +37,7 @@ export default function Pegasus() {
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div className="relative h-60 md:h-[500px] lg:h-[650px]">
+            <div className="relative aspect-video">
               <Image
                 alt="pegasus top"
                 src="/images/keyboards/pegasus/pegasus_top_crop.png"
