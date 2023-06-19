@@ -13,6 +13,11 @@ type ImageCardProps = {
 
 export default function ImageCard({ text, img }: ImageCardProps) {
   const [isExpanded, setIsExpanded] = useState(false);
+
+  const handleExpandClick = () => {
+    setIsExpanded(!isExpanded);
+  };
+
   const escFunction = useCallback((e: any) => {
     if (e.key === "Escape") {
       setIsExpanded(false);
@@ -33,7 +38,7 @@ export default function ImageCard({ text, img }: ImageCardProps) {
         <Image alt={text} src={img} fill={true} className="object-cover" />
         <button
           className="absolute bottom-4 left-4 h-10 w-10 rounded-lg border-2 border-emerald-700 bg-green-300 text-emerald-900 hover:bg-green-400 lg:h-12 lg:w-12 lg:border-4"
-          onClick={(e) => setIsExpanded(!isExpanded)}
+          onClick={handleExpandClick}
         >
           <ArrowsPointingOutIcon className="scale-75 " />
         </button>
@@ -45,11 +50,16 @@ export default function ImageCard({ text, img }: ImageCardProps) {
         <div className="fixed left-0 top-0 z-10 flex h-screen w-screen items-center justify-center backdrop-blur-md">
           <div className="flex h-full w-full items-center justify-center">
             <div className="relative aspect-[3/2] w-full overflow-hidden rounded-3xl border-4 border-slate-400 md:w-[90%] lg:w-[70%]">
-              <Image alt={text} src={img} fill={true} className="object-fit" />
+              <Image
+                alt={text}
+                src={img}
+                fill={true}
+                className="object-cover"
+              />
             </div>
             <button
               className="z-12 absolute right-5 top-5 h-10 w-10 rounded-lg border-2 border-emerald-700 bg-green-300 text-emerald-900 hover:bg-green-400 lg:h-12 lg:w-12 lg:border-4"
-              onClick={(e) => setIsExpanded(!isExpanded)}
+              onClick={handleExpandClick}
             >
               <ArrowsPointingInIcon className="scale-75 text-emerald-900" />
             </button>
