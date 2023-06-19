@@ -48,9 +48,9 @@ export default function Pegasus() {
           </SwiperSlide>
         </Swiper>
       </div>
-      <div className="flex flex-col items-center pb-5">
-        <h1 className="pt-4 text-3xl">Pegasus</h1>
-        <div className="p-4 md:p-10">
+      <div className="flex flex-col items-center">
+        <h1 className="p-5 text-3xl">Pegasus</h1>
+        <div className="px-5 py-5 md:px-10">
           <h2 className="text-2xl">Overview</h2>
           <p className="pt-2">
             Pegasus is the first in the Mythics series keyboards. A 40% keyboard
