@@ -17,7 +17,7 @@ export default function KeyboardCard({
 }: KeyboardCardProps) {
   return (
     <div className="m-1 flex w-80 flex-col rounded-3xl bg-slate-600 text-white md:w-[800px] md:flex-row ">
-      <div className="relative m-0 h-[239.76px] w-full overflow-hidden rounded-3xl border-4 border-slate-400 bg-slate-600 object-cover object-center md:h-[400px]">
+      <div className="relative m-0 aspect-[3/2] w-full overflow-hidden rounded-3xl border-4 border-slate-400 bg-slate-600 object-cover object-center ">
         <Image
           className="object-cover"
           alt={title}
