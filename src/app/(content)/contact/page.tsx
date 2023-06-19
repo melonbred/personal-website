@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function Contact() {
   return (
     <>
-      <div className="min-w-screen flex flex-col items-center pb-5 pt-24 lg:pt-10">
+      <div className="min-w-screen flex h-screen flex-col items-center py-5 lg:pt-10">
         <h1 className="pt-4 text-3xl">Contact</h1>
         <div className="flex flex-col items-center p-5 md:px-20">
           <p className="py-5">
