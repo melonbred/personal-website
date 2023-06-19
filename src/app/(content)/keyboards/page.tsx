@@ -15,7 +15,7 @@ import KeyboardCard from "@/components/KeyboardCard";
 export default function Resources() {
   return (
     <>
-      <div className="flex flex-col items-center py-5 lg:pt-10">
+      <div className="flex flex-col items-center">
         <h1 className="text-3xl">Keyboards</h1>
       </div>
       <div className="p-5 md:px-10">
