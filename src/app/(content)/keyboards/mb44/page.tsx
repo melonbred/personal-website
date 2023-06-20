@@ -34,6 +34,9 @@ export default function MB44() {
                 fill={true}
                 className="rounded-2xl object-cover"
               />
+              <p className="absolute bottom-1 left-2 text-sm">
+                Courtesy of Kokaloo
+              </p>
             </div>
           </SwiperSlide>
           <SwiperSlide>
@@ -44,6 +47,9 @@ export default function MB44() {
                 fill={true}
                 className="rounded-2xl object-cover"
               />
+              <p className="absolute bottom-1 left-2 text-sm">
+                Courtesy of Kokaloo
+              </p>
             </div>
           </SwiperSlide>
         </Swiper>
