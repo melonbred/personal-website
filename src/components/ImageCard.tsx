@@ -33,7 +33,7 @@ export default function ImageCard({ text, img }: ImageCardProps) {
   }, []);
 
   return (
-    <div className="my-4 w-11/12 rounded-3xl bg-slate-600 sm:w-96 md:w-2/3">
+    <div className="my-4 w-11/12 rounded-3xl bg-slate-600 sm:w-96 md:w-2/3 lg:w-1/2 xl:w-2/5">
       <div className="relative flex aspect-[3/2] w-full flex-col overflow-hidden rounded-3xl border-4 border-slate-400 object-cover">
         <Image alt={text} src={img} fill={true} className="object-cover" />
         <button
