@@ -40,7 +40,7 @@ export default function Keyboards() {
               title="MB-44"
               body="A 12.75u 40% keyboard with a fun 65%-esque blocker separating the arrow cluster."
               href="/keyboards/mb44"
-              img="/images/keyboards/mb44_kokaloo.jpg"
+              img="/images/keyboards/mb44/mb44_kokaloo.jpg"
             />
           </div>
         </SwiperSlide>
