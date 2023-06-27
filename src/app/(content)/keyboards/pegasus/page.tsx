@@ -53,12 +53,11 @@ export default function Pegasus() {
         <div className="px-5 py-5 md:px-10">
           <h2 className="text-2xl">Overview</h2>
           <p className="pt-2">
-            Pegasus is the first in the Mythics series keyboards. A 40% keyboard
-            with a 12.75u &quot;WKL&quot; layout and 0.75u blockers, this
-            project was as much as an experiment as all the projects that came
-            before it. A 4-piece construction that offers a plate mounting
-            solution, Pegasus was a premium offering into the 40% keyboard
-            space.
+            Pegasus is the first in the Mythics series. A 40% keyboard with a
+            12.75u &quot;WKL&quot; layout and 0.75u blockers, this project was
+            as much as an experiment as all the projects that came before it. A
+            4-piece construction that offers an unique plate mounting solution,
+            Pegasus was a premium offering into the 40% keyboard space.
           </p>
 
           <div className="flex flex-col items-center justify-between pt-10 md:flex-row md:space-x-10">
@@ -67,13 +66,13 @@ export default function Pegasus() {
               <p className="py-2">
                 The 4-piece construction includes components typical of many
                 keyboards: top, bottom, switch plate and weight. However, what
-                is unique about Pegasus is the plate mounting solution. The
-                switch plate is a half plate that is integrated into the raised
-                bezel component of the keyboard. This component is then
-                sandwiched between the case and bottom components, isolated by
-                open-cell foam strips. The idea was to provide a soft, flexible
-                typing experience in the alphas while offering a stable platform
-                in the modifiers for tap-hold functions.
+                makes Pegasus unique is the plate mounting solution. The switch
+                plate is a half plate that is integrated into the raised bezel
+                component of the keyboard. This component is then sandwiched
+                between the case and bottom components, isolated by open-cell
+                foam strips. The idea was to provide a soft, flexible typing
+                experience in the alphas while offering a stable platform in the
+                modifiers for tap-hold functions.
               </p>
               <p className="py-2">
                 The weight featured an engraving of a Pegasus and was offered in
@@ -84,15 +83,6 @@ export default function Pegasus() {
               text="Pegasus Schematic"
               img="/images/keyboards/pegasus/pegasus_schematic.png"
             />
-            {/* <div className="py-5 md:w-5/12">
-              <img
-                alt="pegasus schematic"
-                src="/images/keyboards/pegasus/pegasus_schematic.png"
-                width="750"
-                height="500"
-                className="object-fit rounded-xl"
-              />
-            </div> */}
           </div>
 
           <h2 className="pt-10 text-2xl">PCB</h2>
@@ -118,7 +108,7 @@ export default function Pegasus() {
                       <th scope="row" className="px-5 py-3 text-left uppercase">
                         Layout
                       </th>
-                      <td>40% WKL</td>
+                      <td>40% - 12.75u WKL</td>
                     </tr>
                     <tr className="bg-slate-500">
                       <th scope="row" className="px-5 py-3 text-left uppercase">

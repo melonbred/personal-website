@@ -12,6 +12,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "@/app/swiper.css";
 import "swiper/css/pagination";
+import Link from "next/link";
 
 export default function MB44() {
   return (
@@ -29,26 +30,40 @@ export default function MB44() {
           <SwiperSlide>
             <div className="relative aspect-video">
               <Image
-                alt="mb44 top"
+                alt="mb44 keyboard top"
                 src="/images/keyboards/mb44/mb44_top_kok.jpeg"
                 fill={true}
                 className="rounded-2xl object-cover"
               />
               <p className="absolute bottom-1 left-2 text-sm">
-                Courtesy of Kokaloo
+                Courtesy of{" "}
+                <Link
+                  href="https://www.instagram.com/kokaloo_/"
+                  target="_blank"
+                  className="underline hover:line-through hover:decoration-emerald-400/80 hover:decoration-4"
+                >
+                  Kokaloo
+                </Link>
               </p>
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className="relative aspect-video">
               <Image
-                alt="mb44 btm"
+                alt="mb44 keyboard bottom"
                 src="/images/keyboards/mb44/mb44_btm_kok.jpeg"
                 fill={true}
                 className="rounded-2xl object-cover"
               />
               <p className="absolute bottom-1 left-2 text-sm">
-                Courtesy of Kokaloo
+                Courtesy of{" "}
+                <Link
+                  href="https://www.instagram.com/kokaloo_/"
+                  target="_blank"
+                  className="underline hover:line-through hover:decoration-emerald-400/80 hover:decoration-4"
+                >
+                  Kokaloo
+                </Link>
               </p>
             </div>
           </SwiperSlide>
@@ -56,7 +71,7 @@ export default function MB44() {
       </div>
       <div className="flex flex-col items-center pb-5">
         <h1 className="pt-4 text-3xl">MB-44</h1>
-        <div className="p-4 md:p-10">
+        <div className="p-4 md:p-10 lg:px-20">
           <h2 className="text-2xl">Overview</h2>
           <p className="pt-2">
             MB-44 is the first project to be publically available and truely
@@ -68,28 +83,29 @@ export default function MB44() {
           </p>
 
           <div className="flex flex-col items-center justify-between pt-10 md:flex-row md:space-x-10">
-            <div className="flex flex-col md:w-1/2">
-              <h2 className="text-2xl">Case Construction</h2>
-              <p className="py-2">
-                The 4-piece construction includes components typical of many
-                keyboards: top, bottom, switch plate and weight. However, what
-                is unique about Pegasus is the plate mounting solution. The
-                switch plate is a half plate that is integrated into the raised
-                bezel component of the keyboard. This component is then
-                sandwiched between the case and bottom components, isolated by
-                open-cell foam strips. The idea was to provide a soft, flexible
-                typing experience in the alphas while offering a stable platform
-                in the modifiers for tap-hold functions.
-              </p>
-              <p className="py-2">
-                The weight featured an engraving of a Pegasus and was offered in
-                raw brass and polished stainless steel.
-              </p>
-            </div>
             <ImageCard
               text="Pegasus Schematic"
               img="/images/keyboards/pegasus/pegasus_schematic.png"
             />
+            <div className="flex flex-col md:w-1/2">
+              <h2 className="text-2xl">Case Construction</h2>
+              <p className="py-2">
+                The case is typical top mount construction with a top and bottom
+                piece. This was the first keyboard project that I knew I wanted
+                to have CNC machined of aluminum. As such, I wanted to
+                experiment with different modeling tools. The top piece features
+                a large 3.5-mm chamfer that wraps around the perimeter. The
+                bottom piece mirros the large 3.5-mm chamfer around the
+                perimeter, while also featuring a fun loft to create the
+                7-degree typing angle.
+              </p>
+              <p className="py-2">
+                This was my attempt at departuring from a typical rectangle
+                keyboard, and I hope this accomplished some sort of
+                individuality and sense of fun.
+              </p>
+            </div>
+
             {/* <div className="py-5 md:w-5/12">
               <img
                 alt="pegasus schematic"
@@ -101,18 +117,29 @@ export default function MB44() {
             </div> */}
           </div>
 
-          <h2 className="pt-10 text-2xl">PCB</h2>
-          <p className="py-2">
-            The PCB is powered by an Atmel Atmega32u4-MU and features a cut
-            across the middle to provide flexibility in the alpha cluster.
-            Rotary encoder support is also provided in two independent
-            locations.
-          </p>
-          <p className="py-2">
-            The mainboard PCB is connected to a C3 Unified Daughterboard via a
-            4-pin JST cable to provide ESD, oversurge protection, shield noise
-            decoupling, and single-path grounding to chasis functionality.
-          </p>
+          <div className="flex flex-col items-center justify-between pt-10 md:flex-row md:space-x-10">
+            <div className="flex flex-col md:w-1/2">
+              <h2 className="text-2xl">PCB</h2>
+              <p className="py-2">
+                The PCB is powered by an Atmel Atmega32u2-AU and features an
+                assortment of bottom row options that support big spacebar
+                (6.26u) and split spacebar layouts. A large driver for this
+                layout was to incorporate 2x 3u split space layout since it was
+                not very common at its time. Rotary encoder support is also
+                provided in two independent locations.
+              </p>
+              <p className="py-2">
+                The mainboard PCB is connected to a C3 Unified Daughterboard via
+                a 4-pin JST cable to provide ESD, oversurge protection, shield
+                noise decoupling, and single-path grounding to chasis
+                functionality.
+              </p>
+            </div>
+            <ImageCard
+              text="MB-44 Keyboard Layout"
+              img="/images/keyboards/mb44/mb44_kle.jpg"
+            />
+          </div>
 
           <div className="flex flex-col md:flex-row">
             <div className="md:w-1/2">
@@ -124,31 +151,31 @@ export default function MB44() {
                       <th scope="row" className="px-5 py-3 text-left uppercase">
                         Layout
                       </th>
-                      <td>40% WKL</td>
+                      <td>40% - 12.75u</td>
                     </tr>
                     <tr className="bg-slate-500">
                       <th scope="row" className="px-5 py-3 text-left uppercase">
                         Plate Mounting
                       </th>
-                      <td>Gasket Mounted Integrated Half-Plate</td>
+                      <td>Top Mount</td>
                     </tr>
                     <tr className="bg-slate-600">
                       <th scope="row" className="px-5 py-3 text-left uppercase">
                         Typing Angle
                       </th>
-                      <td>6 degrees</td>
+                      <td>7 degrees</td>
                     </tr>
                     <tr className="bg-slate-500">
                       <th scope="row" className="px-5 py-3 text-left uppercase">
                         Front Height
                       </th>
-                      <td>20 mm</td>
+                      <td>22.3 mm</td>
                     </tr>
                     <tr className="bg-slate-600">
                       <th scope="row" className="px-5 py-3 text-left uppercase">
                         Effective Key Height
                       </th>
-                      <td>24.2 mm</td>
+                      <td>26.4 mm</td>
                     </tr>
                     <tr className="bg-slate-500">
                       <th scope="row" className="px-5 py-3 text-left uppercase">
@@ -160,7 +187,7 @@ export default function MB44() {
                       <th scope="row" className="px-5 py-3 text-left uppercase">
                         Weight Material
                       </th>
-                      <td>Brass or Polished Stainless Steel</td>
+                      <td>N/A</td>
                     </tr>
                   </tbody>
                 </table>
@@ -169,16 +196,16 @@ export default function MB44() {
             <div className="md:w-1/2 md:pl-10">
               <h2 className="pt-10 text-2xl">Timeline</h2>
               <p className="pt-5">
-                P3D Store was the worldwide vendor for Pegasus.{" "}
+                Aeternus was the worldwide vendor for MB-44.{" "}
               </p>
               <ul className="ml-4 list-disc">
                 <li className="pt-5">
-                  Group buy was from May 21st through July 1st, 2022.
+                  Group buy was from April 9th through April 30th, 2021.
                 </li>
                 <li className="pt-5">
-                  Group buy was fulfilled on January 1st, 2023.
+                  Group buy was fulfilled on October 19th, 2021.
                 </li>
-                <li className="pt-5">Extras sold on January 25th, 2023.</li>
+                <li className="pt-5">Extras sold on November 19th, 2021.</li>
               </ul>
             </div>
           </div>
