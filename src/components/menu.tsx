@@ -14,7 +14,7 @@ type MenuProps = {
 export default function MenuButton(props: MenuProps) {
   const [isOpen, setIsOpen] = useState(false);
 
-  console.log(`The menu is open: ${isOpen}`);
+  // console.log(`The menu is open: ${isOpen}`);
 
   const menuRef = useRef<HTMLDivElement>(null);
 
@@ -22,7 +22,7 @@ export default function MenuButton(props: MenuProps) {
     const handleClick = (e: any) => {
       if (menuRef.current && !menuRef.current.contains(e.target)) {
         setIsOpen(false);
-        console.log("Click off menu button. The menu is closed");
+        // console.log("Click off menu button. The menu is closed");
       }
     };
 
