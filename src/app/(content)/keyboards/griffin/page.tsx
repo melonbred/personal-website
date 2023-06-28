@@ -3,6 +3,7 @@
 import Image from "next/image";
 
 import ImageCard from "@/components/ImageCard";
+import KeyboardSpecTable from "@/components/KeyboardSpecTable";
 
 // import Swiper core and required modules
 import { Navigation, Pagination, A11y } from "swiper";
@@ -119,13 +120,13 @@ export default function Griffin() {
             <h2 className="pt-10 text-2xl">PCB</h2>
             <p className="pt-5">
               This project comes bundled with the{" "}
-              <a
+              <Link
                 href="https://github.com/dededecline/SST60"
                 target="_blank"
                 className="underline hover:decoration-emerald-400/80 hover:decoration-4"
               >
                 SST60 PCB
-              </a>{" "}
+              </Link>{" "}
               developed by Dededecline and OJ Designs, providing multi-layout
               and Tsangan bottom row support. However, Griffin is compatible
               with all common PCBs with gummy o-ring support such as the Bakenko
@@ -141,54 +142,15 @@ export default function Griffin() {
           <div className="flex flex-col md:flex-row">
             <div className="md:w-1/2">
               <h2 className="pb-5 pt-10 text-2xl">Specifications</h2>
-              <div className="relative overflow-x-auto rounded-xl">
-                <table className="w-full">
-                  <tbody>
-                    <tr className="bg-slate-600">
-                      <th scope="row" className="px-5 py-3 text-left uppercase">
-                        Layout
-                      </th>
-                      <td>60%</td>
-                    </tr>
-                    <tr className="bg-slate-500">
-                      <th scope="row" className="px-5 py-3 text-left uppercase">
-                        Plate Mounting
-                      </th>
-                      <td>Gummy O-Ring</td>
-                    </tr>
-                    <tr className="bg-slate-600">
-                      <th scope="row" className="px-5 py-3 text-left uppercase">
-                        Typing Angle
-                      </th>
-                      <td>6 degrees</td>
-                    </tr>
-                    <tr className="bg-slate-500">
-                      <th scope="row" className="px-5 py-3 text-left uppercase">
-                        Front Height
-                      </th>
-                      <td>16.8 mm</td>
-                    </tr>
-                    <tr className="bg-slate-600">
-                      <th scope="row" className="px-5 py-3 text-left uppercase">
-                        Effective Key Height
-                      </th>
-                      <td>21.6 mm</td>
-                    </tr>
-                    <tr className="bg-slate-500">
-                      <th scope="row" className="px-5 py-3 text-left uppercase">
-                        Case Material
-                      </th>
-                      <td>6063 Aluminium</td>
-                    </tr>
-                    <tr className="bg-slate-600">
-                      <th scope="row" className="px-5 py-3 text-left uppercase">
-                        Weight Material
-                      </th>
-                      <td>Brass</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
+              <KeyboardSpecTable
+                layout="60%"
+                mounting="Gummy O-Ring"
+                angle="6 degrees"
+                height="16.8mm"
+                ekh="21.6 mm"
+                caseMaterial="6063 Aluminium"
+                weightMaterial="Brass"
+              />
             </div>
             <div className="md:w-1/2 md:pl-10">
               <h2 className="pt-10 text-2xl">Timeline</h2>
@@ -196,15 +158,6 @@ export default function Griffin() {
                 Griffin is currently in Interest Check. More information to
                 follow soon!
               </p>
-              {/* <ul className="ml-4 list-disc">
-                <li className="pt-5">
-                  Group buy is to run from July 1st through August 1st, 2023.
-                </li>
-                <li className="pt-5">
-                  Group buy was fulfilled on January 1st, 2023.
-                </li>
-                <li className="pt-5">Extras sold on January 25th, 2023.</li>
-              </ul> */}
             </div>
           </div>
         </div>

@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import ImageCard from "@/components/ImageCard";
+import KeyboardSpecTable from "@/components/KeyboardSpecTable";
 
 // import Swiper core and required modules
 import { Navigation, Pagination, A11y } from "swiper";
@@ -105,16 +106,6 @@ export default function MB44() {
                 individuality and sense of fun.
               </p>
             </div>
-
-            {/* <div className="py-5 md:w-5/12">
-              <img
-                alt="pegasus schematic"
-                src="/images/keyboards/pegasus/pegasus_schematic.png"
-                width="750"
-                height="500"
-                className="object-fit rounded-xl"
-              />
-            </div> */}
           </div>
 
           <div className="flex flex-col items-center justify-between pt-10 md:flex-row md:space-x-10">
@@ -144,54 +135,15 @@ export default function MB44() {
           <div className="flex flex-col md:flex-row">
             <div className="md:w-1/2">
               <h2 className="pb-5 pt-10 text-2xl">Specifications</h2>
-              <div className="relative overflow-x-auto rounded-xl">
-                <table className="w-full">
-                  <tbody>
-                    <tr className="bg-slate-600">
-                      <th scope="row" className="px-5 py-3 text-left uppercase">
-                        Layout
-                      </th>
-                      <td>40% - 12.75u</td>
-                    </tr>
-                    <tr className="bg-slate-500">
-                      <th scope="row" className="px-5 py-3 text-left uppercase">
-                        Plate Mounting
-                      </th>
-                      <td>Top Mount</td>
-                    </tr>
-                    <tr className="bg-slate-600">
-                      <th scope="row" className="px-5 py-3 text-left uppercase">
-                        Typing Angle
-                      </th>
-                      <td>7 degrees</td>
-                    </tr>
-                    <tr className="bg-slate-500">
-                      <th scope="row" className="px-5 py-3 text-left uppercase">
-                        Front Height
-                      </th>
-                      <td>22.3 mm</td>
-                    </tr>
-                    <tr className="bg-slate-600">
-                      <th scope="row" className="px-5 py-3 text-left uppercase">
-                        Effective Key Height
-                      </th>
-                      <td>26.4 mm</td>
-                    </tr>
-                    <tr className="bg-slate-500">
-                      <th scope="row" className="px-5 py-3 text-left uppercase">
-                        Case Material
-                      </th>
-                      <td>6063 Aluminium</td>
-                    </tr>
-                    <tr className="bg-slate-600">
-                      <th scope="row" className="px-5 py-3 text-left uppercase">
-                        Weight Material
-                      </th>
-                      <td>N/A</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
+              <KeyboardSpecTable
+                layout="40% - 12.75u"
+                mounting="Top Mount"
+                angle="7 degrees"
+                height="22.3 mm"
+                ekh="26.4 mm"
+                caseMaterial="6063 Aluminium"
+                weightMaterial="N/A"
+              />
             </div>
             <div className="md:w-1/2 md:pl-10">
               <h2 className="pt-10 text-2xl">Timeline</h2>
