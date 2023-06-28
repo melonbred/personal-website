@@ -15,8 +15,9 @@ export default function ImageCard({ text, img }: ImageCardProps) {
   const [isExpanded, setIsExpanded] = useState(false);
 
   const handleExpandClick = () => {
-    setIsExpanded(!isExpanded);
-    // console.log("isExpanded set to true");
+    setIsExpanded(true);
+    // console.log("isExpanded set to !isExpanded");
+    // console.log(isExpanded);
   };
 
   const escFunction = useCallback((e: any) => {
@@ -73,10 +74,7 @@ export default function ImageCard({ text, img }: ImageCardProps) {
                 className="object-cover"
               />
             </div>
-            <button
-              className="z-12 absolute right-5 top-5 h-10 w-10 rounded-lg border-2 border-emerald-700 bg-green-300 text-emerald-900 hover:bg-green-400 lg:h-12 lg:w-12 lg:border-4"
-              onClick={handleOutsideClick}
-            >
+            <button className="z-12 absolute right-5 top-5 h-10 w-10 rounded-lg border-2 border-emerald-700 bg-green-300 text-emerald-900 hover:bg-green-400 lg:h-12 lg:w-12 lg:border-4">
               <ArrowsPointingInIcon className="scale-75 text-emerald-900" />
             </button>
           </div>
