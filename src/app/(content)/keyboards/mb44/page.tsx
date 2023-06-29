@@ -85,8 +85,8 @@ export default function MB44() {
 
           <div className="flex flex-col items-center justify-between pt-10 md:flex-row md:space-x-10">
             <ImageCard
-              text="Pegasus Schematic"
-              img="/images/keyboards/pegasus/pegasus_schematic.png"
+              text="MB-44 Keyboard Layout"
+              img="/images/keyboards/mb44/mb44_kle.jpg"
             />
             <div className="flex flex-col md:w-1/2">
               <h2 className="text-2xl">Case Construction</h2>
@@ -127,8 +127,8 @@ export default function MB44() {
               </p>
             </div>
             <ImageCard
-              text="MB-44 Keyboard Layout"
-              img="/images/keyboards/mb44/mb44_kle.jpg"
+              text="MB-44 PCB Bottom"
+              img="/images/keyboards/mb44/mb44_pcb_btm.png"
             />
           </div>
 
