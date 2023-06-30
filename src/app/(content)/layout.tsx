@@ -68,7 +68,7 @@ export default function RootLayout({
         </aside>
         <div className="h-full w-full overflow-hidden overflow-y-auto rounded-3xl bg-slate-800">
           <div className="flex justify-center">
-            <div className="2xl:w-5/6 3xl:w-1/2">{children}</div>
+            <div className="w-full 2xl:w-5/6 3xl:w-1/2">{children}</div>
           </div>
         </div>
       </div>
