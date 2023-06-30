@@ -4,10 +4,10 @@ import MenuButton from "@/components/menu";
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen justify-center overflow-x-hidden bg-slate-800 pt-20">
+    <div className="flex min-h-screen justify-center overflow-x-hidden bg-slate-800 sm:pt-20">
       <div className="flex flex-col items-center">
         <div className="m-4 w-max md:flex md:justify-center">
-          <div className="flex justify-center">
+          <div className="flex justify-center py-3">
             <div className="h-32 w-32 overflow-hidden rounded-full">
               <Image
                 alt="MB Headshot"

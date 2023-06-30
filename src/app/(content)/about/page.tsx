@@ -4,7 +4,7 @@ export default function About() {
   return (
     <div className="flex flex-col items-center p-5 md:p-10">
       <h1 className="text-3xl">About Me</h1>
-      <div className="md:px-10">
+      <div className="p-5 md:px-10">
         <p className="pt-5">
           Located in the San Francisco, Bay Area, I&apos;m an engineer by day
           with a love for tinkering and learning. Some other hobbies of mine
