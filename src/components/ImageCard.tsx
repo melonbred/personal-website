@@ -51,9 +51,12 @@ export default function ImageCard({ text, img }: ImageCardProps) {
       <div className="relative flex aspect-[3/2] w-full flex-col overflow-hidden rounded-3xl border-4 border-slate-400 object-cover">
         <button onClick={handleExpandClick}>
           <Image alt={text} src={img} fill={true} className="object-cover" />
-          <div className="absolute bottom-4 left-4 h-10 w-10 rounded-lg border-2 border-emerald-700 bg-green-300 text-emerald-900 hover:bg-green-400 lg:h-12 lg:w-12 lg:border-4">
+          <button
+            className="absolute bottom-4 left-4 h-10 w-10 rounded-lg border-2 border-emerald-700 bg-green-300 text-emerald-900 hover:bg-green-400 lg:h-12 lg:w-12 lg:border-4"
+            onClick={handleExpandClick}
+          >
             <ArrowsPointingOutIcon className="scale-75 " />
-          </div>
+          </button>
         </button>
       </div>
       <div className="p-2">
