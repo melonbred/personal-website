@@ -56,16 +56,14 @@ export default function MenuLg() {
       <div className={`flex flex-col `}>
         <div
           style={{ paddingLeft: `${30 * level}px` }}
-          className={`${
-            pathname === entry.link ? "bg-slate-600 text-white" : ""
-          } m-1 flex w-52 rounded-3xl transition duration-100 hover:bg-green-400 hover:text-black`}
+          className={`m-1 flex w-52 rounded-3xl transition duration-100`}
         >
           {entry.children ? (
             <div className="flex items-center">
               {entry.children && (
                 <button
                   onClick={() => setIsExpanded(!isExpanded)}
-                  className="h-5 w-5 rounded-md border-2 border-green-500 bg-green-300 text-black hover:bg-cyan-400"
+                  className="h-5 w-5 rounded-md border-2 border-green-500 bg-green-300 text-black hover:bg-green-400"
                 >
                   {isExpanded ? (
                     <ChevronDoubleDownIcon className="scale-75" />
@@ -74,14 +72,25 @@ export default function MenuLg() {
                   )}
                 </button>
               )}
-              <Link href={entry.link} scroll={false} className="flex pl-2">
+              <Link
+                href={entry.link}
+                scroll={false}
+                className={`${
+                  pathname === entry.link ? "bg-slate-600 text-white" : ""
+                } ml-2 flex rounded-xl px-2 hover:bg-green-400 hover:text-black`}
+              >
                 {isExpanded ? <div>{entry.name}</div> : <div>{entry.name}</div>}
               </Link>
             </div>
           ) : (
             <div className="flex items-center">
               <div className="h-5 w-5"></div>
-              <Link href={entry.link} className="pl-2">
+              <Link
+                href={entry.link}
+                className={`${
+                  pathname === entry.link ? "bg-slate-600 text-white" : ""
+                } ml-2 rounded-xl px-2 hover:bg-green-400 hover:text-black`}
+              >
                 {entry.name}
               </Link>
             </div>
