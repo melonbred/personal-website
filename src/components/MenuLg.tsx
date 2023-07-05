@@ -53,18 +53,19 @@ export default function MenuLg() {
     const [isExpanded, setIsExpanded] = useState(false);
 
     return (
-      <div className={`flex flex-col`}>
+      <div className={`flex flex-col `}>
         <div
+          style={{ paddingLeft: `${30 * level}px` }}
           className={`${
             pathname === entry.link ? "bg-slate-600 text-white" : ""
-          } m-1 flex w-44 items-center justify-center rounded-3xl transition duration-100 `}
+          } m-1 flex w-52 rounded-3xl transition duration-100 hover:bg-green-400 hover:text-black`}
         >
           {entry.children ? (
             <div className="flex items-center">
               {entry.children && (
                 <button
                   onClick={() => setIsExpanded(!isExpanded)}
-                  className="absolute left-20  h-5 w-5"
+                  className="h-5 w-5 rounded-md border-2 border-green-500 bg-green-300 text-black hover:bg-cyan-400"
                 >
                   {isExpanded ? (
                     <ChevronDoubleDownIcon className="scale-75" />
@@ -73,18 +74,22 @@ export default function MenuLg() {
                   )}
                 </button>
               )}
-              <Link key={entry.name} href={entry.link} className="flex">
-                {isExpanded ? (
-                  <div className="font-bold">{entry.name}</div>
-                ) : (
-                  <div>{entry.name}</div>
-                )}
+              <Link
+                key={entry.name}
+                href={entry.link}
+                scroll={false}
+                className="flex pl-2"
+              >
+                {isExpanded ? <div>{entry.name}</div> : <div>{entry.name}</div>}
               </Link>
             </div>
           ) : (
-            <Link key={entry.name} href={entry.link} className="flex">
-              {entry.name}
-            </Link>
+            <div className="flex items-center">
+              <div className="h-5 w-5"></div>
+              <Link key={entry.name} href={entry.link} className="pl-2">
+                {entry.name}
+              </Link>
+            </div>
           )}
         </div>
         {isExpanded && (
