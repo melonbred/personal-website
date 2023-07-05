@@ -74,19 +74,14 @@ export default function MenuLg() {
                   )}
                 </button>
               )}
-              <Link
-                key={entry.name}
-                href={entry.link}
-                scroll={false}
-                className="flex pl-2"
-              >
+              <Link href={entry.link} scroll={false} className="flex pl-2">
                 {isExpanded ? <div>{entry.name}</div> : <div>{entry.name}</div>}
               </Link>
             </div>
           ) : (
             <div className="flex items-center">
               <div className="h-5 w-5"></div>
-              <Link key={entry.name} href={entry.link} className="pl-2">
+              <Link href={entry.link} className="pl-2">
                 {entry.name}
               </Link>
             </div>
@@ -95,7 +90,7 @@ export default function MenuLg() {
         {isExpanded && (
           <div>
             {entry.children?.map((entry: TEntry) => (
-              <Entry entry={entry} level={level + 1} />
+              <Entry key={entry.name} entry={entry} level={level + 1} />
             ))}
           </div>
         )}
@@ -113,7 +108,7 @@ export default function MenuLg() {
 
         <div className="relative flex flex-col items-center justify-center rounded-b-3xl bg-green-300 text-green-950">
           {navLinks.map((entry) => {
-            return <Entry entry={entry} level={0} />;
+            return <Entry key={entry.name} entry={entry} level={0} />;
           })}
         </div>
       </div>
