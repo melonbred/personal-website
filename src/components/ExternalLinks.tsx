@@ -16,6 +16,7 @@ export default function ExternalLinks() {
         <div className="flex w-full justify-between">
           <Link
             href="https://github.com/melonbred"
+            target="_blank"
             className="relative flex h-16 w-40 items-center justify-evenly rounded-3xl border-4 border-emerald-700 bg-green-300 transition-all duration-150 hover:scale-105 hover:bg-green-400"
           >
             <Image
@@ -29,6 +30,7 @@ export default function ExternalLinks() {
           </Link>
           <Link
             href="https://www.instagram.com/melonbred.kb/"
+            target="_blank"
             className="relative flex h-16 w-40 items-center justify-evenly rounded-3xl border-4 border-emerald-700 bg-green-300 transition-all duration-150 hover:scale-105 hover:bg-green-400"
           >
             <Image
