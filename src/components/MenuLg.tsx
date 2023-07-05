@@ -16,7 +16,7 @@ type TEntry = {
 };
 
 //Testing alternate array to create nav menu. See menu.tsx component for original array.
-const navLinks = [
+export const navLinks = [
   { name: "About", link: "/about" },
   {
     name: "Keyboards",
@@ -63,7 +63,7 @@ export default function MenuLg() {
               {entry.children && (
                 <button
                   onClick={() => setIsExpanded(!isExpanded)}
-                  className="h-5 w-5 rounded-md border-2 border-green-500 bg-green-300 text-black transition duration-150 hover:scale-125 hover:bg-green-400"
+                  className="h-5 w-5 rounded-md border-2 border-emerald-700 bg-green-300 text-black transition duration-150 hover:scale-125 hover:bg-green-400"
                 >
                   {isExpanded ? (
                     <ChevronDoubleDownIcon className="scale-75" />
@@ -77,7 +77,7 @@ export default function MenuLg() {
                 scroll={false}
                 className={`${
                   pathname === entry.link ? "bg-slate-600 text-white" : ""
-                } ml-2 flex rounded-xl px-2 hover:bg-green-400 hover:text-black`}
+                } ml-2 flex rounded-xl px-2 transition duration-150 hover:scale-110 hover:bg-green-400 hover:text-black`}
               >
                 {isExpanded ? <div>{entry.name}</div> : <div>{entry.name}</div>}
               </Link>
@@ -89,7 +89,7 @@ export default function MenuLg() {
                 href={entry.link}
                 className={`${
                   pathname === entry.link ? "bg-slate-600 text-white" : ""
-                } ml-2 rounded-xl px-2 hover:bg-green-400 hover:text-black`}
+                } ml-2 rounded-xl px-2 transition duration-150 hover:scale-110 hover:bg-green-400 hover:text-black`}
               >
                 {entry.name}
               </Link>
