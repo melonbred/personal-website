@@ -74,7 +74,6 @@ export default function MenuLg() {
               )}
               <Link
                 href={entry.link}
-                scroll={false}
                 className={`${
                   pathname === entry.link ? "bg-slate-600 text-white" : ""
                 } ml-2 flex rounded-xl px-2 transition duration-150 hover:scale-110 hover:bg-green-400 hover:text-black`}
