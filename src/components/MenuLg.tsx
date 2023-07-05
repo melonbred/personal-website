@@ -63,7 +63,7 @@ export default function MenuLg() {
               {entry.children && (
                 <button
                   onClick={() => setIsExpanded(!isExpanded)}
-                  className="h-5 w-5 rounded-md border-2 border-green-500 bg-green-300 text-black hover:bg-green-400"
+                  className="h-5 w-5 rounded-md border-2 border-green-500 bg-green-300 text-black transition duration-150 hover:scale-125 hover:bg-green-400"
                 >
                   {isExpanded ? (
                     <ChevronDoubleDownIcon className="scale-75" />
