@@ -19,7 +19,9 @@ export default function Keyboards() {
         <h1 className="text-3xl">Keyboards</h1>
       </div>
       <div className="p-5 md:px-20 md:py-10">
-        <h2 className="text-2xl">MB Series</h2>
+        <h2 id="mb" className="text-2xl">
+          MB Series
+        </h2>
         <p className="py-2">
           Projects in the MB series all started off as personal experiments with
           the intent to learn and try different things. These projects typically
@@ -66,7 +68,9 @@ export default function Keyboards() {
         </SwiperSlide>
       </Swiper>
       <div className="p-5 md:px-20 md:py-10">
-        <h2 className="pt-5 text-2xl">Mythics Series</h2>
+        <h2 id="mythics" className="pt-5 text-2xl">
+          Mythics Series
+        </h2>
         <p className="py-2">
           Projects in the Mythics series all share a similar aesthetic. Inspired
           by older TX-Keyboards designs (TX-75 and TX-CP) and ai03&apos;s

@@ -56,11 +56,11 @@ export default function RootLayout({
                     <p>This is melonbred.dev.</p>
                   </div>
                 </div>
-                <div className="my-20">
+                <div className="py-1">
                   <MenuLg />
                 </div>
               </div>
-              <div className="my-10">
+              <div className="">
                 <ExternalLinks />
               </div>
             </div>
