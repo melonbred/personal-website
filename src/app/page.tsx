@@ -28,7 +28,9 @@ export default function Home() {
           </div>
         </div>
         <MenuButton isHome={true} />
-        <ExternalLinks />
+        <div className="my-8">
+          <ExternalLinks />
+        </div>
       </div>
     </div>
   );
