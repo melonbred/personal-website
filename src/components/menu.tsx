@@ -72,7 +72,7 @@ export default function MenuButton(props: MenuProps) {
                 </button>
               )}
               <Link
-                onClick={() => setIsExpanded(!isExpanded)}
+                onClick={() => setIsOpen(!isOpen)}
                 href={entry.link}
                 scroll={false}
                 className={`${
@@ -86,6 +86,7 @@ export default function MenuButton(props: MenuProps) {
             <div className="flex items-center">
               <div className="h-5 w-5"></div>
               <Link
+                onClick={() => setIsOpen(!isOpen)}
                 href={entry.link}
                 className={`${
                   pathname === entry.link ? "bg-slate-600 text-white" : ""
