@@ -72,6 +72,7 @@ export default function MenuButton(props: MenuProps) {
                 </button>
               )}
               <Link
+                onClick={() => setIsExpanded(!isExpanded)}
                 href={entry.link}
                 scroll={false}
                 className={`${
@@ -126,9 +127,9 @@ export default function MenuButton(props: MenuProps) {
           ${props.isHome ? "w-80" : "w-64 md:w-80"}
            m-0 flex h-16 items-center rounded-3xl border-4 border-emerald-700 bg-green-300 text-green-950 duration-150`}
           >
-            <Bars3Icon className="absolute left-4 h-8 w-8"></Bars3Icon>
+            <Bars3Icon className="relative left-4 h-8 w-8"></Bars3Icon>
 
-            <div className="flex w-full justify-center">Menu</div>
+            <div className="flex w-full justify-center pr-8">Menu</div>
           </div>
         </button>
 
