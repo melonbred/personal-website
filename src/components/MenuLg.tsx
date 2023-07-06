@@ -97,7 +97,7 @@ export default function MenuLg() {
         </div>
         {isExpanded && (
           <div
-            style={{ marginLeft: `${12 + 10 * level}px` }}
+            style={{ marginLeft: `${13 + 10 * level}px` }}
             className="h-full w-0.5 bg-emerald-700"
           >
             {entry.children?.map((entry: TEntry) => (
