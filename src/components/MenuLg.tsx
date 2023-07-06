@@ -55,7 +55,7 @@ export default function MenuLg() {
     return (
       <div className={`flex flex-col `}>
         <div
-          style={{ paddingLeft: `${30 * level}px` }}
+          style={{ paddingLeft: `${10 * level}px` }}
           className={`m-1 flex w-52 rounded-3xl transition duration-100`}
         >
           {entry.children ? (
@@ -96,7 +96,10 @@ export default function MenuLg() {
           )}
         </div>
         {isExpanded && (
-          <div>
+          <div
+            style={{ marginLeft: `${12 + 10 * level}px` }}
+            className="h-full w-0.5 bg-emerald-700"
+          >
             {entry.children?.map((entry: TEntry) => (
               <Entry key={entry.name} entry={entry} level={level + 1} />
             ))}
