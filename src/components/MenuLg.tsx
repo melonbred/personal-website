@@ -50,7 +50,7 @@ export default function MenuLg() {
   console.log(pathname);
 
   function Entry({ entry, level }: { entry: TEntry; level: number }) {
-    const [isExpanded, setIsExpanded] = useState(false);
+    // const [isExpanded, setIsExpanded] = useState(false);
 
     return (
       <div className={`flex flex-col `}>
@@ -61,16 +61,16 @@ export default function MenuLg() {
           {entry.children ? (
             <div className="flex items-center">
               {entry.children && (
-                <button
-                  onClick={() => setIsExpanded(!isExpanded)}
-                  className="h-5 w-5 rounded-md border-2 border-emerald-700 bg-green-300 text-black transition duration-150 hover:scale-125 hover:bg-green-400"
+                <div
+                  // onClick={() => setIsExpanded(!isExpanded)}
+                  className="h-5 w-5 rounded-md border-2 border-emerald-700 bg-green-300 text-black"
                 >
-                  {isExpanded ? (
-                    <ChevronDoubleDownIcon className="scale-75" />
-                  ) : (
-                    <ChevronDoubleRightIcon className="scale-75" />
-                  )}
-                </button>
+                  {/* {isExpanded ? ( */}
+                  <ChevronDoubleDownIcon className="scale-75" />
+                  {/* ) : ( */}
+                  {/* <ChevronDoubleRightIcon className="scale-75" /> */}
+                  {/* )} */}
+                </div>
               )}
               <Link
                 href={entry.link}
@@ -78,7 +78,8 @@ export default function MenuLg() {
                   pathname === entry.link ? "bg-slate-600 text-white" : ""
                 } ml-2 flex rounded-xl px-2 transition duration-150 hover:scale-110 hover:bg-green-400 hover:text-black`}
               >
-                {isExpanded ? <div>{entry.name}</div> : <div>{entry.name}</div>}
+                {/* {isExpanded ? <div>{entry.name}</div> : <div>{entry.name}</div>} */}
+                <div>{entry.name}</div>
               </Link>
             </div>
           ) : (
@@ -95,16 +96,16 @@ export default function MenuLg() {
             </div>
           )}
         </div>
-        {isExpanded && (
-          <div
-            style={{ marginLeft: `${13 + 10 * level}px` }}
-            className="h-full w-0.5 bg-emerald-700"
-          >
-            {entry.children?.map((entry: TEntry) => (
-              <Entry key={entry.name} entry={entry} level={level + 1} />
-            ))}
-          </div>
-        )}
+        {/* {isExpanded && ( */}
+        <div
+          style={{ marginLeft: `${13 + 10 * level}px` }}
+          className="h-full w-0.5 bg-emerald-700"
+        >
+          {entry.children?.map((entry: TEntry) => (
+            <Entry key={entry.name} entry={entry} level={level + 1} />
+          ))}
+        </div>
+        {/* )} */}
       </div>
     );
   }
