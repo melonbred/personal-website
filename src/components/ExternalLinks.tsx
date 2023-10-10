@@ -5,11 +5,10 @@ import Image from "next/image";
 export default function ExternalLinks() {
   return (
     <div className="flex flex-col items-center">
-      <div className="m2-3 py-2">Currently in Interest Check</div>
       <GenericButton
-        text="Griffin 60%"
-        href="https://geekhack.org/index.php?topic=120200.0"
-        img="/icons/DocumentCheck.svg"
+        text="Shop"
+        href="https://shop.melonbred.dev"
+        img="/icons/shoppingBag.svg"
       />
       <div className="flex w-full flex-col items-center justify-center py-1">
         <div className="m2-3 py-2">External Links</div>
