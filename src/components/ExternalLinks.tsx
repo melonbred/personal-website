@@ -16,13 +16,13 @@ export default function ExternalLinks() {
           <Link
             href="https://github.com/melonbred"
             target="_blank"
-            className="relative flex h-16 w-40 items-center justify-evenly rounded-3xl border-4 border-emerald-700 bg-green-300 transition-all duration-150 hover:scale-105 hover:bg-green-400"
+            className="relative flex h-16 w-36 items-center justify-evenly rounded-3xl border-4 border-emerald-700 bg-green-300 transition-all duration-150 hover:scale-105 hover:bg-green-400"
           >
             <Image
               alt="MelonBred GitHub"
               src="/icons/github-mark.svg"
-              width={35}
-              height={35}
+              width={30}
+              height={30}
               className="object-fill"
             />
             <div className="text-black">GitHub</div>
@@ -30,13 +30,13 @@ export default function ExternalLinks() {
           <Link
             href="https://www.instagram.com/melonbred.kb/"
             target="_blank"
-            className="relative flex h-16 w-40 items-center justify-evenly rounded-3xl border-4 border-emerald-700 bg-green-300 transition-all duration-150 hover:scale-105 hover:bg-green-400"
+            className="relative flex h-16 w-36 items-center justify-evenly rounded-3xl border-4 border-emerald-700 bg-green-300 transition-all duration-150 hover:scale-105 hover:bg-green-400"
           >
             <Image
               alt="MelonBred Instagram"
               src="/icons/iconmonstr-instagram-11.svg"
-              width={30}
-              height={30}
+              width={25}
+              height={25}
               className="object-fill"
             />
             <div className="text-black">Instagram</div>

@@ -101,7 +101,7 @@ export default function MenuLg() {
 
   return (
     <>
-      <div className="static m-1 mt-4 w-80 rounded-3xl border-emerald-700 bg-green-300">
+      <div className="static m-1 mt-4 w-72 rounded-3xl border-emerald-700 bg-green-300">
         <div className="m-0 flex h-16 items-center rounded-3xl border-4 border-emerald-700 bg-green-300 text-green-950 duration-150">
           <Bars3Icon className="ml-4 mr-1 h-8 w-8"></Bars3Icon>
           <div className="flex w-52 justify-center">Menu</div>
