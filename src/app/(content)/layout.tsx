@@ -37,10 +37,10 @@ export default function RootLayout({
         {/* persistent sidebar for large resolution */}
         <aside className="hidden lg:relative lg:top-0 lg:mr-2 lg:flex lg:h-full lg:flex-col lg:items-center lg:bg-slate-600 lg:p-5 ">
           <div className="h-full overflow-auto overflow-x-hidden">
-            <div className="flex h-full w-[375px] flex-col items-center justify-between">
+            <div className="flex h-full w-[325px] flex-col items-center justify-between">
               <div>
                 <div className="flex flex-col items-center">
-                  <div className="fixed top-0 z-10 flex w-80 items-center justify-evenly bg-slate-600 py-5">
+                  <div className="fixed top-0 z-10 flex w-[325px] items-center justify-evenly bg-slate-600 py-5">
                     <Link
                       className="rounded-full border-4 border-emerald-700 bg-green-300 duration-150 hover:scale-105 hover:bg-green-400"
                       href="/"
