@@ -51,7 +51,7 @@ export default function MenuLg() {
 
   function Entry({ entry, level }: { entry: TEntry; level: number }) {
     return (
-      <div className={`flex flex-col `}>
+      <div className={`flex flex-col`}>
         <div
           style={{ paddingLeft: `${10 * level}px` }}
           className={`m-1 flex w-52 rounded-3xl transition duration-100`}
