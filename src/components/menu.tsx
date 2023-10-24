@@ -54,7 +54,7 @@ export default function MenuButton(props: MenuProps) {
     return (
       <div className={`flex flex-col `}>
         <div
-          style={{ paddingLeft: `${30 * level}px` }}
+          style={{ paddingLeft: `${10 * level}px` }}
           className={`m-1 flex w-52 rounded-3xl transition duration-100`}
         >
           {entry.children ? (
@@ -98,7 +98,10 @@ export default function MenuButton(props: MenuProps) {
           )}
         </div>
         {isExpanded && (
-          <div>
+          <div
+            style={{ marginLeft: `${13 + 10 * level}px` }}
+            className="h-full w-0.5 bg-emerald-700"
+          >
             {entry.children?.map((entry: TEntry) => (
               <Entry key={entry.name} entry={entry} level={level + 1} />
             ))}
@@ -125,7 +128,7 @@ export default function MenuButton(props: MenuProps) {
         >
           <div
             className={`${isOpen ? "" : "hover:scale-105 hover:bg-green-400"}
-          ${props.isHome ? "w-80" : "w-64 md:w-80"}
+          ${props.isHome ? "w-72" : "w-64 md:w-72"}
            m-0 flex h-16 items-center rounded-3xl border-4 border-emerald-700 bg-green-300 text-green-950 duration-150`}
           >
             <Bars3Icon className="relative left-4 h-8 w-8"></Bars3Icon>
@@ -140,7 +143,7 @@ export default function MenuButton(props: MenuProps) {
               ? "translate-y-0 transition-transform duration-200"
               : "-translate-y-20 scale-y-0"
           } 
-        ${props.isHome ? "w-80" : "w-64 md:w-80"}
+        ${props.isHome ? "w-72" : "w-64 md:w-72"}
         relative flex flex-col items-center justify-center rounded-b-3xl bg-green-300 text-green-950`}
         >
           {isOpen &&

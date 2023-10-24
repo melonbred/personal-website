@@ -50,36 +50,26 @@ export default function MenuLg() {
   console.log(pathname);
 
   function Entry({ entry, level }: { entry: TEntry; level: number }) {
-    const [isExpanded, setIsExpanded] = useState(false);
-
     return (
-      <div className={`flex flex-col `}>
+      <div className={`flex flex-col`}>
         <div
-          style={{ paddingLeft: `${30 * level}px` }}
+          style={{ paddingLeft: `${10 * level}px` }}
           className={`m-1 flex w-52 rounded-3xl transition duration-100`}
         >
           {entry.children ? (
             <div className="flex items-center">
               {entry.children && (
-                <button
-                  onClick={() => setIsExpanded(!isExpanded)}
-                  className="h-5 w-5 rounded-md border-2 border-emerald-700 bg-green-300 text-black transition duration-150 hover:scale-125 hover:bg-green-400"
-                >
-                  {isExpanded ? (
-                    <ChevronDoubleDownIcon className="scale-75" />
-                  ) : (
-                    <ChevronDoubleRightIcon className="scale-75" />
-                  )}
-                </button>
+                <div className="h-5 w-5 rounded-md border-2 border-emerald-700 bg-green-300 text-black">
+                  <ChevronDoubleDownIcon className="scale-75" />
+                </div>
               )}
               <Link
                 href={entry.link}
-                scroll={false}
                 className={`${
                   pathname === entry.link ? "bg-slate-600 text-white" : ""
                 } ml-2 flex rounded-xl px-2 transition duration-150 hover:scale-110 hover:bg-green-400 hover:text-black`}
               >
-                {isExpanded ? <div>{entry.name}</div> : <div>{entry.name}</div>}
+                <div>{entry.name}</div>
               </Link>
             </div>
           ) : (
@@ -96,20 +86,22 @@ export default function MenuLg() {
             </div>
           )}
         </div>
-        {isExpanded && (
-          <div>
-            {entry.children?.map((entry: TEntry) => (
-              <Entry key={entry.name} entry={entry} level={level + 1} />
-            ))}
-          </div>
-        )}
+
+        <div
+          style={{ marginLeft: `${13 + 10 * level}px` }}
+          className="h-full w-0.5 bg-emerald-700"
+        >
+          {entry.children?.map((entry: TEntry) => (
+            <Entry key={entry.name} entry={entry} level={level + 1} />
+          ))}
+        </div>
       </div>
     );
   }
 
   return (
     <>
-      <div className="static m-1 mt-4 w-80 rounded-3xl border-emerald-700 bg-green-300">
+      <div className="static m-1 mt-4 w-72 rounded-3xl border-emerald-700 bg-green-300">
         <div className="m-0 flex h-16 items-center rounded-3xl border-4 border-emerald-700 bg-green-300 text-green-950 duration-150">
           <Bars3Icon className="ml-4 mr-1 h-8 w-8"></Bars3Icon>
           <div className="flex w-52 justify-center">Menu</div>
