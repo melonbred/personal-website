@@ -110,10 +110,6 @@ export default function MBTKL() {
           </div>
 
           <div className="flex flex-col items-center justify-between pt-10 md:flex-row md:space-x-10">
-            <ImageCard
-              text="MB-44 Keyboard Layout"
-              img="/images/keyboards/mb44/mb44_kle.jpg"
-            />
             <div className="flex flex-col md:w-1/2">
               <h2 className="text-2xl">Case Construction</h2>
               <p className="py-2">
@@ -136,9 +132,17 @@ export default function MBTKL() {
               </p>
               <p className="py-2"></p>
             </div>
+            <ImageCard
+              text="MB-44 Keyboard Layout"
+              img="/images/keyboards/mb44/mb44_kle.jpg"
+            />
           </div>
 
           <div className="flex flex-col items-center justify-between pt-10 md:flex-row md:space-x-10">
+            <ImageCard
+              text="MB-44 PCB Bottom"
+              img="/images/keyboards/mb44/mb44_pcb_btm.png"
+            />
             <div className="flex flex-col md:w-1/2">
               <h2 className="text-2xl">PCB</h2>
               <p className="py-2">
@@ -156,10 +160,6 @@ export default function MBTKL() {
                 functionality.
               </p>
             </div>
-            <ImageCard
-              text="MB-44 PCB Bottom"
-              img="/images/keyboards/mb44/mb44_pcb_btm.png"
-            />
           </div>
 
           <div className="flex flex-col md:flex-row">
