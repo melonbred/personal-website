@@ -72,7 +72,7 @@ export default function Griffin() {
       </div>
       <div className="flex flex-col items-center">
         <h1 className="p-5 text-3xl">Griffin</h1>
-        <div className="px-5 py-5 md:p-10">
+        <div className="p-4 md:p-10 lg:px-20">
           <h2 className="text-2xl">Overview</h2>
           <p className="pt-5">
             Griffin is the second in the Mythics series. The idea was to provide

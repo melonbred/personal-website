@@ -51,7 +51,7 @@ export default function Pegasus() {
       </div>
       <div className="flex flex-col items-center">
         <h1 className="p-5 text-3xl xl:text-6xl">Pegasus</h1>
-        <div className="px-5 py-5 md:px-10">
+        <div className="p-4 md:p-10 lg:px-20">
           <h2 className="text-2xl">Overview</h2>
           <p className="pt-2">
             Pegasus is the first in the Mythics series. A 40% keyboard with a
