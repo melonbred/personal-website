@@ -50,7 +50,7 @@ export default function Pegasus() {
         </Swiper>
       </div>
       <div className="flex flex-col items-center">
-        <h1 className="p-5 text-3xl">Pegasus</h1>
+        <h1 className="p-5 text-3xl xl:text-6xl">Pegasus</h1>
         <div className="px-5 py-5 md:px-10">
           <h2 className="text-2xl">Overview</h2>
           <p className="pt-2">

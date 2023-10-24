@@ -18,7 +18,7 @@ export default function KeyboardSpecTable({
   weightMaterial,
 }: SpecTableProps) {
   return (
-    <div className="relative overflow-x-auto rounded-xl">
+    <div className="relative overflow-x-auto rounded-xl lg:text-base">
       <table className="w-full">
         <tbody>
           <tr className="bg-slate-600">
