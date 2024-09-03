@@ -17,7 +17,8 @@ export default function RootLayout({
 }) {
   return (
     <div className="absolute inset-0 ">
-      <div className="flex h-[100%] flex-col overflow-hidden bg-slate-600 p-2 lg:h-screen lg:flex-row">
+      {/* <div className="flex h-[100%] flex-col overflow-hidden bg-slate-600 p-2 lg:h-screen lg:flex-row"> */}
+      <div className="flex h-[100%] flex-col bg-slate-600 p-2 lg:h-screen lg:flex-row">
         <div className="relative z-10 flex w-screen items-center justify-between bg-slate-600 pb-2 lg:hidden">
           <Link
             className="rounded-full border-4 border-emerald-700 bg-green-300 duration-150 hover:scale-105"
@@ -70,9 +71,8 @@ export default function RootLayout({
             </div>
           </div>
         </aside>
-        <div className="w-full rounded-3xl bg-slate-800">
-          {/* <div className="flex h-full justify-center overflow-y-auto"> */}
-          <div className="flex h-full justify-center">
+        <div className="w-full overflow-hidden rounded-3xl bg-slate-800">
+          <div className="flex h-full justify-center overflow-y-auto">
             <div className="w-full 2xl:w-5/6 3xl:w-1/2">{children}</div>
           </div>
         </div>
