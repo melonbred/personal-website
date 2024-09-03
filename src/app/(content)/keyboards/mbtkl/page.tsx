@@ -31,27 +31,47 @@ export default function MBTKL() {
           <SwiperSlide>
             <div className="relative aspect-video">
               <Image
-                alt="mbtkl keyboard top"
-                src="/images/keyboards/mbtkl/mbtkl_top.png"
+                alt="mb44 keyboard top"
+                src="/images/keyboards/mb44/mb44_top_kok.jpeg"
                 fill={true}
                 className="rounded-2xl object-cover"
               />
+              <p className="absolute bottom-1 left-2 text-sm">
+                Courtesy of{" "}
+                <Link
+                  href="https://www.instagram.com/kokaloo_/"
+                  target="_blank"
+                  className="underline hover:line-through hover:decoration-emerald-400/80 hover:decoration-4"
+                >
+                  Kokaloo
+                </Link>
+              </p>
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className="relative aspect-video">
               <Image
-                alt="mbtkl keyboard side"
-                src="/images/keyboards/mbtkl/mbtkl_side.png"
+                alt="mb44 keyboard bottom"
+                src="/images/keyboards/mb44/mb44_btm_kok.jpeg"
                 fill={true}
                 className="rounded-2xl object-cover"
               />
+              <p className="absolute bottom-1 left-2 text-sm">
+                Courtesy of{" "}
+                <Link
+                  href="https://www.instagram.com/kokaloo_/"
+                  target="_blank"
+                  className="underline hover:line-through hover:decoration-emerald-400/80 hover:decoration-4"
+                >
+                  Kokaloo
+                </Link>
+              </p>
             </div>
           </SwiperSlide>
         </Swiper>
       </div>
       <div className="flex flex-col items-center pb-5">
-        <h1 className="p-5 text-3xl xl:text-6xl">MB-TKL</h1>
+        <h1 className="pt-4 text-3xl">MB-TKL</h1>
         <div className="p-4 md:p-10 lg:px-20">
           <h2 className="text-2xl">Overview</h2>
           <p className="pt-2">
@@ -82,10 +102,9 @@ export default function MBTKL() {
                 in-between. However, this results in an ortholinear-like layout
                 with the first cluster of four; not my preferred aesthetic. The
                 split in the alphas entirely serves to alleviate this issue, but
-                has the added benefit of separating your hands to provide some
-                added ergonomics. Offsetting the F-keys provided the opportunity
-                to add a fun light bar. Tack on navigation and arrows keys, and
-                call it a day!
+                has the added benefit of providing some ergonomics. Offsetting
+                the F-keys provided the opportunity to add a fun light bar. Tack
+                on navigation and arrows keys, and call it a day!
               </p>
             </div>
           </div>
@@ -100,17 +119,21 @@ export default function MBTKL() {
               </p>
               <p className="py-2">
                 While the case is intended to be simple, the side profile
-                features a compound curve with filleted edges to break away from
-                the standard rectangle on a wedge. Adding to the playfulness of
-                the side profile, a diffuser is also included to soften and
-                disperse the LEDs on the top left.
+                features a simple compound curve with filleted edges. Adding to
+                the playfulness of the side profile, a diffuser is also included
+                to soften and dispears the LEDs on the top left.
               </p>
               <p className="py-2">
+<<<<<<< HEAD
                 The brass weight&pos;s exterior appearance is that of a simple
                 accent piece, recessed to avoid damage while resting on a desk.
+=======
+                The brass weight's exterior appearance is that of a simple
+                accent piece, recessed to avoid damage while use on a desk.
+>>>>>>> parent of f37e880 (Update page header style. Edit contextin mbtkl page.)
                 Inside the case, the soft brass material encompasses the
                 majority of the interior surface area in an effort to absorb
-                some vibrations from keystrokes.
+                some vibrations.
               </p>
               <p className="py-2"></p>
             </div>
@@ -128,7 +151,7 @@ export default function MBTKL() {
             <div className="flex flex-col md:w-1/2">
               <h2 className="text-2xl">PCB</h2>
               <p className="py-2">
-                The PCB is powered by an Atmel Atmega32u4-AU and features an
+                The PCB is powered by an Atmel Atmega32u2-AU and features an
                 assortment of bottom row options that support big spacebar
                 (6.26u) and split spacebar layouts. A large driver for this
                 layout was to incorporate 2x 3u split space layout since it was

@@ -71,7 +71,7 @@ export default function Griffin() {
         </Swiper>
       </div>
       <div className="flex flex-col items-center">
-        <h1 className="p-5 text-3xl xl:text-6xl">Griffin</h1>
+        <h1 className="p-5 text-3xl">Griffin</h1>
         <div className="p-4 md:p-10 lg:px-20">
           <h2 className="text-2xl">Overview</h2>
           <p className="pt-5">

@@ -16,7 +16,7 @@ export default function Keyboards() {
   return (
     <>
       <div className="flex flex-col items-center p-5 md:pt-10">
-        <h1 className="text-3xl xl:text-6xl">Keyboards</h1>
+        <h1 className="text-3xl">Keyboards</h1>
       </div>
       <div className="p-5 md:px-20 md:py-10">
         <h2 id="mb" className="text-2xl">
