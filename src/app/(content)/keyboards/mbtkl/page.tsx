@@ -124,13 +124,8 @@ export default function MBTKL() {
                 to soften and dispears the LEDs on the top left.
               </p>
               <p className="py-2">
-<<<<<<< HEAD
                 The brass weight&pos;s exterior appearance is that of a simple
                 accent piece, recessed to avoid damage while resting on a desk.
-=======
-                The brass weight's exterior appearance is that of a simple
-                accent piece, recessed to avoid damage while use on a desk.
->>>>>>> parent of f37e880 (Update page header style. Edit contextin mbtkl page.)
                 Inside the case, the soft brass material encompasses the
                 majority of the interior surface area in an effort to absorb
                 some vibrations.
