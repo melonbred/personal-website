@@ -70,7 +70,7 @@ export default function MBTKL() {
             <div className="flex flex-col md:w-1/2">
               <h2 className="text-2xl">The Layout</h2>
               <p className="py-2">
-                Let's get it out of the way. This layout is a bit funky.
+                Let&apos;s get it out of the way. This layout is a bit funky.
               </p>
               <p className="py-2">
                 The three key essentials for this layout is a 12.75u main
@@ -106,7 +106,7 @@ export default function MBTKL() {
                 disperse the LEDs on the top left.
               </p>
               <p className="py-2">
-                The brass weight's exterior appearance is that of a simple
+                The brass weight&pos;s exterior appearance is that of a simple
                 accent piece, recessed to avoid damage while resting on a desk.
                 Inside the case, the soft brass material encompasses the
                 majority of the interior surface area in an effort to absorb
