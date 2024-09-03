@@ -71,7 +71,7 @@ export default function MB44() {
         </Swiper>
       </div>
       <div className="flex flex-col items-center pb-5">
-        <h1 className="p-5 text-3xl xl:text-6xl">MB-44</h1>
+        <h1 className="pt-4 text-3xl">MB-44</h1>
         <div className="p-4 md:p-10 lg:px-20">
           <h2 className="text-2xl">Overview</h2>
           <p className="pt-2">
