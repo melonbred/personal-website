@@ -31,41 +31,31 @@ export default function MBTKL() {
           <SwiperSlide>
             <div className="relative aspect-video">
               <Image
-                alt="mb44 keyboard top"
-                src="/images/keyboards/mb44/mb44_top_kok.jpeg"
+                alt="mbtkl keyboard top"
+                src="/images/keyboards/mbtkl/mbtkl_blockers.png"
                 fill={true}
                 className="rounded-2xl object-cover"
               />
-              <p className="absolute bottom-1 left-2 text-sm">
-                Courtesy of{" "}
-                <Link
-                  href="https://www.instagram.com/kokaloo_/"
-                  target="_blank"
-                  className="underline hover:line-through hover:decoration-emerald-400/80 hover:decoration-4"
-                >
-                  Kokaloo
-                </Link>
-              </p>
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className="relative aspect-video">
               <Image
-                alt="mb44 keyboard bottom"
-                src="/images/keyboards/mb44/mb44_btm_kok.jpeg"
+                alt="mbtkl keyboard side profile"
+                src="/images/keyboards/mbtkl/mbtkl_side.png"
                 fill={true}
                 className="rounded-2xl object-cover"
               />
-              <p className="absolute bottom-1 left-2 text-sm">
-                Courtesy of{" "}
-                <Link
-                  href="https://www.instagram.com/kokaloo_/"
-                  target="_blank"
-                  className="underline hover:line-through hover:decoration-emerald-400/80 hover:decoration-4"
-                >
-                  Kokaloo
-                </Link>
-              </p>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="relative aspect-video">
+              <Image
+                alt="mbtkl keyboard bottom"
+                src="/images/keyboards/mbtkl/mbtkl_btm.png"
+                fill={true}
+                className="rounded-2xl object-cover"
+              />
             </div>
           </SwiperSlide>
         </Swiper>
@@ -84,8 +74,8 @@ export default function MBTKL() {
 
           <div className="flex flex-col items-center justify-between pt-10 md:flex-row md:space-x-10">
             <ImageCard
-              text="MB-44 Keyboard Layout"
-              img="/images/keyboards/mb44/mb44_kle.jpg"
+              text="MB-TKL Keyboard Layout"
+              img="/images/keyboards/mbtkl/mbtkl_layout.png"
             />
             <div className="flex flex-col md:w-1/2">
               <h2 className="text-2xl">The Layout</h2>
@@ -105,6 +95,11 @@ export default function MBTKL() {
                 has the added benefit of providing some ergonomics. Offsetting
                 the F-keys provided the opportunity to add a fun light bar. Tack
                 on navigation and arrows keys, and call it a day!
+              </p>
+              <p className="py-2">
+                The left 3U spacebar can be split into 2U + 1U or 1U + 2U
+                configurations. There is also an option for win key (WK) or
+                win-keyless (WKL) which will include a blocker on the case.
               </p>
             </div>
           </div>
@@ -133,15 +128,15 @@ export default function MBTKL() {
               <p className="py-2"></p>
             </div>
             <ImageCard
-              text="MB-44 Keyboard Layout"
-              img="/images/keyboards/mb44/mb44_kle.jpg"
+              text="MB-TKL Case from Factory"
+              img="/images/keyboards/mbtkl/mbtkl_case.png"
             />
           </div>
 
           <div className="flex flex-col items-center justify-between pt-10 md:flex-row md:space-x-10">
             <ImageCard
-              text="MB-44 PCB Bottom"
-              img="/images/keyboards/mb44/mb44_pcb_btm.png"
+              text="MB-TKL PCB Bottom"
+              img="/images/keyboards/mbtkl/mbtkl_pcb.png"
             />
             <div className="flex flex-col md:w-1/2">
               <h2 className="text-2xl">PCB</h2>
@@ -166,29 +161,22 @@ export default function MBTKL() {
             <div className="md:w-1/2">
               <h2 className="pb-5 pt-10 text-2xl">Specifications</h2>
               <KeyboardSpecTable
-                layout="40% - 12.75u"
+                layout="40% TKL - 12.75u main cluster"
                 mounting="Top Mount"
-                angle="7 degrees"
-                height="22.3 mm"
-                ekh="26.4 mm"
+                angle="6 degrees"
+                height="16.8mm"
+                ekh="21.6 mm"
                 caseMaterial="6063 Aluminium"
-                weightMaterial="N/A"
+                weightMaterial="Brass"
               />
             </div>
             <div className="md:w-1/2 md:pl-10">
               <h2 className="pt-10 text-2xl">Timeline</h2>
               <p className="pt-5">
-                Aeternus was the worldwide vendor for MB-44.{" "}
+                Two rounds of prototyping were produced in November 2022 and
+                March 2023 to validate the case and PCB. The project has
+                concluded with no plans for a larger sale.
               </p>
-              <ul className="ml-4 list-disc">
-                <li className="pt-5">
-                  Group buy was from April 9th through April 30th, 2021.
-                </li>
-                <li className="pt-5">
-                  Group buy was fulfilled on October 19th, 2021.
-                </li>
-                <li className="pt-5">Extras sold on November 19th, 2021.</li>
-              </ul>
             </div>
           </div>
         </div>
