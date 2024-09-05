@@ -141,18 +141,16 @@ export default function MBTKL() {
             <div className="flex flex-col md:w-1/2">
               <h2 className="text-2xl">PCB</h2>
               <p className="py-2">
-                The PCB is powered by an Atmel Atmega32u2-AU and features an
-                assortment of bottom row options that support big spacebar
-                (6.26u) and split spacebar layouts. A large driver for this
-                layout was to incorporate 2x 3u split space layout since it was
-                not very common at its time. Rotary encoder support is also
-                provided in two independent locations.
+                The PCB is powered by an Atmel Atmega32u4-AU and features an RGB
+                LED light bar, and split spacebar layouts as shown in the Layout
+                section above. The PCB also includes breakout pins for debugging
+                purposes. This PCB is a very simply design that incorporates ESD
+                and oversurge protection.
               </p>
               <p className="py-2">
-                The mainboard PCB is connected to a C3 Unified Daughterboard via
-                a 4-pin JST cable to provide ESD, oversurge protection, shield
-                noise decoupling, and single-path grounding to chasis
-                functionality.
+                Other features such as rotary encoder support has been
+                considered, but have not been implemented due to my own personal
+                use case.
               </p>
             </div>
           </div>
