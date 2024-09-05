@@ -1,5 +1,6 @@
 import "./globals.css";
-import { Rubik } from "next/font/google";
+import { Antic_Slab, Rubik } from "next/font/google";
+import { Analytics } from "@vercel/analytics/react";
 
 const rubik = Rubik({
   subsets: ["latin"],
@@ -21,7 +22,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${rubik.className} text-white`}>{children}</body>
+      <body className={`${rubik.className} text-white`}>
+        {children}
+        <Analytics />
+      </body>
     </html>
   );
 }
