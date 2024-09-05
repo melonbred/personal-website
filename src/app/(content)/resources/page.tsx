@@ -4,23 +4,12 @@ export default function Resources() {
   return (
     <div className="flex h-full min-w-full flex-col items-center p-5 md:p-10">
       <h1 className="text-3xl xl:text-6xl">Resources</h1>
-      <div className="p-5 md:px-10">
+      <div className="md:px-10">
         <p className="py-5">
-          Work in Progress! Links coming soon. Until then, please refer to the{" "}
-          <Link
-            href="https://github.com/melonbred/open-source-projects"
-            className="underline hover:decoration-emerald-400/80 hover:decoration-4"
-            target="_blank"
-          >
-            Open Source Projects
-          </Link>{" "}
-          repository on my GitHub.
-        </p>
-        <p className="py-5">
-          This page includes resources for all past projects. The resources may
-          include plate files, PCB files, case models, etc. These files are
-          offered for user convenience. However, by downloading and/or using
-          these files, the user agrees to the following:
+          This page includes links to resources for all past projects. The
+          resources may include plate files, PCB files, case models, etc. These
+          files are offered for user convenience. However, by downloading and/or
+          using these files, the user agrees to the following:
         </p>
         <ul className="list-disc">
           <div className="mx-3 text-sm">
@@ -46,10 +35,42 @@ export default function Resources() {
             <h3 className="text-xl">MB-44</h3>
             <ul className="list-disc">
               <div className="px-4 py-2">
-                <li>Plate Files</li>
-                <li>PCB KiCAD (Design)</li>
-                <li>PCB Gerbers (Production)</li>
-                <li>Case Model</li>
+                <li>
+                  <Link
+                    href="https://github.com/melonbred/open-source-projects/tree/main/keyboards/mb44/switch%20plates"
+                    className="underline hover:decoration-emerald-400/80 hover:decoration-4"
+                    target="_blank"
+                  >
+                    Plate Files
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="https://github.com/melonbred/open-source-projects/tree/main/keyboards/mb44/kicad"
+                    className="underline hover:decoration-emerald-400/80 hover:decoration-4"
+                    target="_blank"
+                  >
+                    PCB KiCAD (Design)
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="https://github.com/melonbred/open-source-projects/tree/main/keyboards/mb44/pcb_production"
+                    className="underline hover:decoration-emerald-400/80 hover:decoration-4"
+                    target="_blank"
+                  >
+                    PCB Gerbers (Production)
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="https://github.com/melonbred/open-source-projects/tree/main/keyboards/mb44/case"
+                    className="underline hover:decoration-emerald-400/80 hover:decoration-4"
+                    target="_blank"
+                  >
+                    Case Models
+                  </Link>
+                </li>
               </div>
             </ul>
           </div>
@@ -57,10 +78,42 @@ export default function Resources() {
             <h3 className="text-xl">MB-LB</h3>
             <ul className="list-disc">
               <div className="px-4 py-2">
-                <li>Plate Files</li>
-                <li>PCB KiCAD (Design)</li>
-                <li>PCB Gerbers (Production)</li>
-                <li>Case Files (Stacked Acrylic)</li>
+                <li>
+                  <Link
+                    href="https://github.com/melonbred/open-source-projects/blob/main/keyboards/mblb/stacked%20acrylic%20case/MBLB_Plate.dxf"
+                    className="underline hover:decoration-emerald-400/80 hover:decoration-4"
+                    target="_blank"
+                  >
+                    Plate Files
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="https://github.com/melonbred/open-source-projects/tree/main/keyboards/mblb/kicad"
+                    className="underline hover:decoration-emerald-400/80 hover:decoration-4"
+                    target="_blank"
+                  >
+                    PCB KiCAD (Design)
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="https://github.com/melonbred/open-source-projects/tree/main/keyboards/mblb/pcb_production"
+                    className="underline hover:decoration-emerald-400/80 hover:decoration-4"
+                    target="_blank"
+                  >
+                    PCB Gerbers(Production)
+                  </Link>{" "}
+                </li>
+                <li>
+                  <Link
+                    href="https://github.com/melonbred/open-source-projects/tree/main/keyboards/mblb/stacked%20acrylic%20case"
+                    className="underline hover:decoration-emerald-400/80 hover:decoration-4"
+                    target="_blank"
+                  >
+                    Case Files (Stacked Acrylic)
+                  </Link>
+                </li>
               </div>
             </ul>
           </div>
@@ -72,8 +125,33 @@ export default function Resources() {
             <h3 className="text-xl">Pegasus</h3>
             <ul className="list-disc">
               <div className="px-4 py-2">
-                <li>PCB KiCAD (Design)</li>
-                <li>PCB Gerbers (Production)</li>
+                <li>
+                  <Link
+                    href="https://github.com/melonbred/open-source-projects/tree/main/keyboards/pegasus/kicad"
+                    className="underline hover:decoration-emerald-400/80 hover:decoration-4"
+                    target="_blank"
+                  >
+                    PCB KiCAD (Design)
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="https://github.com/melonbred/open-source-projects/tree/main/keyboards/pegasus/kicad/Production"
+                    className="underline hover:decoration-emerald-400/80 hover:decoration-4"
+                    target="_blank"
+                  >
+                    PCB Gerbers (Production)
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="https://github.com/melonbred/open-source-projects/tree/main/keyboards/pegasus/case"
+                    className="underline hover:decoration-emerald-400/80 hover:decoration-4"
+                    target="_blank"
+                  >
+                    Case Files
+                  </Link>
+                </li>
               </div>
             </ul>
           </div>
