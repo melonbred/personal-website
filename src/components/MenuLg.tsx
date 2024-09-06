@@ -43,6 +43,7 @@ export const navLinks = [
   },
   { name: "Resources", link: "/resources" },
   { name: "Contact", link: "/contact" },
+  { name: "Guestbook", link: "/guestbook" },
 ];
 
 export default function MenuLg() {

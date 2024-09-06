@@ -10,7 +10,13 @@ import {
 } from "@heroicons/react/24/solid";
 import { navLinks } from "./MenuLg";
 
-export const menuArray = ["About", "Keyboards", "Resources", "Contact"];
+export const menuArray = [
+  "About",
+  "Keyboards",
+  "Resources",
+  "Contact",
+  "Guestbook",
+];
 
 type MenuProps = {
   isHome: boolean;
