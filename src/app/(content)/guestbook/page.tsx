@@ -18,14 +18,14 @@ export default async function Guestbook() {
   }
   const listPosts = await getPosts();
 
+  // Session retrieved to add logged-in user name to page text
   const session = await auth();
 
   return (
     <>
       <div className="min-w-screen flex h-full min-h-full flex-col items-center p-5 md:p-10">
         <h1 className="text-3xl xl:text-6xl">Guestbook</h1>
-
-        <div className="flex flex-col items-center p-5 md:p-10">
+        <div className="min-w-screen flex flex-col items-center p-5 md:p-10">
           <AuthSignInButton />
           <AuthSignOutButton />
           <div>Welcome {session?.user?.name}!</div>

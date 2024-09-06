@@ -1,5 +1,6 @@
 "use client";
 
+import { revalidatePath } from "next/cache";
 import { useState } from "react";
 
 // Form handling funciont
@@ -23,21 +24,21 @@ export default function GuestForm() {
 
       if (response.ok) {
         setStatus({ type: "success", message: "Content saved successfully!" });
-        console.log(status);
+        console.log({ status });
         setContent("");
       } else {
         setStatus({
           type: "error",
           message: "Failed to save content. Please try again.",
         });
-        console.log(status);
+        console.log({ status });
       }
     } catch (error) {
       setStatus({
         type: "error",
         message: "An error occurred. Please try again.",
       });
-      console.log(status);
+      console.log({ status });
     }
   };
 
