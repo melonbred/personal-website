@@ -1,12 +1,10 @@
 import AuthSignInButton from "@/components/AuthSignInButton";
 import { AuthSignOutButton } from "@/components/AuthSignOutButton";
-import { PrismaClient } from "@prisma/client";
 import { auth } from "@/../auth";
 import GuestForm from "@/components/GuestForm";
+import { prisma } from "../../../../prisma";
 
 export default async function Guestbook() {
-  const prisma = new PrismaClient();
-
   // Retreive posts from database
   async function getPosts() {
     const listPosts = prisma.post.findMany({
