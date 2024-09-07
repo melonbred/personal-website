@@ -38,10 +38,14 @@ export default async function Guestbook() {
               return (
                 <div className="flex" key={posts.id}>
                   <div className="h-16 w-16 overflow-hidden rounded-full border-2">
-                    <img
-                      className="object-scale-down"
-                      src={posts.author.image}
-                    ></img>
+                    {posts.author.image ? (
+                      <img
+                        className="object-scale-down"
+                        src={posts.author.image}
+                      ></img>
+                    ) : (
+                      <div className="size-16 bg-white"></div>
+                    )}
                   </div>
                   <div className="p-1">
                     <h1 className="text-xl">{posts.author.name}</h1>
