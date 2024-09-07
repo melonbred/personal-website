@@ -13,10 +13,12 @@ export async function POST(request: any) {
     data: {
       content,
       date: new Date(),
-      authorId: session?.user?.id,
+      authorId: session?.user?.id ? String(session.user.id) : "",
     },
   });
 
+  // Call revalidatePath before returning
+  revalidatePath("/"); // This triggers the cache revalidation
+
   return NextResponse.json({ result });
-  revalidatePath("/");
 }
