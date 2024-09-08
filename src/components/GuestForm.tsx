@@ -1,6 +1,5 @@
 "use client";
 
-import { revalidatePath } from "next/cache";
 import { useState } from "react";
 
 // Form handling funciont
@@ -8,6 +7,7 @@ import { useState } from "react";
 export default function GuestForm() {
   const [content, setContent] = useState("");
   const [status, setStatus] = useState({});
+  const [count, setCount] = useState(0);
 
   const handleOnSubmit = async (e: any) => {
     e.preventDefault();
@@ -43,14 +43,32 @@ export default function GuestForm() {
   };
 
   return (
-    <form onSubmit={handleOnSubmit}>
-      <input
-        type="text"
-        value={content}
-        onChange={(e) => setContent(e.target.value)}
-        className="text-black"
-      />
-      <button type="submit">Submit</button>
-    </form>
+    <>
+      <form
+        id="guestForm"
+        className="overflow-hidden rounded-2xl border-4 border-slate-400 bg-slate-600 md:w-3/4"
+        onSubmit={handleOnSubmit}
+      >
+        <textarea
+          id="guestForm"
+          value={content}
+          onChange={(e) => (
+            setContent(e.target.value), setCount(e.target.value.length)
+          )}
+          className="w-full resize-none rounded-xl border-l-8 border-white p-2 text-black outline-none focus:border-green-300"
+          maxLength={500}
+          rows={4}
+        />
+        <div className="flex justify-between bg-slate-600">
+          <p>{count}/500</p>
+          <button
+            className="m-2 items-center rounded-3xl border-4 border-emerald-700 bg-green-300 p-1 text-green-950 transition duration-150 hover:scale-105 hover:bg-green-400"
+            type="submit"
+          >
+            Submit
+          </button>
+        </div>
+      </form>
+    </>
   );
 }

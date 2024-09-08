@@ -21,21 +21,34 @@ export default async function Guestbook() {
 
   return (
     <>
-      <div className="min-w-screen flex h-full min-h-full flex-col items-center p-5 md:p-10">
-        <h1 className="text-3xl xl:text-6xl">Guestbook</h1>
-        <div className="min-w-screen flex flex-col items-center p-5 md:p-10">
-          <AuthSignInButton />
-          <AuthSignOutButton />
-          <div>Welcome {session?.user?.name}!</div>
-          <div className="m-5 border-2">
+      <div className="flex h-full min-h-full flex-col p-5 md:min-w-full md:p-10">
+        <h1 className="flex justify-center text-3xl xl:text-6xl">Guestbook</h1>
+
+        <p className="flex justify-center p-5 md:px-10">
+          Sign the guestbook! This is a space for you to leave comments,
+          feedback, suggestions or just say hello.{" "}
+        </p>
+
+        {session ? (
+          <div>
+            <div className="flex">
+              <p className="flex items-center md:text-lg ">
+                Welcome, {session?.user?.name}!
+              </p>
+              <AuthSignOutButton />
+            </div>
             <GuestForm />
           </div>
-          <div className="border-2">
-            <h2 className="m-5 text-xl underline">Posts</h2>
-            {listPosts.reverse().map((posts) => {
-              return (
-                <div className="flex" key={posts.id}>
-                  <div className="h-16 w-16 overflow-hidden rounded-full border-2">
+        ) : (
+          <AuthSignInButton />
+        )}
+
+        <div>
+          {listPosts.reverse().map((posts) => {
+            return (
+              <div className="mt-5" key={posts.id}>
+                <div className="flex h-8">
+                  <div className="h-8 w-8 overflow-hidden rounded-full border-2">
                     {posts.author.image ? (
                       <img
                         className="object-scale-down"
@@ -45,15 +58,24 @@ export default async function Guestbook() {
                       <div className="size-16 bg-white"></div>
                     )}
                   </div>
-                  <div className="p-1">
-                    <h1 className="text-xl">{posts.author.name}</h1>
-                    <p className="text-xs">{posts.date.toString()}</p>
-                    <p>{posts.content}</p>
+                  <div className="flex items-baseline p-1">
+                    <h1 className="pl-1 pr-1 text-green-300 md:text-xl">
+                      {posts.author.name}
+                    </h1>
+                    <p className="item-end pl-1 pr-1 text-xs">
+                      {posts.date.toLocaleString()}
+                    </p>
                   </div>
                 </div>
-              );
-            })}
-          </div>
+                <div
+                  className="break-word ml-9 inline-block hyphens-auto rounded-xl  border-2 border-slate-400 bg-slate-600 p-1 text-sm md:text-base"
+                  lang="en-us"
+                >
+                  <p>{posts.content}</p>
+                </div>
+              </div>
+            );
+          })}
         </div>
       </div>
     </>
