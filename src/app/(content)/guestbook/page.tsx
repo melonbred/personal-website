@@ -24,7 +24,7 @@ export default async function Guestbook() {
       <div className="flex h-full min-h-full flex-col p-5 md:min-w-full md:p-10">
         <h1 className="flex justify-center text-3xl xl:text-6xl">Guestbook</h1>
 
-        <p className="flex justify-center p-5 md:px-10">
+        <p className="mb-5 mt-5 flex justify-center">
           Sign the guestbook! This is a space for you to leave comments,
           feedback, suggestions or just say hello.{" "}
         </p>

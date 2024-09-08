@@ -46,7 +46,7 @@ export default function GuestForm() {
     <>
       <form
         id="guestForm"
-        className="overflow-hidden rounded-2xl border-4 border-slate-400 bg-slate-600 md:w-3/4"
+        className="overflow-hidden rounded-2xl border-4 border-slate-400 bg-slate-600 md:w-full"
         onSubmit={handleOnSubmit}
       >
         <textarea
@@ -55,12 +55,12 @@ export default function GuestForm() {
           onChange={(e) => (
             setContent(e.target.value), setCount(e.target.value.length)
           )}
-          className="w-full resize-none rounded-xl border-l-8 border-white p-2 text-black outline-none focus:border-green-300"
+          className="w-full resize-none rounded-xl border-l-8 border-white p-3 text-black outline-none focus:border-green-300"
           maxLength={500}
-          rows={4}
+          rows={3}
         />
-        <div className="flex justify-between bg-slate-600">
-          <p>{count}/500</p>
+        <div className="flex items-center justify-between bg-slate-600">
+          <p className="p-3">{count}/500</p>
           <button
             className="m-2 items-center rounded-3xl border-4 border-emerald-700 bg-green-300 p-1 text-green-950 transition duration-150 hover:scale-105 hover:bg-green-400"
             type="submit"
