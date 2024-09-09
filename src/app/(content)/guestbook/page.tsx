@@ -8,6 +8,9 @@ export default async function Guestbook() {
   // Retreive posts from database
   async function getPosts() {
     const listPosts = prisma.post.findMany({
+      orderBy: {
+        id: "desc",
+      },
       include: {
         author: true,
       },
@@ -24,9 +27,10 @@ export default async function Guestbook() {
       <div className="flex h-full min-h-full flex-col p-5 md:min-w-full md:p-10">
         <h1 className="flex justify-center text-3xl xl:text-6xl">Guestbook</h1>
 
-        <p className="mb-5 mt-5 flex justify-center">
+        <p className="mb-5 mt-5 flex justify-center md:text-lg">
           Sign the guestbook! This is a space for you to leave comments,
-          feedback, suggestions or just say hello.{" "}
+          feedback, suggestions or just say hello. Sign in through Discord and
+          you&apos;ll be all set to go.{" "}
         </p>
 
         {session ? (
@@ -43,8 +47,8 @@ export default async function Guestbook() {
           <AuthSignInButton />
         )}
 
-        <div>
-          {listPosts.reverse().map((posts) => {
+        <div className="mb-10">
+          {listPosts.map((posts) => {
             return (
               <div className="mt-5" key={posts.id}>
                 <div className="flex h-8">

@@ -20,7 +20,7 @@ export default function AuthSignInButton() {
           height={30}
           className="ml-2"
         />
-        <span className="p-2">Signin with Discord</span>
+        <span className="p-2">Sign in with Discord</span>
       </button>
     </form>
   );

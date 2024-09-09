@@ -1,9 +1,8 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useRef } from "react";
 
-// Form handling funciont
-
+// Form handling function
 export default function GuestForm() {
   const [content, setContent] = useState("");
   const [status, setStatus] = useState({});
@@ -42,15 +41,19 @@ export default function GuestForm() {
     }
   };
 
+  type FormRef = {
+    form: HTMLFormElement;
+  };
+
   return (
     <>
       <form
-        id="guestForm"
+        name="guestPost"
         className="overflow-hidden rounded-2xl border-4 border-slate-400 bg-slate-600 md:w-full"
         onSubmit={handleOnSubmit}
       >
         <textarea
-          id="guestForm"
+          name="guestPost"
           value={content}
           onChange={(e) => (
             setContent(e.target.value), setCount(e.target.value.length)
@@ -58,7 +61,9 @@ export default function GuestForm() {
           className="w-full resize-none rounded-xl border-l-8 border-white p-3 text-black outline-none focus:border-green-300"
           maxLength={500}
           rows={3}
+          placeholder="Howdy! "
         />
+
         <div className="flex items-center justify-between bg-slate-600">
           <p className="p-3">{count}/500</p>
           <button

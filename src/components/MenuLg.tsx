@@ -48,7 +48,6 @@ export const navLinks = [
 
 export default function MenuLg() {
   const pathname = usePathname();
-  console.log(pathname);
 
   function Entry({ entry, level }: { entry: TEntry; level: number }) {
     return (
