@@ -49,6 +49,10 @@ export default async function Guestbook() {
 
         <div className="mb-10">
           {listPosts.map((posts) => {
+            // Convert time date from db to UTC
+            const date = String(posts.date);
+            const dateUTC = new Date(`${date} UTC`);
+
             return (
               <div className="mt-5" key={posts.id}>
                 <div className="flex h-8">
@@ -62,12 +66,12 @@ export default async function Guestbook() {
                       <div className="size-16 bg-white"></div>
                     )}
                   </div>
-                  <div className="flex items-baseline p-1">
+                  <div className="items-baselißne flex p-1">
                     <h1 className="pl-1 pr-1 text-green-300 md:text-xl">
                       {posts.author.name}
                     </h1>
                     <p className="item-end pl-1 pr-1 text-xs">
-                      {posts.date.toString()}
+                      {dateUTC.toLocaleString()}
                     </p>
                   </div>
                 </div>
