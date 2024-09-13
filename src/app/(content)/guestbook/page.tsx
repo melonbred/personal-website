@@ -51,10 +51,10 @@ export default async function Guestbook() {
           {listPosts.map((posts) => {
             // // Convert time date from db to UTC
             const date = posts.date;
-            // const dateUTC = new Date(`${date} UTC`);
+            const dateUTC = new Date(`${date} UTC`);
             console.log(date);
-            // console.log(dateUTC);
-            const dateLocal = date.toString();
+            console.log(dateUTC);
+            const dateLocal = dateUTC.toLocaleString();
             console.log(dateLocal);
 
             return (
