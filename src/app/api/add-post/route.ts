@@ -9,16 +9,15 @@ export async function POST(request: any) {
   const { content } = res;
   console.log({ res });
 
-  const result = await prisma.post.create({
+  const data = {
     data: {
       content,
       date: new Date(),
       authorId: session?.user?.id ? String(session.user.id) : "",
     },
-  });
+  };
 
-  // Call revalidatePath before returning
-  revalidatePath("/"); // This triggers the cache revalidation
+  const result = await prisma.post.create(data);
 
   return NextResponse.json({ result });
 }
