@@ -1,12 +1,15 @@
 "use client";
 
-import { useState, useRef } from "react";
+import { useState } from "react";
+import { useRouter } from "next/navigation";
 
 // Form handling function
 export default function GuestForm() {
   const [content, setContent] = useState("");
   const [status, setStatus] = useState({});
   const [count, setCount] = useState(0);
+
+  const router = useRouter();
 
   const handleOnSubmit = async (e: any) => {
     e.preventDefault();
@@ -25,6 +28,8 @@ export default function GuestForm() {
         setStatus({ type: "success", message: "Content saved successfully!" });
         console.log({ status });
         setContent("");
+        setCount(0);
+        router.refresh();
       } else {
         setStatus({
           type: "error",
@@ -39,10 +44,6 @@ export default function GuestForm() {
       });
       console.log({ status });
     }
-  };
-
-  type FormRef = {
-    form: HTMLFormElement;
   };
 
   return (
