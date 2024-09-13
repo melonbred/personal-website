@@ -11,7 +11,7 @@ export async function POST(request: any) {
   const data = {
     data: {
       content,
-      date: new Date(),
+      date: new Date(`${new Date()} UTC`),
       authorId: session?.user?.id ? String(session.user.id) : "",
     },
   };
