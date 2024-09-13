@@ -49,14 +49,6 @@ export default async function Guestbook() {
 
         <div className="mb-10">
           {listPosts.map((posts) => {
-            // // Convert time date from db to UTC
-            // const date = posts.date;
-            // const dateUTC = new Date(`${date} UTC`);
-            // console.log(date);
-            // console.log(dateUTC);
-            // const dateLocal = dateUTC.toLocaleString();
-            // console.log(dateLocal);
-
             return (
               <div className="mt-5" key={posts.id}>
                 <div className="flex h-8">
