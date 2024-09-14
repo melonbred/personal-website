@@ -3,6 +3,7 @@ import { AuthSignOutButton } from "@/components/AuthSignOutButton";
 import { auth } from "@/../auth";
 import GuestForm from "@/components/GuestForm";
 import { prisma } from "../../../../prisma";
+import LocalDate from "@/components/LocalDate";
 
 export default async function Guestbook() {
   // Retreive posts from database
@@ -49,18 +50,29 @@ export default async function Guestbook() {
 
         <div className="mb-10">
           {listPosts.map((posts) => {
-            const localDate = new Date(posts.date);
-            const localDateFormat = localDate.toLocaleString(undefined, {
-              year: "numeric",
-              month: "short",
-              day: "numeric",
-              hour: "2-digit",
-              minute: "2-digit",
-              hour12: true,
-            });
+            const serverDate = new Date(posts.date);
+            // const localDate = new Date(posts.date);
+            // const localDateFormat = localDate.toLocaleString(undefined, {
+            //   year: "numeric",
+            //   month: "short",
+            //   day: "numeric",
+            //   hour: "2-digit",
+            //   minute: "2-digit",
+            //   hour12: true,
+            // });
 
-            //Log date fromatting
             // console.log({ time: { localDate, localDateFormat } });
+            // const clientTime = new Date();
+
+            // const serverTime = new Date(`${posts.date} UTC`);
+
+            // const clientOffset = clientTime.getTimezoneOffset() * 60000; //client offset in milliseconds
+
+            // const localTime = new Date(serverTime.getTime() - clientOffset);
+            // console.log({
+            //   time: { clientTime, serverTime, clientOffset, localTime },
+            // });
+            // const localTimeFormat = localTime.toString()
 
             return (
               <div className="mt-5" key={posts.id}>
@@ -80,7 +92,7 @@ export default async function Guestbook() {
                       {posts.author.name}
                     </h1>
                     <p className="item-end pl-1 pr-1 text-xs">
-                      {localDateFormat}
+                      <LocalDate date={serverDate} />
                     </p>
                   </div>
                 </div>
