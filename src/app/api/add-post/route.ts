@@ -12,7 +12,7 @@ export async function POST(request: any) {
     data: {
       content,
       // send date/time as UTC to db to display correctly on client with .toLocaleString()
-      date: new Date(`${new Date()} UTC`),
+      date: new Date(),
       authorId: session?.user?.id ? String(session.user.id) : "",
     },
   };
