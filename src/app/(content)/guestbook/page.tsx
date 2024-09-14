@@ -50,32 +50,6 @@ export default async function Guestbook() {
 
         <div className="mb-10">
           {listPosts.map((posts) => {
-            const serverDate = new Date(posts.date);
-            console.log(posts.date);
-            console.log(serverDate);
-            // const localDate = new Date(posts.date);
-            // const localDateFormat = localDate.toLocaleString(undefined, {
-            //   year: "numeric",
-            //   month: "short",
-            //   day: "numeric",
-            //   hour: "2-digit",
-            //   minute: "2-digit",
-            //   hour12: true,
-            // });
-
-            // console.log({ time: { localDate, localDateFormat } });
-            // const clientTime = new Date();
-
-            // const serverTime = new Date(`${posts.date} UTC`);
-
-            // const clientOffset = clientTime.getTimezoneOffset() * 60000; //client offset in milliseconds
-
-            // const localTime = new Date(serverTime.getTime() - clientOffset);
-            // console.log({
-            //   time: { clientTime, serverTime, clientOffset, localTime },
-            // });
-            // const localTimeFormat = localTime.toString()
-
             return (
               <div className="mt-5" key={posts.id}>
                 <div className="flex h-8">
@@ -84,6 +58,7 @@ export default async function Guestbook() {
                       <img
                         className="object-scale-down"
                         src={posts.author.image}
+                        alt={`${posts.author.name} profile image`}
                       ></img>
                     ) : (
                       <div className="size-16 bg-white"></div>
