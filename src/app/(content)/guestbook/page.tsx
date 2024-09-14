@@ -24,7 +24,7 @@ export default async function Guestbook() {
 
   return (
     <>
-      <div className="flex h-full min-h-full flex-col p-5 md:min-w-full md:p-10">
+      <div className="flex min-h-screen flex-col p-5 md:min-w-full md:p-10">
         <h1 className="flex justify-center text-3xl xl:text-6xl">Guestbook</h1>
 
         <p className="mb-5 mt-5 flex justify-center md:text-lg">
@@ -49,6 +49,11 @@ export default async function Guestbook() {
 
         <div className="mb-10">
           {listPosts.map((posts) => {
+            const date = posts.date;
+            const dateUTC = new Date(`${posts.date} UTC`);
+            console.log(date);
+            console.log(dateUTC);
+
             return (
               <div className="mt-5" key={posts.id}>
                 <div className="flex h-8">
@@ -67,7 +72,7 @@ export default async function Guestbook() {
                       {posts.author.name}
                     </h1>
                     <p className="item-end pl-1 pr-1 text-xs">
-                      {posts.date.toLocaleString()}
+                      {dateUTC.toLocaleString()}
                     </p>
                   </div>
                 </div>
