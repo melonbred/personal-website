@@ -72,7 +72,7 @@ export default async function Guestbook() {
                       {posts.author.name}
                     </h1>
                     <p className="item-end pl-1 pr-1 text-xs">
-                      {dateUTC.toLocaleString()}
+                      {date.toLocaleString()}
                     </p>
                   </div>
                 </div>
