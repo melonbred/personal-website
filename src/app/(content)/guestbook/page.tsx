@@ -51,6 +51,8 @@ export default async function Guestbook() {
         <div className="mb-10">
           {listPosts.map((posts) => {
             const serverDate = new Date(posts.date);
+            console.log(posts.date);
+            console.log(serverDate);
             // const localDate = new Date(posts.date);
             // const localDateFormat = localDate.toLocaleString(undefined, {
             //   year: "numeric",
@@ -92,7 +94,7 @@ export default async function Guestbook() {
                       {posts.author.name}
                     </h1>
                     <p className="item-end pl-1 pr-1 text-xs">
-                      <LocalDate date={serverDate} />
+                      <LocalDate date={posts.date} />
                     </p>
                   </div>
                 </div>

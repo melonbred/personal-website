@@ -1,8 +1,11 @@
 "use client";
 
 export default function LocalDate(date: any) {
-  const localDate = new Date();
-  const localDateFormat = localDate.toLocaleString(undefined, {
+  const propDate = String(Object.values(date));
+  //   console.log(date);
+  //   console.log(propDate);
+  const serverDate = new Date(propDate);
+  const localDate = serverDate.toLocaleString(undefined, {
     year: "numeric",
     month: "short",
     day: "numeric",
@@ -11,7 +14,7 @@ export default function LocalDate(date: any) {
     hour12: true,
   });
 
-  //   console.log({ date: { date, localDate, localDateFormat } });
+  //   console.log({ date: { propDate, serverDate, localDate } });
 
-  return <>{localDateFormat}</>;
+  return <>{localDate}</>;
 }
