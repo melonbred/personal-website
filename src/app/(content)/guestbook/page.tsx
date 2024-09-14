@@ -49,10 +49,18 @@ export default async function Guestbook() {
 
         <div className="mb-10">
           {listPosts.map((posts) => {
-            const date = posts.date;
-            const dateUTC = new Date(`${posts.date} UTC`);
-            console.log(date);
-            console.log(dateUTC);
+            const localDate = new Date(posts.date);
+            const localDateFormat = localDate.toLocaleString(undefined, {
+              year: "numeric",
+              month: "short",
+              day: "numeric",
+              hour: "2-digit",
+              minute: "2-digit",
+              hour12: true,
+            });
+
+            //Log date fromatting
+            // console.log({ time: { localDate, localDateFormat } });
 
             return (
               <div className="mt-5" key={posts.id}>
@@ -72,7 +80,7 @@ export default async function Guestbook() {
                       {posts.author.name}
                     </h1>
                     <p className="item-end pl-1 pr-1 text-xs">
-                      {dateUTC.toLocaleString()}
+                      {localDateFormat}
                     </p>
                   </div>
                 </div>
