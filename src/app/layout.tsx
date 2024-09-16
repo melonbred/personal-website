@@ -11,10 +11,10 @@ const rubik = Rubik({
   variable: "--font-rubik",
 });
 
-export const metadata = {
-  title: "MelonBred Keyboards",
-  description: "MelonBred personal website.",
-};
+// export const metadata = {
+//   title: "MelonBred Keyboards",
+//   description: "MelonBred personal website.",
+// };
 
 export default function RootLayout({
   children,
