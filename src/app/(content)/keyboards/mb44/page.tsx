@@ -19,11 +19,12 @@ export default function MB44() {
   return (
     <>
       <head>
-        <title>MB-44 Keyboard</title>
+        <title>MelonBred MB-44 40% Keyboard</title>
         <meta
           name="description"
           content="MB-44! A 40% mechanical keyboard by MelonBred, this is the first in the MB line of boards that offers a compact 40% layout and a fun 65%-esque blocker."
         />
+        <meta name="keywords" content="mechanical, keyboard, 40%, melonbred, mb44, mb-44, small"
         <meta
           property="description"
           content="MB-44! A 40% mechanical keyboard by MelonBred, this is the first in the MB line of boards that offers a compact 40% layout and a fun 65%-esque blocker."

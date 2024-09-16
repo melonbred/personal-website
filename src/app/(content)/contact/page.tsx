@@ -3,6 +3,10 @@ import Link from "next/link";
 export default function Contact() {
   return (
     <>
+      <head>
+        <title>MelonBred Keyboards - Contact</title>
+        <meta name="desription" content="MelonBred Keyboards - Contact Page" />
+      </head>
       <div className="min-w-screen flex h-full min-h-full flex-col items-center p-5 md:p-10">
         <h1 className="text-3xl xl:text-6xl">Contact</h1>
         <div className="items-center p-5 md:px-10">

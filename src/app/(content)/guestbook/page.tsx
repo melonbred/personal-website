@@ -25,6 +25,14 @@ export default async function Guestbook() {
 
   return (
     <>
+      <head>
+        <title>MelonBred Keyboards - Guestbook</title>
+        <meta
+          name="desription"
+          content="MelonBred Keyboards - Sign the guestbook to leave me a message!"
+        />
+      </head>
+
       <div className="flex min-h-screen flex-col p-5 md:min-w-full md:p-10">
         <h1 className="flex justify-center text-3xl xl:text-6xl">Guestbook</h1>
 
