@@ -15,6 +15,18 @@ import KeyboardCard from "@/components/KeyboardCard";
 export default function Keyboards() {
   return (
     <>
+      <head>
+        <title>MelonBred Keyboards - Keyboards</title>
+        <meta
+          name="description"
+          content="MelonBred Keyboards - Catalog of MelonBred keyboard projects that includes project information and specifications."
+        />
+        <meta
+          name="og:description"
+          content="MelonBred Keyboards - Catalog of MelonBred keyboard projects that includes project information and specifications."
+        />
+      </head>
+
       <div className="flex flex-col items-center p-5 md:pt-10">
         <h1 className="text-3xl xl:text-6xl">Keyboards</h1>
       </div>
