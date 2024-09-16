@@ -11,6 +11,10 @@ export default function Home() {
           name="desription"
           content="MelonBred Keyboards - custom mechanical keyboard projects by MelonBred"
         />
+        <meta
+          name="og:desription"
+          content="MelonBred Keyboards - custom mechanical keyboard projects by MelonBred"
+        />
       </head>
       <div className="flex min-h-screen justify-center overflow-x-hidden bg-slate-800 sm:pt-20">
         <div className="flex flex-col items-center">
