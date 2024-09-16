@@ -29,7 +29,7 @@ export default function MB44() {
           content="mechanical, keyboard, 40%, melonbred, mb44, mb-44, small"
         />
         <meta
-          property="description"
+          property="og:description"
           content="MB-44! A 40% mechanical keyboard by MelonBred, this is the first in the MB line of boards that offers a compact 40% layout and a fun 65%-esque blocker."
         />
         <meta property="og:title" content="MB-44 Keyboard" />

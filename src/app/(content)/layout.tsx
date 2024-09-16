@@ -5,10 +5,10 @@ import MenuButton from "@/components/menu";
 import MenuLg from "@/components/MenuLg";
 import ExternalLinks from "@/components/ExternalLinks";
 
-export const metadata = {
-  title: "MelonBred Keyboards",
-  description: "MelonBred personal website.",
-};
+// export const metadata = {
+//   title: "MelonBred Keyboards",
+//   description: "MelonBred personal website.",
+// };
 
 export default function RootLayout({
   children,
