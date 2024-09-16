@@ -18,6 +18,28 @@ import Link from "next/link";
 export default function MBTKL() {
   return (
     <>
+      <head>
+        <title>MelonBred - MB-TKL - 40% Keyboard</title>
+        <meta
+          name="description"
+          content="MB-TKL! A 40% TenKeyLess style mechanical keyboard by MelonBred, MB-TKL offers a unique TKL experience with a split 40% core layout."
+        />
+        <meta
+          name="keywords"
+          content="mechanical, keyboard, 40%, melonbred, mbtkl, mb-tkl, small, TKL"
+        />
+        <meta
+          property="og:description"
+          content="MB-TKL! A 40% TenKeyLess style mechanical keyboard by MelonBred, MB-TKL offers a unique TKL experience with a split 40% core layout."
+        />
+        <meta property="og:title" content="MelonBred Keyboards - MB-TKL" />
+        <meta property="og: image" content="<generated>" />
+        <meta property="og:image:type" content="image/jpeg" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:image:alt" content="MelonBred 40% MB-TKL Keyboard" />
+      </head>
+
       <div className="p-3">
         <Swiper
           centeredSlides={true}

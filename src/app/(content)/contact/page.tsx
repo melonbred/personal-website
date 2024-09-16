@@ -5,9 +5,9 @@ export default function Contact() {
     <>
       <head>
         <title>MelonBred Keyboards - Contact</title>
-        <meta name="desription" content="MelonBred Keyboards - Contact Page" />
+        <meta name="description" content="MelonBred Keyboards - Contact Page" />
         <meta
-          name="og:desription"
+          name="og:description"
           content="MelonBred Keyboards - Contact Page"
         />
       </head>

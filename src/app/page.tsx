@@ -8,11 +8,11 @@ export default function Home() {
       <head>
         <title>MelonBred Keyboards</title>
         <meta
-          name="desription"
+          name="description"
           content="MelonBred Keyboards - custom mechanical keyboard projects by MelonBred"
         />
         <meta
-          name="og:desription"
+          name="og:description"
           content="MelonBred Keyboards - custom mechanical keyboard projects by MelonBred"
         />
       </head>

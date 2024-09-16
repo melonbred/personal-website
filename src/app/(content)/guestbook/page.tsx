@@ -28,11 +28,11 @@ export default async function Guestbook() {
       <head>
         <title>MelonBred Keyboards - Guestbook</title>
         <meta
-          name="desription"
+          name="description"
           content="MelonBred Keyboards - Sign the guestbook to leave me a message!"
         />
         <meta
-          name="og:desription"
+          name="og:description"
           content="MelonBred Keyboards - Sign the guestbook to leave me a message!"
         />
       </head>

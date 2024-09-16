@@ -6,11 +6,11 @@ export default function Resources() {
       <head>
         <title>MelonBred Keyboards - Resources</title>
         <meta
-          name="desription"
+          name="description"
           content="MelonBred Keyboards - Source for open source assets related to MelonBred projects"
         />
         <meta
-          name="og:desription"
+          name="og:description"
           content="MelonBred Keyboards - Source for open source assets related to MelonBred projects"
         />
       </head>

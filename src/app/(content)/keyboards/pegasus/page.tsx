@@ -17,6 +17,31 @@ import "swiper/css/pagination";
 export default function Pegasus() {
   return (
     <>
+      <head>
+        <title>MelonBred - Pegasus - 40% Keyboard</title>
+        <meta
+          name="description"
+          content="Pegasus is a 40% keyboard with slim WKL blockers and a unique case construction and switch plate solution."
+        />
+        <meta
+          name="keywords"
+          content="mechanical, keyboard, 40%, melonbred, small, pegasus"
+        />
+        <meta
+          property="og:description"
+          content="Pegasus is a 40% keyboard with slim WKL blockers and a unique case construction and switch plate solution."
+        />
+        <meta property="og:title" content="Melonbred Keyboards - Pegasus" />
+        <meta property="og: image" content="<generated>" />
+        <meta property="og:image:type" content="image/jpeg" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta
+          property="og:image:alt"
+          content="MelonBred Pegasus 40% Keyboard"
+        />
+      </head>
+
       <div className="p-3">
         <Swiper
           centeredSlides={true}

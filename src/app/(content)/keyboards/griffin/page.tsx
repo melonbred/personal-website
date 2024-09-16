@@ -19,6 +19,31 @@ import Link from "next/link";
 export default function Griffin() {
   return (
     <>
+      <head>
+        <title>MelonBred - Griffin - 60% Keyboard</title>
+        <meta
+          name="description"
+          content="Griffin is a 60% keyboard that offers a simple construction and customizability while supporting many standard and community open source printed circuit boards (PCB)."
+        />
+        <meta
+          name="keywords"
+          content="mechanical, keyboard, 60%, melonbred, griffin"
+        />
+        <meta
+          property="og:description"
+          content="Griffin is a 60% keyboard that offers a simple construction and customizability while supporting many standard and community open source printed circuit boards (PCB)."
+        />
+        <meta property="og:title" content="MelonBred Keyboards - Griffin" />
+        <meta property="og: image" content="<generated>" />
+        <meta property="og:image:type" content="image/jpeg" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta
+          property="og:image:alt"
+          content="MelonBred Griffin 60% Keyboard"
+        />
+      </head>
+
       <div className="p-3">
         <Swiper
           centeredSlides={true}

@@ -19,7 +19,7 @@ export default function MB44() {
   return (
     <>
       <head>
-        <title>MelonBred MB-44 40% Keyboard</title>
+        <title>MelonBred - MB-44 - 40% Keyboard</title>
         <meta
           name="description"
           content="MB-44! A 40% mechanical keyboard by MelonBred, this is the first in the MB line of boards that offers a compact 40% layout and a fun 65%-esque blocker."
@@ -32,13 +32,14 @@ export default function MB44() {
           property="og:description"
           content="MB-44! A 40% mechanical keyboard by MelonBred, this is the first in the MB line of boards that offers a compact 40% layout and a fun 65%-esque blocker."
         />
-        <meta property="og:title" content="MB-44 Keyboard" />
+        <meta property="og:title" content="MelonBred Keyboards - MB-44" />
         <meta property="og: image" content="<generated>" />
         <meta property="og:image:type" content="image/jpeg" />
-        <meta property="og:image:width" content="400" />
-        <meta property="og:image:height" content="300" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
         <meta property="og:image:alt" content="MelonBred 40% MB-44 Keyboard" />
       </head>
+
       <div className="p-3">
         <Swiper
           centeredSlides={true}
