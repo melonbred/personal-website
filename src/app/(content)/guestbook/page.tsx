@@ -73,7 +73,7 @@ export default async function Guestbook() {
                         alt={`${posts.author.name} profile image`}
                       ></img>
                     ) : (
-                      <div className="size-16 bg-white"></div>
+                      <div className=" bg-white"></div>
                     )}
                   </div>
                   <div className="flex items-baseline p-1">
