@@ -24,8 +24,9 @@ export default function About() {
           to several hundred desks and workstations.
         </p>
         <p className="pt-5">
-          I hope to keep working on projects as ideas strike, and you&apos;ll
-          likely find them here on this site.
+          This website serves to highlight some of my keyboard projects and
+          collaborations. I hope to keep working on projects as ideas strike,
+          and you&apos;ll likely find them here on this site.
         </p>
         <div className="flex items-center justify-end p-10">
           <p className="px-5">Thanks for visiting!</p>
