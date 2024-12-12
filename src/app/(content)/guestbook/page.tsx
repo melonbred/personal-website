@@ -1,3 +1,4 @@
+import Image from "next/image";
 import AuthSignInButton from "@/components/AuthSignInButton";
 import { AuthSignOutButton } from "@/components/AuthSignOutButton";
 import { auth } from "@/../auth";
@@ -67,11 +68,13 @@ export default async function Guestbook() {
                 <div className="flex h-8">
                   <div className="h-8 w-8 overflow-hidden rounded-full border-2">
                     {posts.author.image ? (
-                      <img
+                      <Image
                         className="object-scale-down"
                         src={posts.author.image}
                         alt={`${posts.author.name} profile image`}
-                      ></img>
+                        width={32}
+                        height={32}
+                      />
                     ) : (
                       <div className=" bg-white"></div>
                     )}
