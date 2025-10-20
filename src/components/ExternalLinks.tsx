@@ -6,11 +6,11 @@ import Image from "next/image";
 export default function ExternalLinks() {
   return (
     <div className="flex flex-col items-center">
-      {/* <GenericButton
+      <GenericButton
         text="Shop"
         href="https://shop.melonbred.dev"
         img="/icons/shoppingBag.svg"
-      /> */}
+      />
       <div className="flex w-72 flex-col items-center justify-center py-1">
         <div className="m2-3 py-2">External Links</div>
         <div className="flex w-full justify-between">
