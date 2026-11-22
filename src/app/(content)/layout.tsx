@@ -1,8 +1,8 @@
 import "../globals.css";
 import Image from "next/image";
 import Link from "next/link";
-import MenuButton from "@/components/menu";
 import MenuLg from "@/components/MenuLg";
+import MenuMobile from "@/components/MenuMobile";
 import ExternalLinks from "@/components/ExternalLinks";
 
 // export const metadata = {
@@ -18,7 +18,7 @@ export default function RootLayout({
   return (
     <div className="absolute inset-0 ">
       <div className="flex h-[100%] flex-col overflow-hidden bg-slate-600 p-2 lg:h-screen lg:flex-row">
-        <div className="relative z-10 flex w-screen items-center justify-between bg-slate-600 pb-2 lg:hidden">
+        <div className="relative z-10 flex w-full items-center justify-between bg-slate-600 pb-2 lg:hidden">
           <Link
             className="rounded-full border-4 border-emerald-700 bg-green-300 duration-150 hover:scale-105"
             href="/"
@@ -30,9 +30,7 @@ export default function RootLayout({
               src="/images/misc/turtlepan.png"
             />
           </Link>
-          <div className="fixed right-0 top-4">
-            <MenuButton isHome={false} addTailWind="absolute right-3" />
-          </div>
+          <MenuMobile className="pr-1" />
         </div>
         {/* persistent sidebar for large resolution */}
         <aside className="hidden lg:relative lg:top-0 lg:mr-2 lg:flex lg:h-full lg:flex-col lg:items-center lg:bg-slate-600 lg:p-5 ">

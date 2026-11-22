@@ -6,6 +6,19 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+
+  /* Sidebar tokens (shadcn/ui naming), as space-separated RGB channels so
+     Tailwind opacity modifiers work. Mapped to the site's palette. */
+  --sidebar: 71 85 105; /* slate-600: panel background */
+  --sidebar-foreground: 255 255 255; /* white */
+  --sidebar-primary: 134 239 172; /* green-300: menu card / buttons */
+  --sidebar-primary-foreground: 5 46 22; /* green-950 */
+  --sidebar-accent: 74 222 128; /* green-400: hover */
+  --sidebar-accent-foreground: 0 0 0; /* black */
+  --sidebar-active: 71 85 105; /* slate-600: current page */
+  --sidebar-active-foreground: 255 255 255; /* white */
+  --sidebar-border: 4 120 87; /* emerald-700 */
+  --sidebar-ring: 4 120 87; /* emerald-700 */
 }
 
 @media (prefers-color-scheme: dark) {
