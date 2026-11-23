@@ -9,6 +9,7 @@ import {
   XMarkIcon,
 } from "@heroicons/react/24/solid";
 
+import { cn } from "@/lib/utils";
 import ExternalLinks from "@/components/ExternalLinks";
 import { navLinks } from "@/components/MenuLg";
 import { Button } from "@/components/ui/button";
@@ -168,10 +169,16 @@ function MenuMobileContent() {
  * shadcn/ui Sidebar. At `lg` and up the trigger is hidden and the persistent
  * MenuLg aside takes over.
  */
-export default function MenuMobile({ className }: { className?: string }) {
+export default function MenuMobile({
+  className,
+  triggerClassName,
+}: {
+  className?: string;
+  triggerClassName?: string;
+}) {
   return (
     <SidebarProvider className={className}>
-      <SidebarTrigger className="lg:hidden">
+      <SidebarTrigger className={cn("lg:hidden", triggerClassName)}>
         <Bars3Icon />
         <span>Menu</span>
       </SidebarTrigger>

@@ -2,7 +2,7 @@ import "../globals.css";
 import Image from "next/image";
 import Link from "next/link";
 import MenuLg from "@/components/MenuLg";
-import MenuMobile from "@/components/MenuMobile";
+import MobileFrame from "@/components/MobileFrame";
 import ExternalLinks from "@/components/ExternalLinks";
 
 // export const metadata = {
@@ -21,34 +21,7 @@ export default function RootLayout({
           is fixed over the viewport and content scrolls beneath it. At lg and
           up the content pane is its own scroll container beside the aside. */}
       <div className="flex min-h-screen flex-col bg-slate-800 px-2 pb-2 pt-[6.5rem] lg:h-screen lg:min-h-0 lg:flex-row lg:overflow-hidden lg:bg-slate-600 lg:p-2">
-        {/* Rounded window cut out of a slate border via a large box-shadow.
-            pointer-events-none so taps and scrolling pass through. */}
-        <div
-          aria-hidden
-          className="pointer-events-none fixed inset-x-2 bottom-2 top-[6.5rem] z-30 rounded-3xl shadow-[0_0_0_100vmax_theme(colors.slate.600)] lg:hidden"
-        />
-        {/* Solid strip over the bottom border band. Visually redundant, but
-            Safari (iOS 26) tints the area under its floating toolbar from the
-            background of fixed elements at the viewport edge; a box-shadow
-            isn't sampled. */}
-        <div
-          aria-hidden
-          className="pointer-events-none fixed inset-x-0 bottom-0 z-40 h-2 bg-slate-600 lg:hidden"
-        />
-        <div className="fixed inset-x-0 top-0 z-40 flex h-[6.5rem] items-center justify-between bg-slate-600 p-2 lg:hidden">
-          <Link
-            className="rounded-full border-4 border-emerald-700 bg-green-300 duration-150 hover:scale-105"
-            href="/"
-          >
-            <Image
-              alt="turtle"
-              width="80"
-              height="80"
-              src="/images/misc/turtlepan.png"
-            />
-          </Link>
-          <MenuMobile className="pr-1" />
-        </div>
+        <MobileFrame />
         {/* persistent sidebar for large resolution */}
         <aside className="hidden lg:relative lg:top-0 lg:mr-2 lg:flex lg:h-full lg:flex-col lg:items-center lg:bg-slate-600 lg:p-5 ">
           <div className="h-full overflow-auto overflow-x-hidden">
