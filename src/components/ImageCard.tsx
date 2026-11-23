@@ -63,7 +63,7 @@ export default function ImageCard({ text, img }: ImageCardProps) {
         <p className="pr-2 text-right text-sm">{text}</p>
       </div>
       <div className={`${isExpanded ? "block" : "hidden"}`}>
-        <div className="fixed left-0 top-0 z-10 flex h-screen w-screen items-center justify-center backdrop-blur-md">
+        <div className="fixed left-0 top-0 z-50 flex h-screen w-screen items-center justify-center backdrop-blur-md">
           <div className="flex h-full w-full items-center justify-center">
             <div
               ref={backgroundRef}
