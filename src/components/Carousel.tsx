@@ -47,13 +47,15 @@ export default function Carousel({
     }
   }, [swiper, userPaused]);
 
-  // The ring shrinks as the time to the next slide runs out. It's updated
+  // The ring empties clockwise from 12 o'clock, like a clock hand, as the time
+  // to the next slide runs out (a negative offset trims the arc from its
+  // starting end). It's updated
   // directly on the DOM node to avoid a React render every animation frame.
   const ringRef = useRef<SVGCircleElement>(null);
   function setRing(fractionLeft: number) {
     ringRef.current?.setAttribute(
       "stroke-dashoffset",
-      String(RING_CIRCUMFERENCE * (1 - Math.min(1, Math.max(0, fractionLeft))))
+      String(-RING_CIRCUMFERENCE * (1 - Math.min(1, Math.max(0, fractionLeft))))
     );
   }
 
