@@ -3,17 +3,15 @@ import Link from "next/link";
 export default function Resources() {
   return (
     <>
-      <head>
-        <title>MelonBred Keyboards - Resources</title>
-        <meta
-          name="description"
-          content="MelonBred Keyboards - Source for open source assets related to MelonBred projects"
-        />
-        <meta
-          name="og:description"
-          content="MelonBred Keyboards - Source for open source assets related to MelonBred projects"
-        />
-      </head>
+      <title>MelonBred Keyboards - Resources</title>
+      <meta
+        name="description"
+        content="MelonBred Keyboards - Source for open source assets related to MelonBred projects"
+      />
+      <meta
+        name="og:description"
+        content="MelonBred Keyboards - Source for open source assets related to MelonBred projects"
+      />
       <div className="flex h-full min-w-full flex-col items-center p-5 md:p-10">
         <h1 className="text-3xl xl:text-6xl">Resources</h1>
         <div className="md:px-10">

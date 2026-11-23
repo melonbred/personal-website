@@ -84,10 +84,10 @@ function SidebarProvider({
     setOpenMobile(!openMobile);
   }, [openMobile, setOpenMobile]);
 
-  // Close the sheet if the viewport grows past the mobile breakpoint.
-  React.useEffect(() => {
-    if (!isMobile && openMobile) setOpenMobile(false);
-  }, [isMobile, openMobile, setOpenMobile]);
+  // Close the sheet if the viewport grows past the mobile breakpoint, so it
+  // doesn't reappear when the window shrinks again. Adjusting state during
+  // render (rather than in an effect) avoids an extra render pass.
+  if (!isMobile && _openMobile) _setOpenMobile(false);
 
   // Cmd/Ctrl + B toggles the sidebar.
   React.useEffect(() => {

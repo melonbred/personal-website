@@ -5,17 +5,15 @@ import MenuButton from "@/components/menu";
 export default function Home() {
   return (
     <>
-      <head>
-        <title>MelonBred Keyboards</title>
-        <meta
-          name="description"
-          content="MelonBred Keyboards - custom mechanical keyboard projects by MelonBred"
-        />
-        <meta
-          name="og:description"
-          content="MelonBred Keyboards - custom mechanical keyboard projects by MelonBred"
-        />
-      </head>
+      <title>MelonBred Keyboards</title>
+      <meta
+        name="description"
+        content="MelonBred Keyboards - custom mechanical keyboard projects by MelonBred"
+      />
+      <meta
+        name="og:description"
+        content="MelonBred Keyboards - custom mechanical keyboard projects by MelonBred"
+      />
       <div className="flex min-h-screen justify-center overflow-x-hidden bg-slate-800 sm:pt-20">
         <div className="flex flex-col items-center">
           <div className="m-4 w-max md:flex md:justify-center">

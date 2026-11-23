@@ -1,10 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  experimental: {
-    appDir: true,
-  },
   images: {
-    domains: ["cdn.discordapp.com"],
+    // Discord avatars for signed-in users.
+    remotePatterns: [{ protocol: "https", hostname: "cdn.discordapp.com" }],
   },
 };
 

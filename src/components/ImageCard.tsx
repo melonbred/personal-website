@@ -49,14 +49,21 @@ export default function ImageCard({ text, img }: ImageCardProps) {
   return (
     <div className="my-4 w-11/12 rounded-3xl bg-slate-600 sm:w-96 md:w-2/3 lg:w-1/2 xl:w-2/5">
       <div className="relative flex aspect-[3/2] w-full flex-col overflow-hidden rounded-3xl border-4 border-slate-400 object-cover">
-        <button onClick={handleExpandClick}>
+        {/* One button covers the image; the expand icon is decorative so the
+            markup doesn't nest a button inside a button (invalid HTML, which
+            caused a hydration mismatch). */}
+        <button
+          type="button"
+          onClick={handleExpandClick}
+          className="group absolute inset-0"
+        >
           <Image alt={text} src={img} fill={true} className="object-cover" />
-          <button
-            className="absolute bottom-4 left-4 h-10 w-10 rounded-lg border-2 border-emerald-700 bg-green-300 text-emerald-900 hover:bg-green-400 lg:h-12 lg:w-12 lg:border-4"
-            onClick={handleExpandClick}
+          <span
+            aria-hidden="true"
+            className="absolute bottom-4 left-4 h-10 w-10 rounded-lg border-2 border-emerald-700 bg-green-300 text-emerald-900 group-hover:bg-green-400 lg:h-12 lg:w-12 lg:border-4"
           >
-            <ArrowsPointingOutIcon className="scale-75 " />
-          </button>
+            <ArrowsPointingOutIcon className="scale-75" />
+          </span>
         </button>
       </div>
       <div className="p-2">

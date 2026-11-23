@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState, type ComponentProps } from "react";
-import { A11y, Autoplay, Navigation, Pagination } from "swiper";
+import { A11y, Autoplay, Navigation, Pagination } from "swiper/modules";
 import type { Swiper as SwiperInstance } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { PauseIcon, PlayIcon } from "@heroicons/react/24/solid";
@@ -31,11 +31,14 @@ export default function Carousel({
   const [swiper, setSwiper] = useState<SwiperInstance | null>(null);
   const [userPaused, setUserPaused] = useState(false);
 
-  useEffect(() => {
+  // Runs once when Swiper mounts. Users who prefer reduced motion start
+  // paused.
+  function handleSwiper(instance: SwiperInstance) {
+    setSwiper(instance);
     if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
       setUserPaused(true);
     }
-  }, []);
+  }
 
   useEffect(() => {
     if (!swiper || swiper.destroyed) return;
@@ -72,7 +75,7 @@ export default function Carousel({
           disableOnInteraction: false,
           pauseOnMouseEnter: true,
         }}
-        onSwiper={setSwiper}
+        onSwiper={handleSwiper}
         onAutoplayTimeLeft={(_, __, fractionLeft) => setRing(fractionLeft)}
         {...props}
       >
