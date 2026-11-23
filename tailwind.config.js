@@ -29,6 +29,16 @@ module.exports = {
           ring: "rgb(var(--sidebar-ring) / <alpha-value>)",
         },
       },
+      // Home-page menu list dropping open below lg.
+      keyframes: {
+        "menu-open": {
+          from: { opacity: "0", transform: "translateY(-1rem) scaleY(0.9)" },
+          to: { opacity: "1", transform: "translateY(0) scaleY(1)" },
+        },
+      },
+      animation: {
+        "menu-open": "menu-open 200ms ease-out",
+      },
       screens: {
         xl: "1280px",
         "2xl": "1800px",

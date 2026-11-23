@@ -38,7 +38,9 @@ export default function Home() {
             </div>
           </div>
           <MenuButton isHome={true} />
-          <div className="my-8">
+          {/* mt-auto pushes the links to the bottom of the screen; on short
+              screens they simply follow the menu. */}
+          <div className="mt-auto pb-8 pt-8">
             <ExternalLinks />
           </div>
         </div>
