@@ -38,3 +38,39 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+/* Content-pane typography. `:where()` keeps specificity at zero so any
+   utility class on an element (sizes, colors, margins, `after:hidden`)
+   still wins. */
+@layer components {
+  /* Section headings: heavier, brand green. Page titles (h1) keep the
+     default white, regular weight. Body text color is set on the
+     .content-prose wrapper (slate-200). */
+  :where(.content-prose) :is(h2, h3) {
+    @apply font-semibold tracking-tight text-green-300;
+  }
+
+  :where(.content-prose) h1 {
+    @apply text-white;
+  }
+
+  /* Spacing rhythm: headings keep the generous space above them (set per
+     page) and sit close to the text they introduce. */
+  :where(.content-prose) h2 {
+    @apply mb-2;
+  }
+
+  :where(.content-prose) h3 {
+    @apply mb-1 mt-6;
+  }
+
+  :where(.content-prose) h3:first-child {
+    @apply mt-0;
+  }
+
+  /* Short emerald bar under section headings. */
+  :where(.content-prose) h2::after {
+    content: "";
+    @apply mt-1.5 block h-1 w-10 rounded-full bg-emerald-500;
+  }
+}

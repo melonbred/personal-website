@@ -5,7 +5,8 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const rubik = Rubik({
   subsets: ["latin"],
-  weight: "400",
+  // No `weight`: Rubik is a variable font, so one file covers regular body
+  // text and the semibold/bold headings.
   display: "swap",
   preload: true,
   variable: "--font-rubik",

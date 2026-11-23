@@ -27,7 +27,7 @@ export default function KeyboardCard({
         />
       </div>
       <div className="flex flex-col items-start justify-center p-4 md:w-72">
-        <h2 className="text-xl">{title}</h2>
+        <h2 className="m-0 text-xl after:hidden">{title}</h2>
         <p className="pt-1 text-left">{body}</p>
         <div className="mt-auto flex w-full items-center justify-end rounded-md pt-4">
           <Link

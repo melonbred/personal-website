@@ -42,7 +42,6 @@ export default function Resources() {
           </ul>
 
           <h2 className="pt-10 text-2xl">MB Series</h2>
-          <hr className="pb-2"></hr>
           <div className="flex flex-col md:flex-row md:justify-between">
             <div className="py-2 md:mr-20 md:w-1/2">
               <h3 className="text-xl">MB-44</h3>
@@ -132,7 +131,6 @@ export default function Resources() {
             </div>
           </div>
           <h2 className="pt-10 text-2xl">Mythics Series</h2>
-          <hr className="pb-2"></hr>
           <div className="flex flex-col md:flex-row md:justify-between">
             <div className="py-2 md:mr-20 md:w-1/2">
               <h3 className="text-xl">Pegasus</h3>

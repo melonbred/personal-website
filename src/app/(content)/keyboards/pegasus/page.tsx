@@ -134,7 +134,7 @@ export default function Pegasus() {
 
           <div className="flex flex-col md:flex-row">
             <div className="md:w-1/2">
-              <h2 className="pb-5 pt-10 text-2xl">Specifications</h2>
+              <h2 className="pt-10 text-2xl">Specifications</h2>
               <KeyboardSpecTable
                 layout="40% - 12.75u WKL"
                 mounting="Gasket Mounted Integrated Half-Plate"
