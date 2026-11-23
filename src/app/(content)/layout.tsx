@@ -27,6 +27,14 @@ export default function RootLayout({
           aria-hidden
           className="pointer-events-none fixed inset-x-2 bottom-2 top-[6.5rem] z-30 rounded-3xl shadow-[0_0_0_100vmax_theme(colors.slate.600)] lg:hidden"
         />
+        {/* Solid strip over the bottom border band. Visually redundant, but
+            Safari (iOS 26) tints the area under its floating toolbar from the
+            background of fixed elements at the viewport edge; a box-shadow
+            isn't sampled. */}
+        <div
+          aria-hidden
+          className="pointer-events-none fixed inset-x-0 bottom-0 z-40 h-2 bg-slate-600 lg:hidden"
+        />
         <div className="fixed inset-x-0 top-0 z-40 flex h-[6.5rem] items-center justify-between bg-slate-600 p-2 lg:hidden">
           <Link
             className="rounded-full border-4 border-emerald-700 bg-green-300 duration-150 hover:scale-105"
