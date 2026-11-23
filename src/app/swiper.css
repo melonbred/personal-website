@@ -11,11 +11,11 @@
 }
 
 .swiper-pagination-bullet {
-  width: 20px;
-  height: 20px;
+  width: 10px;
+  height: 10px;
   text-align: center;
-  line-height: 20px;
-  font-size: 12px;
+  line-height: 10px;
+  font-size: 6px;
   color: #000;
   opacity: 1;
   background: rgba(134 239 172 0.2);

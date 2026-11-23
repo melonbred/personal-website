@@ -1,14 +1,6 @@
 "use client";
 
-// import Swiper core and required modules
-import { Navigation, Pagination, A11y } from "swiper";
-import { Swiper, SwiperSlide } from "swiper/react";
-
-// Import Swiper styles
-import "swiper/css";
-import "swiper/css/navigation";
-import "@/app/swiper.css";
-import "swiper/css/pagination";
+import Carousel, { SwiperSlide } from "@/components/Carousel";
 
 import KeyboardCard from "@/components/KeyboardCard";
 
@@ -40,14 +32,7 @@ export default function Keyboards() {
           feature simple case constructions and fun layouts.
         </p>
       </div>
-      <Swiper
-        centeredSlides={true}
-        modules={[Navigation, Pagination, A11y]}
-        navigation={true}
-        pagination={{ clickable: true }}
-        onSlideChange={() => console.log("slide change")}
-        onSwiper={(swiper) => console.log(swiper)}
-      >
+      <Carousel>
         <SwiperSlide>
           <div className="flex justify-center">
             <KeyboardCard
@@ -78,7 +63,7 @@ export default function Keyboards() {
             />
           </div>
         </SwiperSlide>
-      </Swiper>
+      </Carousel>
       <div className="p-5 md:px-20 md:py-10">
         <h2 id="mythics" className="pt-5 text-2xl">
           Mythics Series
@@ -92,14 +77,7 @@ export default function Keyboards() {
           mounting solutions.
         </p>
       </div>
-      <Swiper
-        centeredSlides={true}
-        modules={[Navigation, Pagination, A11y]}
-        navigation={true}
-        pagination={{ clickable: true }}
-        onSlideChange={() => console.log("slide change")}
-        onSwiper={(swiper) => console.log(swiper)}
-      >
+      <Carousel>
         <SwiperSlide>
           <div className="flex justify-center">
             <KeyboardCard
@@ -120,7 +98,7 @@ export default function Keyboards() {
             />
           </div>
         </SwiperSlide>
-      </Swiper>
+      </Carousel>
       <div className="p-10"></div>
     </>
   );

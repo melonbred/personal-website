@@ -4,15 +4,7 @@ import Image from "next/image";
 import ImageCard from "@/components/ImageCard";
 import KeyboardSpecTable from "@/components/KeyboardSpecTable";
 
-// import Swiper core and required modules
-import { Navigation, Pagination, A11y } from "swiper";
-import { Swiper, SwiperSlide } from "swiper/react";
-
-// Import Swiper styles
-import "swiper/css";
-import "swiper/css/navigation";
-import "@/app/swiper.css";
-import "swiper/css/pagination";
+import Carousel, { SwiperSlide } from "@/components/Carousel";
 
 export default function Pegasus() {
   return (
@@ -43,15 +35,7 @@ export default function Pegasus() {
       </head>
 
       <div className="p-3">
-        <Swiper
-          centeredSlides={true}
-          modules={[Navigation, Pagination, A11y]}
-          navigation={true}
-          spaceBetween={200}
-          pagination={{ clickable: true }}
-          onSlideChange={() => console.log("slide change")}
-          onSwiper={(swiper) => console.log(swiper)}
-        >
+        <Carousel spaceBetween={200}>
           <SwiperSlide>
             <div className="relative aspect-video">
               <Image
@@ -72,7 +56,7 @@ export default function Pegasus() {
               />
             </div>
           </SwiperSlide>
-        </Swiper>
+        </Carousel>
       </div>
       <div className="flex flex-col items-center">
         <h1 className="p-5 text-3xl xl:text-6xl">Pegasus</h1>
